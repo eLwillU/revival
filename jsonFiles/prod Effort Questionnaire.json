@@ -1,0 +1,2941 @@
+{
+  "resourceType": "Questionnaire",
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "YES-NO-Valueset",
+      "url": "http://to.be.defined",
+      "title": "yes/no",
+      "status": "active",
+      "compose": {
+        "include": [
+          {
+            "system": "http://snomed.info/sct",
+            "concept": [
+              {
+                "code": "373066001",
+                "display": "yes",
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "ja"
+                  },
+                  {
+                    "language": "en",
+                    "value": "yes"
+                  },
+                  {
+                    "language": "fr",
+                    "value": "oui"
+                  }
+                ]
+              },
+              {
+                "code": "373067005",
+                "display": "no",
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "nein"
+                  },
+                  {
+                    "language": "en",
+                    "value": "no"
+                  },
+                  {
+                    "language": "fr",
+                    "value": "non"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "FREQUENCY-Valueset",
+      "url": "http://to.be.defined",
+      "title": "Frequency",
+      "status": "active",
+      "compose": {
+        "include": [
+          {
+            "system": "http://approches.ch/codesystems/frequency",
+            "concept": [
+              {
+                "code": "'0'",
+                "display": "many times a day",
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "mehrmals täglich"
+                  },
+                  {
+                    "language": "fr",
+                    "value": "plusieurs fois par jour"
+                  }
+                ]
+              },
+              {
+                "code": "1",
+                "display": "once a day",
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "einmal täglich"
+                  },
+                  {
+                    "language": "fr",
+                    "value": "une fois par jour"
+                  }
+                ]
+              },
+              {
+                "code": "2",
+                "display": "2-3x a week",
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "2-3x pro Woche"
+                  },
+                  {
+                    "language": "fr",
+                    "value": "2-3x par semaine"
+                  }
+                ]
+              },
+              {
+                "code": "3",
+                "display": "once a week",
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "einmal pro Woche"
+                  },
+                  {
+                    "language": "fr",
+                    "value": "une fois par semaine"
+                  }
+                ]
+              },
+              {
+                "code": "4",
+                "display": "rarer",
+                "designation": [
+                  {
+                    "language": "de",
+                    "value": "seltener"
+                  },
+                  {
+                    "language": "fr",
+                    "value": "plus rarement"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://midata.coop/extensions/valueset-reference",
+      "valueReference": {
+        "reference": "#YES-NO-Valueset"
+      }
+    },
+    {
+      "url": "http://midata.coop/extensions/valueset-reference",
+      "valueReference": {
+        "reference": "#FREQUENCY-Valueset"
+      }
+    }
+  ],
+  "url": "http://approches.ch.ch/prom/time-spent",
+  "version": "1.0",
+  "name": "Effort questionnaire",
+  "title": "time spent",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "de"
+          },
+          {
+            "url": "content",
+            "valueString": "Zeitaufwand"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "fr"
+          },
+          {
+            "url": "content",
+            "valueString": "temps investi"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "subjectType": [
+    "Patient"
+  ],
+  "publisher": "BFH & MIDATA",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://midata.coop/codesystems/usecontext-type",
+        "code": "prom"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://approches.ch/codesystems/questionnaire-type",
+            "code": "time-spent"
+          }
+        ]
+      }
+    }
+  ],
+  "code": [
+    {
+      "system": "http://loinc.org",
+      "code": "89196-0",
+      "display": "Patient reported outcome measure panel"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "I0",
+      "text": "Einführungstext",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Dieser Fragebogen soll Ihnen helfen, einzuschätzen, wie viel Zeit Sie in der vergangenen Woche für Ihren Angehörigen aufgewendet haben.\nSollten Sie mehr als eine Person unterstützen, beantworten Sie bitte die Fragen für die Person, die Sie mehrheitlich unterstützen."
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "Ce questionnaire doit vous permettre d’estimer le temps consacré à votre proche la semaine passée.\nSi vous soutenez plus d'une personne, veuillez penser à la personne que vous soutenez le plus souvent lorsque vous répondez aux questions."
+              }
+            ]
+          }
+        ]
+      },
+      "type": "display"
+    },
+    {
+      "linkId": "Q1",
+      "prefix": "1",
+      "text": "helfen Sie ihrer unterstützten Person bei der Bewegung innerhalb der Wohnung / Haus, inkl. beim Aufstehen aus dem Bett?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "helfen Sie ihrer unterstützten Person bei der Bewegung innerhalb der Wohnung/des Hauses, inkl. beim Aufstehen aus dem Bett?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "aidez-vous votre proche à se déplacer dans son appartement/sa maison et à se lever de son lit?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#YES-NO-Valueset",
+      "item": [
+        {
+          "linkId": "Q1a",
+          "text": "wie oft?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "wie oft?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "à quelle fréquence?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "Q1",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false,
+          "answerValueSet": "#FREQUENCY-Valueset"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "slider",
+                    "display": "Slider"
+                  }
+                ],
+                "text": "Slider"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 120
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://ucum.org",
+                    "code": "min",
+                    "display": "minute"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
+              "valueInteger": 5
+            }
+          ],
+          "linkId": "Q1b",
+          "text": "und wie lange jeweils?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "und wie lange jeweils?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "et combien de temps par fois?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "quantity",
+          "enableWhen": [
+            {
+              "question": "Q1",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "Q2",
+      "prefix": "2",
+      "text": "helfen Sie ihrer unterstützten Person beim Toilettengang?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "helfen Sie ihrer unterstützten Person beim Toilettengang?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "aidez-vous votre proche à aller aux toilettes?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#YES-NO-Valueset",
+      "item": [
+        {
+          "linkId": "Q2a",
+          "text": "wie oft?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "wie oft?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "à quelle fréquence?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "Q2",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false,
+          "answerValueSet": "#FREQUENCY-Valueset"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "slider",
+                    "display": "Slider"
+                  }
+                ],
+                "text": "Slider"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 120
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://ucum.org",
+                    "code": "min",
+                    "display": "minute"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
+              "valueInteger": 5
+            }
+          ],
+          "linkId": "Q2b",
+          "text": "und wie lange jeweils?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "und wie lange jeweils?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "et combien de temps par fois?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "quantity",
+          "enableWhen": [
+            {
+              "question": "Q2",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "Q3",
+      "prefix": "3",
+      "text": "helfen Sie ihrer unterstützten Person bei der täglichen Körperpflege?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "helfen Sie ihrer unterstützten Person bei der täglichen Körperpflege?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "aidez-vous votre proche à s'occuper de son hygiène personnelle quotidienne?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#YES-NO-Valueset",
+      "item": [
+        {
+          "linkId": "Q3a",
+          "text": "wie oft?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "wie oft?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "à quelle fréquence?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "Q3",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false,
+          "answerValueSet": "#FREQUENCY-Valueset"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "slider",
+                    "display": "Slider"
+                  }
+                ],
+                "text": "Slider"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 120
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://ucum.org",
+                    "code": "min",
+                    "display": "minute"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
+              "valueInteger": 5
+            }
+          ],
+          "linkId": "Q3b",
+          "text": "und wie lange jeweils?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "und wie lange jeweils?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "et combien de temps par fois?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "quantity",
+          "enableWhen": [
+            {
+              "question": "Q3",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "Q4",
+      "prefix": "4",
+      "text": "helfen Sie ihrer unterstützten Person beim Duschen oder Baden?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "helfen Sie ihrer unterstützten Person beim Duschen oder Baden?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "aidez-vous votre proche à prendre sa douche ou son bain?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#YES-NO-Valueset",
+      "item": [
+        {
+          "linkId": "Q4a",
+          "text": "wie oft?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "wie oft?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "à quelle fréquence?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "Q4",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false,
+          "answerValueSet": "#FREQUENCY-Valueset"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "slider",
+                    "display": "Slider"
+                  }
+                ],
+                "text": "Slider"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 120
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://ucum.org",
+                    "code": "min",
+                    "display": "minute"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
+              "valueInteger": 5
+            }
+          ],
+          "linkId": "Q4b",
+          "text": "und wie lange jeweils?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "und wie lange jeweils?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "et combien de temps par fois?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "quantity",
+          "enableWhen": [
+            {
+              "question": "Q4",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "Q5",
+      "prefix": "5",
+      "text": "helfen Sie ihrer unterstützten Person beim Anziehen?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "helfen Sie ihrer unterstützten Person beim Anziehen"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "aidez-vous votre proche à s'habiller?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#YES-NO-Valueset",
+      "item": [
+        {
+          "linkId": "Q5a",
+          "text": "wie oft?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "wie oft?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "à quelle fréquence?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "Q5",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false,
+          "answerValueSet": "#FREQUENCY-Valueset"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "slider",
+                    "display": "Slider"
+                  }
+                ],
+                "text": "Slider"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 120
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://ucum.org",
+                    "code": "min",
+                    "display": "minute"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
+              "valueInteger": 5
+            }
+          ],
+          "linkId": "Q5b",
+          "text": "und wie lange jeweils?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "und wie lange jeweils?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "et combien de temps par fois?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "quantity",
+          "enableWhen": [
+            {
+              "question": "Q5",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "Q6",
+      "prefix": "6",
+      "text": "helfen Sie ihrer unterstützten Person beim Essen?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "helfen Sie ihrer unterstützten Person beim Essen?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "aidez-vous votre proche à manger?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#YES-NO-Valueset",
+      "item": [
+        {
+          "linkId": "Q6a",
+          "text": "wie oft?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "wie oft?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "à quelle fréquence?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "Q6",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false,
+          "answerValueSet": "#FREQUENCY-Valueset"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "slider",
+                    "display": "Slider"
+                  }
+                ],
+                "text": "Slider"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 120
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://ucum.org",
+                    "code": "min",
+                    "display": "minute"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
+              "valueInteger": 5
+            }
+          ],
+          "linkId": "Q6b",
+          "text": "und wie lange jeweils?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "und wie lange jeweils?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "et combien de temps par fois?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "quantity",
+          "enableWhen": [
+            {
+              "question": "Q6",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "Q7",
+      "prefix": "7",
+      "text": "helfen Sie ihrer unterstützten Person bei der Zubereitung von Mahlzeiten?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "helfen Sie ihrer unterstützten Person bei der Zubereitung von Mahlzeiten?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "aidez-vous votre proche à préparer les repas?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#YES-NO-Valueset",
+      "item": [
+        {
+          "linkId": "Q7a",
+          "text": "wie oft?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "wie oft?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "à quelle fréquence?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "Q7",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false,
+          "answerValueSet": "#FREQUENCY-Valueset"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "slider",
+                    "display": "Slider"
+                  }
+                ],
+                "text": "Slider"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 120
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://ucum.org",
+                    "code": "min",
+                    "display": "minute"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
+              "valueInteger": 5
+            }
+          ],
+          "linkId": "Q7b",
+          "text": "und wie lange jeweils?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "und wie lange jeweils?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "et combien de temps par fois?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "quantity",
+          "enableWhen": [
+            {
+              "question": "Q7",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "Q8",
+      "prefix": "8",
+      "text": "helfen Sie ihrer unterstützten Person bei der Ausführung von medizinischen oder pflegerischen Verrichtungen?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "helfen Sie ihrer unterstützten Person bei der Ausführung von medizinischen oder pflegerischen Verrichtungen?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "aidez-vous votre proche en effectuant des tâches médicales?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#YES-NO-Valueset",
+      "item": [
+        {
+          "linkId": "Q8a",
+          "text": "wie oft?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "wie oft?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "à quelle fréquence?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "Q8",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false,
+          "answerValueSet": "#FREQUENCY-Valueset"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "slider",
+                    "display": "Slider"
+                  }
+                ],
+                "text": "Slider"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 120
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://ucum.org",
+                    "code": "min",
+                    "display": "minute"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
+              "valueInteger": 5
+            }
+          ],
+          "linkId": "Q8b",
+          "text": "und wie lange jeweils?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "und wie lange jeweils?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "et combien de temps par fois?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "quantity",
+          "enableWhen": [
+            {
+              "question": "Q8",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "Q9",
+      "prefix": "9",
+      "text": "helfen Sie ihrer unterstützten Person bei der alltäglichen  Hausarbeit inkl. Wäschepflege?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "helfen Sie ihrer unterstützten Person bei der alltäglichen  Hausarbeit inkl. Wäschepflege?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "aidez-vous votre proche à effectuer les tâches ménagères quotidiennes, y compris la lessive?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#YES-NO-Valueset",
+      "item": [
+        {
+          "linkId": "Q9a",
+          "text": "wie oft?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "wie oft?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "à quelle fréquence?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "Q9",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false,
+          "answerValueSet": "#FREQUENCY-Valueset"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "slider",
+                    "display": "Slider"
+                  }
+                ],
+                "text": "Slider"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 120
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://ucum.org",
+                    "code": "min",
+                    "display": "minute"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
+              "valueInteger": 5
+            }
+          ],
+          "linkId": "Q9b",
+          "text": "und wie lange jeweils?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "und wie lange jeweils?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "et combien de temps par fois?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "quantity",
+          "enableWhen": [
+            {
+              "question": "Q9",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "Q10",
+      "prefix": "10",
+      "text": "helfen Sie ihrer unterstützten Person bei der Versorgung von Haustieren?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "helfen Sie ihrer unterstützten Person bei der Versorgung von Haustieren?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "aidez-vous votre proche à s'occuper de ses animaux domestiques?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#YES-NO-Valueset",
+      "item": [
+        {
+          "linkId": "Q10a",
+          "text": "wie oft?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "wie oft?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "à quelle fréquence?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "Q10",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false,
+          "answerValueSet": "#FREQUENCY-Valueset"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "slider",
+                    "display": "Slider"
+                  }
+                ],
+                "text": "Slider"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 120
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://ucum.org",
+                    "code": "min",
+                    "display": "minute"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
+              "valueInteger": 5
+            }
+          ],
+          "linkId": "Q10b",
+          "text": "und wie lange jeweils?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "und wie lange jeweils?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "et combien de temps par fois?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "quantity",
+          "enableWhen": [
+            {
+              "question": "Q10",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "Q11",
+      "prefix": "11",
+      "text": "helfen Sie ihrer unterstützten Person beim Einkaufen?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "helfen Sie ihrer unterstützten Person beim Einkaufen?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "aidez-vous votre proche à faire ses courses?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#YES-NO-Valueset",
+      "item": [
+        {
+          "linkId": "Q11a",
+          "text": "wie oft?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "wie oft?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "à quelle fréquence?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "Q11",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false,
+          "answerValueSet": "#FREQUENCY-Valueset"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "slider",
+                    "display": "Slider"
+                  }
+                ],
+                "text": "Slider"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 120
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://ucum.org",
+                    "code": "min",
+                    "display": "minute"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
+              "valueInteger": 5
+            }
+          ],
+          "linkId": "Q11b",
+          "text": "und wie lange jeweils?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "und wie lange jeweils?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "et combien de temps par fois?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "quantity",
+          "enableWhen": [
+            {
+              "question": "Q11",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "Q12",
+      "prefix": "12",
+      "text": "helfen Sie ihrer unterstützten Person bei der Erledigung administrativer Tätigkeiten?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "helfen Sie ihrer unterstützten Person bei der Erledigung administrativer Tätigkeiten?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "aidez-vous votre proche dans ses tâches administratives?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#YES-NO-Valueset",
+      "item": [
+        {
+          "linkId": "Q12a",
+          "text": "wie oft?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "wie oft?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "à quelle fréquence?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "Q12",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false,
+          "answerValueSet": "#FREQUENCY-Valueset"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "slider",
+                    "display": "Slider"
+                  }
+                ],
+                "text": "Slider"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 120
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://ucum.org",
+                    "code": "min",
+                    "display": "minute"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
+              "valueInteger": 5
+            }
+          ],
+          "linkId": "Q12b",
+          "text": "und wie lange jeweils?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "und wie lange jeweils?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "et combien de temps par fois?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "quantity",
+          "enableWhen": [
+            {
+              "question": "Q12",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "Q13",
+      "prefix": "13",
+      "text": "helfen Sie ihrer unterstützten Person bei der Wahrnehmung von Terminen (Arzt, Zahnarzt, Fusspflege, Physiotherapie, etc.)?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "helfen Sie ihrer unterstützten Person bei der Wahrnehmung von Terminen (Arzt, Zahnarzt, Fusspflege, Physiotherapie, etc.)?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "aidez-vous votre proche à se rendre à ses rendez-vous (médecin, dentiste, podologue, physiothérapeute, etc.)?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#YES-NO-Valueset",
+      "item": [
+        {
+          "linkId": "Q13a",
+          "text": "wie oft?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "wie oft?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "à quelle fréquence?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "Q13",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false,
+          "answerValueSet": "#FREQUENCY-Valueset"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "slider",
+                    "display": "Slider"
+                  }
+                ],
+                "text": "Slider"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 120
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://ucum.org",
+                    "code": "min",
+                    "display": "minute"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
+              "valueInteger": 5
+            }
+          ],
+          "linkId": "Q13b",
+          "text": "und wie lange jeweils?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "und wie lange jeweils?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "et combien de temps par fois?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "quantity",
+          "enableWhen": [
+            {
+              "question": "Q13",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "Q14",
+      "prefix": "14",
+      "text": "helfen Sie ihrer unterstützten Person durch emotionale/psychologische Unterstützung (z.B. Gesellschaft leisten, Trost oder Gefühl von Sicherheit geben)?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "helfen Sie ihrer unterstützten Person durch emotionale/psychologische Unterstützung (z.B. Gesellschaft leisten, Trost oder Gefühl von Sicherheit geben)?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "aidez-vous votre proche en lui apportant un soutien émotionnel/psychologique (p.ex. en lui tenant compagnie, en le réconfortant ou en lui donnant un sentiment de sécurité)?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#YES-NO-Valueset",
+      "item": [
+        {
+          "linkId": "Q14a",
+          "text": "wie oft?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "wie oft?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "à quelle fréquence?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "Q14",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false,
+          "answerValueSet": "#FREQUENCY-Valueset"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "slider",
+                    "display": "Slider"
+                  }
+                ],
+                "text": "Slider"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 120
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://ucum.org",
+                    "code": "min",
+                    "display": "minute"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
+              "valueInteger": 5
+            }
+          ],
+          "linkId": "Q14b",
+          "text": "und wie lange jeweils?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "und wie lange jeweils?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "et combien de temps par fois?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "quantity",
+          "enableWhen": [
+            {
+              "question": "Q14",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "Q15",
+      "prefix": "15",
+      "text": "helfen Sie ihrer unterstützten Person bei der Pflege von sozialen Kontakten?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "helfen Sie ihrer unterstützten Person bei der Pflege von sozialen Kontakten?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "aidez-vous votre proche à entretenir des contacts sociaux?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#YES-NO-Valueset",
+      "item": [
+        {
+          "linkId": "Q15a",
+          "text": "wie oft?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "wie oft?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "à quelle fréquence?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "Q15",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false,
+          "answerValueSet": "#FREQUENCY-Valueset"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "slider",
+                    "display": "Slider"
+                  }
+                ],
+                "text": "Slider"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 120
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://ucum.org",
+                    "code": "min",
+                    "display": "minute"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
+              "valueInteger": 5
+            }
+          ],
+          "linkId": "Q15b",
+          "text": "und wie lange jeweils?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "und wie lange jeweils?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "et combien de temps par fois?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "quantity",
+          "enableWhen": [
+            {
+              "question": "Q15",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "Der geleistete Zeitaufwand wird aufgrund der gegebenen Antworten automatisch berechnet.",
+            "name": "timeSpent",
+            "language": "text/fhirpath",
+            "expression": "item.aggregate(iif($this.item.exists(),$total + (iif($this.item[0].answer.valueCoding.code.toInteger() = 4,0.5,iif($this.item[0].answer.valueCoding.code.toInteger() = 3,1,iif($this.item[0].answer.valueCoding.code.toInteger() = 2,2.5,iif($this.item[0].answer.valueCoding.code.toInteger() = 1,7,2.5 * 7))))) * $this.item[1].answer.valueQuantity.value, $total), 0).round(0)"
+          }
+        }
+      ],
+      "linkId": "timeSpent",
+      "text": "Der geleistete Zeitaufwand wird aufgrund der gegebenen Antworten automatisch berechnet.",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Der geleistete Zeitaufwand wird aufgrund der gegebenen Antworten automatisch berechnet."
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "Le temps passé est calculé automatiquement en fonction des réponses données."
+              }
+            ]
+          }
+        ]
+      },
+      "type": "quantity",
+      "required": false,
+      "repeats": false,
+      "initial": [
+        {
+          "valueQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "code": "min"
+          }
+        }
+      ]
+    }
+  ]
+}
