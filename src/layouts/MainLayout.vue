@@ -1,22 +1,41 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+  <q-layout view="hHh lpR fFf">
+    <q-header bordered class="bg-primary text-white">
       <q-toolbar>
-        <q-toolbar-title> Quasar App </q-toolbar-title>
-        <div>Quasar v{{ $q.version }}</div>
-      </q-toolbar>
-      <q-btn to="/pageOne"> Page 1</q-btn>
-      <q-btn to="/pageTwo"> Page 2</q-btn>
+        <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
-      <LoginButton></LoginButton>
+        <q-toolbar-title>
+          <q-avatar>
+            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
+          </q-avatar>
+          Title
+        </q-toolbar-title>
+      </q-toolbar>
     </q-header>
 
-    <q-page-container>
-      <RouterView></RouterView>
-    </q-page-container>
+    <q-drawer v-model="leftDrawerOpen" side="left" overlay elevated>
+      <q-item
+        icon="person"
+        label="Midata"
+        :content-inset-level="0.5"
+        clickable
+        to="/pageOne"
+        class="items-center justify-between text-subtitle1"
+        >Item 1</q-item
+      >
+    </q-drawer>
+
+    <q-page-container> </q-page-container>
   </q-layout>
 </template>
 
 <script setup>
-import LoginButton from "src/components/LoginButton.vue";
+import { ref } from "vue";
+import PageLinks from "src/components/PageLinks.vue";
+
+const leftDrawerOpen = ref(false);
+
+function toggleLeftDrawer() {
+  leftDrawerOpen.value = !leftDrawerOpen.value;
+}
 </script>
