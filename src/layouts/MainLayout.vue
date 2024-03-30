@@ -20,7 +20,7 @@
       >
     </q-drawer>
 
-    <q-page-container> </q-page-container>
+    <q-page-container> <RouterView></RouterView> </q-page-container>
   </q-layout>
 </template>
 

@@ -1,9 +1,7 @@
 <template>
   <q-page padding>
-    Hello
+    <div>Hello World</div>
   </q-page>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>

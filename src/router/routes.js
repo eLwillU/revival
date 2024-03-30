@@ -14,8 +14,8 @@ const routes = [
       },
       {
         path: "/TestPage",
-      component: () => import("pages/TestPage.vue"),
-    },
+        component: () => import("pages/TestPage.vue"),
+      },
     ],
   },
   // Always leave this as last one,
