@@ -3,12 +3,11 @@
     <q-header bordered class="bg-primary text-white">
       <q-toolbar>
         <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
-
         <q-toolbar-title> revival </q-toolbar-title>
+        <q-btn flat round dense icon="whatshot" />
       </q-toolbar>
     </q-header>
-
-    <q-drawer v-model="leftDrawerOpen" side="left" overlay elevated>
+    <q-drawer v-model="leftDrawerOpen" side="left" elevated>
       <q-item
         icon="person"
         label="Midata"
