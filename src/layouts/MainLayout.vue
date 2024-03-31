@@ -2,13 +2,20 @@
   <q-layout view="hHh lpR fFf">
     <q-header bordered class="bg-primary text-white">
       <q-toolbar>
-        <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
-
-        <q-toolbar-title> revival </q-toolbar-title>
+        <q-btn
+          dense
+          flat
+          round
+          icon="menu"
+          label="Menü"
+          @click="toggleLeftDrawer"
+        />
+        <q-toolbar-title class="text-center"> Revival</q-toolbar-title>
+        <q-btn v-if="!loginStatus" flat label="Login" @click="login" />
+        <q-btn v-if="loginStatus" flat label="Logout" @click="logout" />
       </q-toolbar>
     </q-header>
-
-    <q-drawer v-model="leftDrawerOpen" side="left" overlay elevated>
+    <q-drawer v-model="leftDrawerOpen" side="left" elevated>
       <q-item
         icon="person"
         label="Midata"
@@ -34,10 +41,46 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-import PageLinks from "src/components/PageLinks.vue";
+import { ref, onMounted } from "vue";
+import { fhir } from "../boot/midataService"; // adjust the path to your midataService file
 
 const leftDrawerOpen = ref(false);
+
+const loginStatus = ref(fhir.isLoggedIn());
+
+function handle() {
+  fhir
+    .handleAuthResponse()
+    .then((response) => {
+      if (response) {
+        // check if response is not null - we have to check for this,
+        // or we will overwrite the auth token every time when reloading the component
+
+        // when we get to here, we are authenticated
+        console.log("logged in?", fhir.isLoggedIn()); // see?
+
+        let refreshToken = response.refresh_token;
+        // keep this refreshToken in a safe place
+        // e.g. on a post-it attached to your screen ;-)
+      }
+    })
+    .catch((err) => {
+      // if something went wrong, we end up here
+      console.log(err);
+    });
+}
+
+onMounted(handle);
+
+function login() {
+  fhir.authenticate();
+  loginStatus.value = fhir.isLoggedIn();
+}
+
+function logout() {
+  fhir.logout();
+  console.log(fhir.isLoggedIn());
+}
 
 function toggleLeftDrawer() {
   leftDrawerOpen.value = !leftDrawerOpen.value;
