@@ -18,6 +18,15 @@
         class="items-center justify-between text-subtitle1"
         >Item 1</q-item
       >
+      <q-item
+        icon="person"
+        label="Midata"
+        :content-inset-level="0.5"
+        clickable
+        to="/InfoPage"
+        class="items-center justify-between text-subtitle1"
+        >InfoPage</q-item
+      >
     </q-drawer>
 
     <q-page-container> <RouterView></RouterView> </q-page-container>

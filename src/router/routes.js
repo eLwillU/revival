@@ -13,8 +13,8 @@ const routes = [
         component: () => import("pages/pageTwo.vue"),
       },
       {
-        path: "/TestPage",
-        component: () => import("pages/TestPage.vue"),
+        path: "/InfoPage",
+        component: () => import("pages/InfoPage.vue"),
       },
     ],
   },
