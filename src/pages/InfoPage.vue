@@ -10,11 +10,11 @@
       </div>
     </q-img>
 
-    <div class="q-pa-md text-center q-mt-lg"> <!-- q-mt-lg für mehr Abstand oben -->
+    <div class="q-pa-md text-center q-mt-lg">
       <div class="text-h6 q-my-md">
         Willkommen bei REVIVAL
       </div>
-      <div class="text-subtitle2 q-my-md"> <!-- Reduzierung des Abstandes für den Untertitel -->
+      <div class="text-subtitle2 q-my-md">
         Nutzen Sie jetzt die Gelegenheit, die Zukunft der Krebsbehandlung aktiv mitzugestalten, indem Sie Ihre persönlichen Erfahrungen durch den digitalen SCAPE-Fragebogen teilen. Ihr wertvolles Feedback ist ein Schlüssel zu einer besseren Patientenversorgung und hilft uns, das Gesundheitssystem effektiver zu gestalten. REVIVAL ist mehr als nur ein Studentenprojekt – es ist eine Bewegung, die durch Ihre Teilnahme und Ihr Engagement wächst. Lassen Sie uns gemeinsam handeln, um den Weg für innovative Veränderungen zu ebnen und das Wohl von Krebspatienten zu fördern. Für einen tieferen Einblick und weitere Informationen schauen Sie sich bitte das Video unten an und entdecken Sie, wie auch Sie einen Unterschied machen können. Seien Sie der Wandel, den Sie in der Welt sehen möchten – beginnen wir heute!
       </div>
       <div class="video-container q-my-md">
@@ -28,7 +28,7 @@
     </div>
 
     <!-- q-cards Container mit zusätzlichem Abstand unten -->
-    <div class="q-gutter-md row justify-center q-mt-md" style="margin-bottom: 3em;"> <!-- Erhöhter margin-bottom -->
+    <div class="q-gutter-md row justify-center q-mt-md" style="margin-bottom: 3em;">
       <div v-for="n in 2" :key="n" class="col-5 col-md-4 col-lg-3 q-mb-md">
         <q-card class="my-card">
           <q-img
@@ -64,16 +64,16 @@
   height: auto; /* Für ein responsives Video */
 }
 
-/* Angepasste .my-card-Klasse für zusätzlichen Abstand am unteren Rand */
+
 .my-card {
-  max-width: 300px; /* Reduziert die maximale Breite für kleinere Karten */
-  width: 100%; /* Ermöglicht der Karte, sich innerhalb ihres Containers anzupassen */
-  margin: auto; /* Zentriert die Karte im Container */
-  margin-bottom: 2em; /* Zusätzlicher Abstand am unteren Rand der Karte */
+  max-width: 300px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 2em;
 }
 
 .card-image {
-  height: 150px; /* Höhe der Kartenbilder angepasst */
-  object-fit: cover; /* Bild deckt die gesamte Karte ab ohne verzerrt zu werden */
+  height: 150px;
+  object-fit: cover;
 }
 </style>
