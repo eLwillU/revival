@@ -15,7 +15,7 @@
         <q-btn v-if="loginStatus" flat label="Logout" @click="logout" />
       </q-toolbar>
     </q-header>
-    <q-drawer v-model="leftDrawerOpen" side="left" elevated>
+    <q-drawer v-model="leftDrawerOpen" side="left" overlay>
       <q-item
         icon="person"
         label="Midata"
@@ -34,9 +34,20 @@
         class="items-center justify-between text-subtitle1"
         >InfoPage</q-item
       >
+      <q-item
+        icon="person"
+        label="Midata"
+        :content-inset-level="0.5"
+        clickable
+        to="/Questionnaire"
+        class="items-center justify-between text-subtitle1"
+        >Questionnaire</q-item
+      >
     </q-drawer>
 
-    <q-page-container> <RouterView></RouterView> </q-page-container>
+    <q-page-container class="q-pa-sm row justify-center">
+      <RouterView class="col-md-6"></RouterView>
+    </q-page-container>
   </q-layout>
 </template>
 

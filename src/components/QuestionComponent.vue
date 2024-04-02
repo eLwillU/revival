@@ -1,31 +1,27 @@
 <template>
-  <q-card bordered class="bg-grey-4 q-ma-md">
-    <q-card-section>
-      <div class="text-h6">Frage 1</div>
-      <div class="text-subtitle2">
-        Wie oft waren Sie wegen der durch die Krebserkrankung verursachten
-        Symptome bei einem/r Hausarzt/-ärztin oder Allgemeinarzt/-ärztin, bevor
-        Sie eine:n Spezialisten/-in konsultiert haben?
-      </div>
-    </q-card-section>
-
-    <q-separator inset />
-
-    <q-card-section>
-      <q-option-group
-        v-model="group"
-        :options="options"
-        color="primary"
-        class=""
-      />
-    </q-card-section>
-  </q-card>
+  <div>
+    <q-card bordered flat class="bg-grey-2">
+      <q-card-section>
+        <div class="text-h6">Frage 1</div>
+        <div class="text-subtitle2">
+          Wie oft waren Sie wegen der durch die Krebserkrankung verursachten
+          Symptome bei einem/r Hausarzt/-ärztin oder Allgemeinarzt/-ärztin,
+          bevor Sie eine:n Spezialisten/-in konsultiert haben?
+        </div>
+      </q-card-section>
+    </q-card>
+    <q-option-group
+      v-model="group"
+      :options="options"
+      color="primary"
+      class=""
+    />
+  </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
 const group = ref("op1");
-const answer = ref(null);
 
 const options = [
   {
