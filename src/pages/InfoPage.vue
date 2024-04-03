@@ -12,24 +12,16 @@
       </q-img>
     </div>
 
-    <div class="q-pa-md text-center q-mt-lg">
-      <div class="text-h6 q-my-md">Willkommen bei REVIVAL</div>
+    <div>
+      <div class="text-h6 q-my-md text-center">Willkommen bei REVIVAL</div>
       <div class="text-subtitle2 q-my-md">
-        Nutzen Sie jetzt die Gelegenheit, die Zukunft der Krebsbehandlung aktiv
-        mitzugestalten, indem Sie Ihre persönlichen Erfahrungen durch den
-        digitalen SCAPE-Fragebogen teilen. Ihr wertvolles Feedback ist ein
-        Schlüssel zu einer besseren Patientenversorgung und hilft uns, das
-        Gesundheitssystem effektiver zu gestalten. REVIVAL ist mehr als nur ein
-        Studentenprojekt – es ist eine Bewegung, die durch Ihre Teilnahme und
-        Ihr Engagement wächst. Lassen Sie uns gemeinsam handeln, um den Weg für
-        innovative Veränderungen zu ebnen und das Wohl von Krebspatienten zu
-        fördern. Für einen tieferen Einblick und weitere Informationen schauen
-        Sie sich bitte das Video unten an und entdecken Sie, wie auch Sie einen
-        Unterschied machen können. Seien Sie der Wandel, den Sie in der Welt
-        sehen möchten – beginnen wir heute!
+        {{ $t("welcomeText.de") }}
       </div>
-      <div class="video-container q-my-md" style="width: 60%">
-        <q-video src="https://www.youtube.com/embed/CvBfHwUxHIk" />
+      <div class="video-container q-my-md">
+        <q-video
+          src="https://www.youtube.com/embed/CvBfHwUxHIk"
+          :ratio="16 / 9"
+        />
       </div>
     </div>
 

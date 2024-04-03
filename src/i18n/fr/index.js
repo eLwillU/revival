@@ -5,4 +5,10 @@ export default {
     fr: "français",
     en: "anglais",
   },
+  welcomeText: {
+    option: "Text de welcome",
+    de: "Text de welcome",
+    fr: "Text de welcome",
+    en: "Text de welcome",
+  },
 };

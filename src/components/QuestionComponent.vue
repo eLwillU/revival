@@ -10,12 +10,11 @@
         </div>
       </q-card-section>
     </q-card>
-    <q-option-group
-      v-model="group"
-      :options="options"
-      color="primary"
-      class=""
-    />
+    <q-option-group v-model="group" :options="options" color="primary">
+      <template v-slot:label="opt">
+        <div class="q-py-sm">{{ opt.label }}</div></template
+      >
+    </q-option-group>
   </div>
 </template>
 
