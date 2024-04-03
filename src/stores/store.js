@@ -1,20 +1,13 @@
-import { defineStore } from "pinia";
+import {defineStore} from "pinia";
 
 export const userStore = defineStore("counter", {
+
   state: () => ({
-    counter: 0,
-    locale: navigator.language
+    locale: navigator.language,
+
   }),
 
-  getters: {
-    doubleCount(state) {
-      return state.counter * 2;
-    },
-  },
+  getters: {},
 
-  actions: {
-    increment() {
-      this.counter++;
-    },
-  },
+  actions: {},
 });

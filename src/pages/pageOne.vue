@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <div>{{$t('welcome')}}</div>
+    <div>{{ $t("welcome") }}</div>
     <QuestionComponent></QuestionComponent>
   </q-page>
 </template>

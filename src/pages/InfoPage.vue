@@ -3,19 +3,17 @@
     <div class="flex justify-center col-6">
       <q-img
         src="https://cdn.prod.www.manager-magazin.de/images/e762e9b2-669c-40fc-a4df-dc28ba89c20b_w960_r1.778_fpx55_fpy59.jpg"
-        style="max-width: 1000px; max-height: 500px"
       >
         <div class="absolute-bottom text-center">
-          Lasst uns zusammen die Krebsbehandlung besser machen – Ihre Stimme
-          zählt!
+          {{ $t("infoCaption") }}
         </div>
       </q-img>
     </div>
 
     <div>
-      <div class="text-h6 q-my-md text-center">Willkommen bei REVIVAL</div>
+      <div class="text-h6 q-my-md text-center">{{ $t("infoWelcome") }}</div>
       <div class="text-subtitle2 q-my-md">
-        {{ $t("welcomeText.de") }}
+        {{ $t("infoText") }}
       </div>
       <div class="video-container q-my-md">
         <q-video

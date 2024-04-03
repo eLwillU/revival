@@ -11,8 +11,21 @@
           @click="toggleLeftDrawer"
         />
         <q-toolbar-title class="text-center"> Revival</q-toolbar-title>
-        <q-btn v-if="!loginStatus" flat label="Login" @click="login" />
-        <q-btn v-if="loginStatus" flat label="Logout" @click="logout" />
+
+        <q-btn
+          outline
+          class="q-mx-xs"
+          style="color: white"
+          @click="$i18n.locale = `de-CH`"
+          >DE</q-btn
+        >
+        <q-btn
+          outline
+          class="q-mx-xs"
+          style="color: white"
+          @click="$i18n.locale = `fr-CH`"
+          >FR</q-btn
+        >
       </q-toolbar>
     </q-header>
     <q-drawer v-model="leftDrawerOpen" side="left" overlay>
