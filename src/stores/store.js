@@ -1,8 +1,9 @@
 import { defineStore } from "pinia";
 
-export const useCounterStore = defineStore("counter", {
+export const userStore = defineStore("counter", {
   state: () => ({
     counter: 0,
+    locale: navigator.language
   }),
 
   getters: {
