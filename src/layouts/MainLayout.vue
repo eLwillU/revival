@@ -7,7 +7,7 @@
           flat
           round
           icon="menu"
-          label="Menü"
+          label="Menu"
           @click="toggleLeftDrawer"
         />
         <q-toolbar-title class="text-center"> Revival</q-toolbar-title>

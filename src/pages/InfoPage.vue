@@ -40,6 +40,7 @@
 </template>
 
 <script setup>
+import { openURL } from "quasar";
 import InformationCard from "../components/InformationCard.vue";
 
 // Skript-Bereich, falls nötig
