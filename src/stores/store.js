@@ -1,8 +1,9 @@
 import { defineStore } from "pinia";
+import { ref, computed } from "vue";
 
 export const userStore = defineStore("counter", {
   state: () => ({
-    locale: navigator.language,
+    locale: ref(navigator.language),
   }),
 
   getters: {

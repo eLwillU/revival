@@ -1,34 +1,23 @@
 <template>
   <FQRenderer
+    :key="$i18n.locale"
     :questionnaire-data="qData"
-    :language="language"
+    :language="$i18n.locale.split('-')[0]"
     :translation-strings="{
       /* TranslationStrings object */
     }"
   />
-
-  <q-btn @click="logLanguage">Log lang</q-btn>
 </template>
 
 <script setup>
 import { ref } from "vue";
 import { FQRenderer } from "@i4mi/fhir-questionnaire-renderer";
 import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
-import { useI18n } from "vue-i18n";
-const { locale } = useI18n();
-import { userStore } from "src/stores/store";
 
-const store = userStore();
-
-console.log("sotre lang ", i18n.locale);
-
-const language = "de";
-
-const url = "../jsonFiles/prod Effort Questionnaire.json";
+const url = "../jsonFiles/scape-questionnaire.fhir.json";
 const data = ref("");
-const qData = ref(new QuestionnaireData("", [language]));
+const qData = ref(new QuestionnaireData(data.value, ["de", "fr"]));
 
-console.log("lang: ", language);
 async function fetchData() {
   try {
     const response = await fetch(url);
@@ -36,7 +25,7 @@ async function fetchData() {
       throw new Error("Network response was not ok");
     }
     data.value = await response.json();
-    qData.value = new QuestionnaireData(data.value, [language]);
+    qData.value = new QuestionnaireData(data.value, ["de", "fr"]);
     console.log("qdata", qData.value);
   } catch (error) {
     console.error("Error fetching JSON:", error);
@@ -51,9 +40,5 @@ function save() {
 
 function reset() {
   // SEE to @i4mi/fhir_questionnaire documentation.
-}
-
-function logLanguage() {
-  console.log(language);
 }
 </script>

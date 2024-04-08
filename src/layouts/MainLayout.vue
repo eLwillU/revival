@@ -56,6 +56,15 @@
         class="items-center justify-between text-subtitle1"
         >Questionnaire</q-item
       >
+      <q-item
+        icon="person"
+        label="Midata"
+        :content-inset-level="0.5"
+        clickable
+        to="/debug"
+        class="items-center justify-between text-subtitle1"
+        >Debug</q-item
+      >
     </q-drawer>
 
     <q-page-container class="q-pa-sm row justify-center">

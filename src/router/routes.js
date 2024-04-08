@@ -24,6 +24,10 @@ const routes = [
         path: "/Quest",
         component: () => import("pages/questionnairePage.vue"),
       },
+      {
+        path: "/debug",
+        component: () => import("pages/debugPage.vue"),
+      },
     ],
   },
   // Always leave this as last one,
