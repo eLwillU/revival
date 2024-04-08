@@ -2,9 +2,9 @@
   <q-page>
     <q-linear-progress :value="count" class="q-mt-md" />
     <QuestionComponent
-      :question-text="question.questionText"
-      :question-title="question.questionTitle"
-      :answer-options="question.answerOptions"
+      :question-text="questions[currentQuestion].questionText"
+      :question-title="questions[currentQuestion].questionTitle"
+      :answer-options="questions[currentQuestion].answerOptions"
       @answerSelected="print"
     ></QuestionComponent>
     <q-btn @click="previousPage">Zurück</q-btn>
@@ -15,7 +15,9 @@
 <script setup>
 import QuestionComponent from "../components/QuestionComponent.vue";
 import { useCounter } from "@vueuse/core";
-const { count, inc, dec, set, reset } = useCounter();
+import { ref } from "vue";
+
+const { count, inc, dec } = useCounter();
 
 function print() {
   console.log("yeeeeting the emit");
@@ -23,11 +25,18 @@ function print() {
 
 function nextPage() {
   inc(step);
-  console.log(count);
+  if (currentQuestion.value < questions.length - 1) {
+    currentQuestion.value++;
+  }
 }
 function previousPage() {
   dec(step);
+  if (currentQuestion.value > 0) {
+    currentQuestion.value--;
+  }
 }
+
+const currentQuestion = ref(0);
 
 const question = {
   questionTitle: "Frage 1",
@@ -101,4 +110,5 @@ const question3 = {
 const questions = [question, question2, question3];
 
 const step = 1 / questions.length;
+count.value = step;
 </script>

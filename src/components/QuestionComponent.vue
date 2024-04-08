@@ -18,7 +18,7 @@
       >
     </q-option-group>
 
-    <q-btn @click="testing">test-Emit</q-btn>
+    <q-btn @click="loque">test-Emit</q-btn>
   </div>
 </template>
 
@@ -32,7 +32,10 @@ const props = defineProps({
   answerOptions: Array,
 });
 
-const options = props.answerOptions;
+function loque() {
+  console.log(group.value);
+}
+
 const emit = defineEmits(["answerSelected"]);
 function testing() {
   emit("answerSelected");
