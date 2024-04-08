@@ -13,6 +13,7 @@
     "build": "quasar build"
   },
   "dependencies": {
+    "@i4mi/fhir_questionnaire": "^0.2.1",
     "@i4mi/js-on-fhir": "^1.0.0",
     "@quasar/extras": "^1.16.4",
     "@vueuse/core": "^10.9.0",
