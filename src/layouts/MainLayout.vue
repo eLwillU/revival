@@ -68,9 +68,17 @@
 import { ref, onMounted } from "vue";
 import { fhir } from "../boot/midataService"; // adjust the path to your midataService file
 
+import { userStore } from "stores/store";
+
+const store = userStore();
+
 const leftDrawerOpen = ref(false);
 
 const loginStatus = ref(fhir.isLoggedIn());
+
+function changeLanguage(language) {
+  store.locale = language;
+}
 
 function handle() {
   fhir

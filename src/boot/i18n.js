@@ -15,6 +15,7 @@ export default boot(({ app }) => {
       "fr-CH": FR,
       "de-CH": DE,
     },
+    legacy: false,
   });
   // Set i18n instance on app
   app.use(i18n);
