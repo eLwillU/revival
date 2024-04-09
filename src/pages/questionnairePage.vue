@@ -6,6 +6,8 @@
     :translation-strings="{
       /* TranslationStrings object */
     }"
+    @save="save"
+    @reset="reset"
   />
 </template>
 
@@ -16,7 +18,7 @@ import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
 
 const url = "../jsonFiles/scape-questionnaire.fhir.json";
 const data = ref("");
-const qData = ref(new QuestionnaireData(data.value, ["de", "fr"]));
+const qData = ref(new QuestionnaireData("", ["de", "fr"]));
 
 async function fetchData() {
   try {
@@ -32,7 +34,6 @@ async function fetchData() {
   }
 }
 fetchData();
-// IMPORTANT!!! The QuestionnaireData should be wrapped in a ref.
 
 function save() {
   // SEE to @i4mi/fhir_questionnaire documentation.
