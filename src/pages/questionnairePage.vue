@@ -16,7 +16,7 @@ import { ref } from "vue";
 import { FQRenderer } from "@i4mi/fhir-questionnaire-renderer";
 import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
 
-const url = "../jsonFiles/scape-questionnaire.fhir.json";
+const url = "../jsonFiles/scape-copy.json";
 const data = ref("");
 const qData = ref(new QuestionnaireData("", ["de", "fr"]));
 
