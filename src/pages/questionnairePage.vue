@@ -5,17 +5,18 @@
         <q-btn @click="console.log(qData.getQuestions()[1])"
           >Debug Button</q-btn
         >
+        <q-btn @click="updateQuestions()"> Set Questions </q-btn>
+        <q-btn @click="logQuestionnaireResponse()">Check</q-btn>
       </div>
     </div>
     <div v-for="question in qData.getQuestions()" :key="question.id">
       <q-card>
         <q-card-section>
           <div class="text-body2 text-weight-medium text-justify q-py-sm">
-            {{ question.id }}
+            {{ question.id }}.
             {{ question.label[$i18n.locale.split("-")[0]] }}
           </div>
         </q-card-section>
-
         <q-card-section>
           <div
             v-for="answerOption in question.answerOptions"
@@ -28,11 +29,6 @@
               :onAnswer="qData.updateQuestionAnswers.bind(qData)"
             ></q-radio>
           </div>
-          Answers:
-          {{ selectedAnswers }}
-
-          <q-btn @click="updateQuestions()"> Set Questions </q-btn>
-          <q-btn @click="getResponse()">Check</q-btn>
         </q-card-section>
       </q-card>
     </div>
@@ -83,6 +79,8 @@ function updateQuestions() {
       selectedAnswers.value[questionId]
     );
   }
+}
+function logQuestionnaireResponse() {
   console.log("resp:", qData.value.getQuestionnaireResponse("de"));
 }
 </script>
