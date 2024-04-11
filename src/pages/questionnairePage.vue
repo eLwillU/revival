@@ -23,7 +23,7 @@
           >
             <q-radio
               :label="answerOption.answer['de']"
-              :val="answerOption.answer['de']"
+              :val="answerOption"
               v-model="selectedAnswers[question.id]"
               :onAnswer="qData.updateQuestionAnswers.bind(qData)"
             ></q-radio>
@@ -54,7 +54,6 @@ async function fetchData() {
     }
     data.value = await response.json();
     qData.value = new QuestionnaireData(data.value, ["de", "fr"]);
-    console.log("AnswerOptions: ", qData.value.getQuestions()[2].answerOptions);
   } catch (error) {
     console.error("Error fetching JSON:", error);
   }
