@@ -43,12 +43,12 @@ Ja, absolut ;Oui, tout à fait 
 Ja, bis zu einem gewissen Grad ;Oui, dans une certaine mesure 
 Nein ;Non 
 Ich weiss es nicht / Ich erinnere mich nicht ;Je ne sais pas / je ne me souviens plus 
-52. Stehen Sie in regelmässigem Kontakt mit einer Bezugsperson (z. B. Arzt/Ärztin, Pflegefach-person, Sozialarbeiter:in) wegen der Nachsorge? ;52. Etes-vous en contact régulier avec une personne de référence (par ex. médecin, infirmier·ère, assistant∙e social·e) pour le suivi ? 
+52. Stehen Sie in regelmässigem Kontakt mit einer Bezugsperson (zum Beispiel: Arzt/Ärztin, Pflegefach-person, Sozialarbeiter:in) wegen der Nachsorge? ;52. Etes-vous en contact régulier avec une personne de référence (par ex. médecin, infirmier·ère, assistant∙e social·e) pour le suivi ? 
 Ja ;Oui 
 Nein, aber ich hätte es gerne ;Non, mais j’aimerais bien 
 Nein, das ist nicht nötig ;Non, cela n’est pas nécessaire 
 Ich weiss es nicht ;Je ne sais pas 
-52.1 Stehen Sie in regelmässigem Kontakt mit einer Bezugsperson (z. B. Arzt/Ärztin, Pflegefach-person, Sozialarbeiter:in) wegen der Nachsorge? Wenn ja, mit welcher?;52.1 Êtes-vous en contact régulier avec une personne de référence (par ex. médecin, infirmier(ère), assistant(e) social(e)) pour le suivi ? Si oui, avec laquelle ?
+23. Wenn ja, mit welcher?;52.1 Si oui, avec laquelle ?
 Onkologe/-in / Facharzt/-ärztin ;oncologue / médecin spécialiste 
 Hausarzt/-ärztin oder Allgemeinarzt/-ärztin;médecin de famille / généraliste 
 Pflegefachperson ;infimier·ère 
@@ -95,17 +95,17 @@ Ja, manchmal ;Oui, parfois 
 Nein ;Non 
 Ich weiss es nicht / Ich erinnere mich nicht ;Je ne sais pas / je ne m’en souviens plus 
 64. Wie schätzen Sie Ihre Behandlung und Betreuung insgesamt ein? ;64. Comment évalueriez-vous l’ensemble de votre prise en charge ? 
-0 (Sehr schlecht);0 (Très mauvaise)
-1;1
-2;2
-3;3
-4;4
-5;5
-6;6
-7;7
-8;8
-9;9
-10 (sehr gut);10 (très bonne)
+(0) (Sehr schlecht);(0) (Très mauvaise)
+(1);(1)
+(2);(2)
+(3);(3)
+(4);(4)
+(5);(5)
+(6);(6)
+(7);(7)
+(8);(8)
+(9);(9)
+(10) (sehr gut);(10) (très bonne)
 75. Haben Sie Verständnisprobleme, wenn Sie eine schriftliche Information zu einer medizinischen Behandlung oder zu Ihrem Gesundheitszustand erhalten? ;75. Lorsque vous obtenez une information écrite à propos d’un traitement médical ou de votre état de santé, rencontrez-vous des problèmes de compréhension ? 
 Immer ;Toujours 
 Oft ;Souvent 

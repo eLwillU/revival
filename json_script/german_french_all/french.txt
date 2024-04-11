@@ -48,7 +48,7 @@ Oui 
 Non, mais j’aimerais bien 
 Non, cela n’est pas nécessaire 
 Je ne sais pas 
-52.1 Êtes-vous en contact régulier avec une personne de référence (par ex. médecin, infirmier(ère), assistant(e) social(e)) pour le suivi ? Si oui, avec laquelle ?
+52.1 Si oui, avec laquelle ?
 oncologue / médecin spécialiste 
 médecin de famille / généraliste 
 infimier·ère 
@@ -95,17 +95,17 @@ Oui, parfois 
 Non 
 Je ne sais pas / je ne m’en souviens plus 
 64. Comment évalueriez-vous l’ensemble de votre prise en charge ? 
-0 (Très mauvaise)
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10 (très bonne)
+(0) (Très mauvaise)
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+(10) (très bonne)
 75. Lorsque vous obtenez une information écrite à propos d’un traitement médical ou de votre état de santé, rencontrez-vous des problèmes de compréhension ? 
 Toujours 
 Souvent 
