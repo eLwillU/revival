@@ -1,0 +1,118 @@
+15. Est-ce que les effets indésirables possibles du ou des traitements vous ont été expliqués de manière compréhensible ? 
+Oui, tout à fait 
+Oui, dans une certaine mesure 
+Non, je n’ai pas compris les explications 
+Je n’ai pas eu d’explications mais j’en aurais voulu 
+Je n’ai pas eu besoin d’explications 
+Je ne sais pas / je ne m’en souviens plus 
+16. Est-ce qu’on vous a aussi parlé des effets indésirables pouvant survenir plus tard et pas seulement dans l’immédiat ? 
+Oui, tout à fait 
+Oui, dans une certaine mesure 
+Non, mais j’aurais aimé qu’on m’en parle 
+Je n’ai pas eu besoin qu’on m’en parle 
+Je ne sais pas / je ne m’en souviens plus 
+17. Avez-vous été impliqué·e autant que vous le souhaitiez dans les décisions concernant vos soins et traitements ? 
+Oui, tout à fait 
+Oui, dans une certaine mesure 
+Non, j’aurais aimé être plus impliqué·e 
+Je ne sais pas / je ne m’en souviens plus 
+18. Est-ce que votre famille et/ou vos proches ont été impliqué∙es autant que vous le souhaitiez dans les décisions concernant vos soins et traitements ? 
+Oui, tout à fait 
+Oui, dans une certaine mesure 
+Non, j’aurais aimé qu’ils/elles soient plus (ou moins) impliqué∙es 
+Non concerné∙e 
+Je ne sais pas / je ne me souviens plus 
+19. Est-ce que vos habitudes de vie et votre situation familiale et/ou professionnelle ont été prises en compte dans les décisions concernant vos soins et traitements ? 
+Oui, tout à fait 
+Oui, dans une certaine mesure 
+Non, mais je l’aurais souhaité 
+Cela n’a pas été nécessaire 
+Je ne sais pas / je ne me souviens plus 
+20. Est-ce qu’on a discuté avec vous ou est-ce qu’on vous a donné des informations sur l’impact du cancer sur vos activités quotidiennes (par exemple sur votre vie professionnelle, sur vos loisirs) ? 
+Oui 
+Non, mais j’aurais aimé avoir une discussion ou des informations 
+Cela n’a pas été nécessaire 
+Je ne sais pas / je ne m’en souviens plus 
+50. Est-ce qu’on vous a proposé suffisamment de conseils pratiques et/ou de soutien pour gérer les effets à long terme du cancer ou des traitements (par ex. fatigue, douleurs, anxiété) ? 
+Oui, tout à fait 
+Oui, dans une certaine mesure 
+Non 
+Cela n’a pas été nécessaire 
+51. A la fin des traitements, aviez-vous toutes les informations dont vous aviez besoin concernant le suivi ? 
+Oui, tout à fait 
+Oui, dans une certaine mesure 
+Non 
+Je ne sais pas / je ne me souviens plus 
+52. Etes-vous en contact régulier avec une personne de référence (par ex. médecin, infirmier·ère, assistant∙e social·e) pour le suivi ? 
+Oui 
+Non, mais j’aimerais bien 
+Non, cela n’est pas nécessaire 
+Je ne sais pas 
+52.1 Êtes-vous en contact régulier avec une personne de référence (par ex. médecin, infirmier(ère), assistant(e) social(e)) pour le suivi ? Si oui, avec laquelle ?
+oncologue / médecin spécialiste 
+médecin de famille / généraliste 
+infimier·ère 
+assistant·e social·e 
+autre professionnel∙le 
+56. Est-ce qu’on vous a donné des informations sur des groupes de soutien ou d’entraide destinés aux personnes atteintes de cancer ? 
+Oui 
+Non, mais j’aurais aimé avoir des informations 
+Cela n’a pas été nécessaire 
+Je ne sais pas / je ne m’en souviens plus 
+57. Est-ce qu’on vous a donné des informations sur les possibilités d’aide et de soutien pour vous aider à gérer votre état émotionnel (par ex. stress, anxiété, tristesse) ? 
+Oui 
+Non, mais j’aurais aimé avoir des informations 
+Cela n’a pas été nécessaire 
+Je ne sais pas / je ne m’en souviens plus 
+58. Est-ce qu’on vous a donné des informations sur la façon d’obtenir une aide financière ou des prestations auxquelles vous pourriez avoir droit ? 
+Oui 
+Non, mais j’aurais aimé des informations 
+Cela n’a pas été nécessaire 
+Je ne sais pas / je ne m’en souviens plus 
+59. Est-ce que les différentes personnes qui vous ont traité·e et soigné·e (comme votre médecin de famille / généraliste, oncologue, médecins et infirmier∙ères à l’hôpital, soins à domicile) ont bien collaboré pour vous offrir les meilleurs soins possibles ? 
+Oui, toujours 
+Oui, parfois 
+Non 
+Je ne sais pas / je ne m’en souviens plus 
+60. Est-ce qu’on vous a donné un plan de soins ? (C’est un document écrit qui présente vos besoins et objectifs pour soigner le cancer. C’est un plan ou un accord entre vous et les professionnel∙les de santé pour vous aider à atteindre ces objectifs.) 
+Oui 
+Non 
+Je ne sais/comprends pas ce qu’est un plan de soins 
+Je ne sais pas / je ne m’en souviens plus 
+61. Au cours de votre parcours de soins, est-il arrivé que des résultats d’un test ou votre dossier médical ne soient pas disponibles au moment du rendez-vous pour les soins ? 
+Oui, souvent 
+Oui, parfois 
+Non 
+Je ne sais pas / je ne m’en souviens plus 
+62. Au cours de votre parcours de soins, est-il arrivé qu’on vous donne des renseignements qui portaient à confusion ou qui étaient contradictoires concernant votre état de santé ou vos traitements ? 
+Oui, souvent 
+Oui, parfois 
+Non 
+Je ne sais pas / je ne m’en souviens plus 
+63. Au cours de votre parcours de soins, y a-t-il eu un moment où vous pensiez que des tests ou d'autres évaluations étaient répétées inutilement ? 
+Oui, souvent 
+Oui, parfois 
+Non 
+Je ne sais pas / je ne m’en souviens plus 
+64. Comment évalueriez-vous l’ensemble de votre prise en charge ? 
+0 (Très mauvaise)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10 (très bonne)
+75. Lorsque vous obtenez une information écrite à propos d’un traitement médical ou de votre état de santé, rencontrez-vous des problèmes de compréhension ? 
+Toujours 
+Souvent 
+Parfois 
+Occasionnellement 
+Jamais 
+76. En général, comment préférez-vous prendre des décisions médicales concernant le cancer ? 
+Je préfère prendre moi les décisions 
+Je préfère que mon ou ma médecin et moi prenions les décisions ensemble 
+Je préfère que mon ou ma médecin prenne les décisions 

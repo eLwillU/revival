@@ -1,0 +1,408 @@
+{
+    "questions": [
+        {
+            "fr_question_text": "15. Est-ce que les effets indésirables possibles du ou des traitements vous ont été expliqués de manière compréhensible ?",
+            "fr_answer_texts": [
+                "Oui, tout à fait",
+                "Oui, dans une certaine mesure",
+                "Non, je n’ai pas compris les explications",
+                "Je n’ai pas eu d’explications mais j’en aurais voulu",
+                "Je n’ai pas eu besoin d’explications",
+                "Je ne sais pas / je ne m’en souviens plus"
+            ],
+            "de_question_text": "15. Wurden Ihnen die möglichen Nebenwirkungen der Behandlung(en) in verständlicher Weise erklärt?",
+            "de_answer_texts": [
+                "Ja, absolut",
+                "Ja, bis zu einem gewissen Grad",
+                "Nein, ich habe die Erklärungen nicht verstanden",
+                "Ich habe keine Erklärungen bekommen, aber ich hätte gerne welche gehabt",
+                "Ich habe keine Erklärungen gebraucht",
+                "Ich weiss es nicht / Ich erinnere mich nicht"
+            ]
+        },
+        {
+            "fr_question_text": "16. Est-ce qu’on vous a aussi parlé des effets indésirables pouvant survenir plus tard et pas seulement dans l’immédiat ?",
+            "fr_answer_texts": [
+                "Oui, tout à fait",
+                "Oui, dans une certaine mesure",
+                "Non, mais j’aurais aimé qu’on m’en parle",
+                "Je n’ai pas eu besoin qu’on m’en parle",
+                "Je ne sais pas / je ne m’en souviens plus"
+            ],
+            "de_question_text": "16. Hat man Sie auch über Nebenwirkungen informiert, die später und nicht nur direkt im Anschluss an die Behandlung auftreten können?",
+            "de_answer_texts": [
+                "Ja, absolut",
+                "Ja, bis zu einem gewissen Grad",
+                "Nein, aber ich hätte mir Informationen dazu gewünscht",
+                "Ich habe keine Informationen dazu gebraucht",
+                "Ich weiss es nicht / Ich erinnere mich nicht"
+            ]
+        },
+        {
+            "fr_question_text": "17. Avez-vous été impliqué·e autant que vous le souhaitiez dans les décisions concernant vos soins et traitements ?",
+            "fr_answer_texts": [
+                "Oui, tout à fait",
+                "Oui, dans une certaine mesure",
+                "Non, j’aurais aimé être plus impliqué·e",
+                "Je ne sais pas / je ne m’en souviens plus"
+            ],
+            "de_question_text": "17. Wurden Sie in die Entscheidungen bezüglich Ihrer Behandlungen in gewünschtem Umfang einbezogen?",
+            "de_answer_texts": [
+                "Ja, absolut",
+                "Ja, bis zu einem gewissen Grad",
+                "Nein, aber ich hätte mir jedoch einen stärkeren Einbezug gewünscht",
+                "Ich weiss es nicht / Ich erinnere mich nicht"
+            ]
+        },
+        {
+            "fr_question_text": "18. Est-ce que votre famille et/ou vos proches ont été impliqué∙es autant que vous le souhaitiez dans les décisions concernant vos soins et traitements ?",
+            "fr_answer_texts": [
+                "Oui, tout à fait",
+                "Oui, dans une certaine mesure",
+                "Non, j’aurais aimé qu’ils/elles soient plus (ou moins) impliqué∙es",
+                "Non concerné∙e",
+                "Je ne sais pas / je ne me souviens plus"
+            ],
+            "de_question_text": "18. Waren Ihre Familie oder nahestehende Personen im von Ihnen gewünschten Umfang in die Entscheidungen zu Ihren Behandlungen einbezogen?",
+            "de_answer_texts": [
+                "Ja, absolut",
+                "Ja, bis zu einem gewissen Grad",
+                "Nein, ich hätte mir einen stärkeren (oder weniger starken) Einbezug gewünscht",
+                "Die Frage betrifft mich nicht",
+                "Ich weiss es nicht / Ich erinnere mich nicht"
+            ]
+        },
+        {
+            "fr_question_text": "19. Est-ce que vos habitudes de vie et votre situation familiale et/ou professionnelle ont été prises en compte dans les décisions concernant vos soins et traitements ?",
+            "fr_answer_texts": [
+                "Oui, tout à fait",
+                "Oui, dans une certaine mesure",
+                "Non, mais je l’aurais souhaité",
+                "Cela n’a pas été nécessaire",
+                "Je ne sais pas / je ne me souviens plus"
+            ],
+            "de_question_text": "19. Wurden Ihre Lebensgewohnheiten und Ihre familiäre und/oder berufliche Situation bei den Entscheidungen zu Ihren Behandlungen berücksichtigt?",
+            "de_answer_texts": [
+                "Ja, absolut",
+                "Ja, bis zu einem gewissen Grad",
+                "Nein, aber ich hätte mir dies gewünscht",
+                "Das war nicht nötig",
+                "Ich weiss es nicht / Ich erinnere mich nicht"
+            ]
+        },
+        {
+            "fr_question_text": "20. Est-ce qu’on a discuté avec vous ou est-ce qu’on vous a donné des informations sur l’impact du cancer sur vos activités quotidiennes (par exemple sur votre vie professionnelle, sur vos loisirs) ?",
+            "fr_answer_texts": [
+                "Oui",
+                "Non, mais j’aurais aimé avoir une discussion ou des informations",
+                "Cela n’a pas été nécessaire",
+                "Je ne sais pas / je ne m’en souviens plus"
+            ],
+            "de_question_text": "20. Hat man mit Ihnen darüber gesprochen oder Ihnen Informationen dazu gegeben, welche Auswirkungen die Krebserkrankung auf Ihren Alltag hat (z. B. auf Ihrer Arbeit, auf Ihre Freizeit)?",
+            "de_answer_texts": [
+                "Ja",
+                "Nein, aber ich hätte mir ein Gespräch oder Informationen dazu gewünscht",
+                "Das war nicht nötig",
+                "Ich weiss es nicht / Ich erinnere mich nicht"
+            ]
+        },
+        {
+            "fr_question_text": "50. Est-ce qu’on vous a proposé suffisamment de conseils pratiques et/ou de soutien pour gérer les effets à long terme du cancer ou des traitements (par ex. fatigue, douleurs, anxiété) ?",
+            "fr_answer_texts": [
+                "Oui, tout à fait",
+                "Oui, dans une certaine mesure",
+                "Non",
+                "Cela n’a pas été nécessaire"
+            ],
+            "de_question_text": "50. Hat man Ihnen ausreichend praktische Ratschläge gegeben und/oder Unterstützung angeboten, um mit den Langzeitfolgen der Krebserkrankung oder der Behandlungen um-zugehen (z. B. Müdigkeit, Schmerzen, Angst)?",
+            "de_answer_texts": [
+                "Ja, absolut",
+                "Ja, bis zu einem gewissen Grad",
+                "Nein",
+                "Das war nicht nötig"
+            ]
+        },
+        {
+            "fr_question_text": "51. A la fin des traitements, aviez-vous toutes les informations dont vous aviez besoin concernant le suivi ?",
+            "fr_answer_texts": [
+                "Oui, tout à fait",
+                "Oui, dans une certaine mesure",
+                "Non",
+                "Je ne sais pas / je ne me souviens plus"
+            ],
+            "de_question_text": "51. Hatten Sie am Ende der Behandlungen alle nötigen Informationen zur Nachsorge?",
+            "de_answer_texts": [
+                "Ja, absolut",
+                "Ja, bis zu einem gewissen Grad",
+                "Nein",
+                "Ich weiss es nicht / Ich erinnere mich nicht"
+            ]
+        },
+        {
+            "fr_question_text": "52. Etes-vous en contact régulier avec une personne de référence (par ex. médecin, infirmier·ère, assistant∙e social·e) pour le suivi ?",
+            "fr_answer_texts": [
+                "Oui",
+                "Non, mais j’aimerais bien",
+                "Non, cela n’est pas nécessaire",
+                "Je ne sais pas"
+            ],
+            "de_question_text": "52. Stehen Sie in regelmässigem Kontakt mit einer Bezugsperson (z. B. Arzt/Ärztin, Pflegefach-person, Sozialarbeiter:in) wegen der Nachsorge?",
+            "de_answer_texts": [
+                "Ja",
+                "Nein, aber ich hätte es gerne",
+                "Nein, das ist nicht nötig",
+                "Ich weiss es nicht"
+            ]
+        },
+        {
+            "fr_question_text": "52.1 Êtes-vous en contact régulier avec une personne de référence (par ex. médecin, infirmier(ère), assistant(e) social(e)) pour le suivi ? Si oui, avec laquelle ?",
+            "fr_answer_texts": [
+                "oncologue / médecin spécialiste",
+                "médecin de famille / généraliste",
+                "infimier·ère",
+                "assistant·e social·e",
+                "autre professionnel∙le"
+            ],
+            "de_question_text": "52.1 Stehen Sie in regelmässigem Kontakt mit einer Bezugsperson (z. B. Arzt/Ärztin, Pflegefach-person, Sozialarbeiter:in) wegen der Nachsorge? Wenn ja, mit welcher?",
+            "de_answer_texts": [
+                "Onkologe/-in / Facharzt/-ärztin",
+                "Hausarzt/-ärztin oder Allgemeinarzt/-ärztin",
+                "Pflegefachperson",
+                "Sozialarbeiter:in",
+                "eine andere Fachperson"
+            ]
+        },
+        {
+            "fr_question_text": "56. Est-ce qu’on vous a donné des informations sur des groupes de soutien ou d’entraide destinés aux personnes atteintes de cancer ?",
+            "fr_answer_texts": [
+                "Oui",
+                "Non, mais j’aurais aimé avoir des informations",
+                "Cela n’a pas été nécessaire",
+                "Je ne sais pas / je ne m’en souviens plus"
+            ],
+            "de_question_text": "56. Hat man Ihnen Informationen zu Unterstützungs- oder Selbsthilfegruppen für Krebsbetroffene gegeben?",
+            "de_answer_texts": [
+                "Ja",
+                "Nein, aber ich hätte gerne solche Informationen gehabt",
+                "Das war nicht nötig",
+                "Ich weiss es nicht / Ich erinnere mich nicht"
+            ]
+        },
+        {
+            "fr_question_text": "57. Est-ce qu’on vous a donné des informations sur les possibilités d’aide et de soutien pour vous aider à gérer votre état émotionnel (par ex. stress, anxiété, tristesse) ?",
+            "fr_answer_texts": [
+                "Oui",
+                "Non, mais j’aurais aimé avoir des informations",
+                "Cela n’a pas été nécessaire",
+                "Je ne sais pas / je ne m’en souviens plus"
+            ],
+            "de_question_text": "57. Hat man Ihnen Informationen zu Hilfs- und Unterstützungsangeboten gegeben, um Ihnen zu helfen, mit Ihren Gefühlen umzugehen (z. B. Stress, Angst, Traurigkeit)?",
+            "de_answer_texts": [
+                "Ja",
+                "Nein, aber ich hätte gerne solche Informationen gehabt",
+                "Das war nicht nötig",
+                "Ich weiss es nicht / Ich erinnere mich nicht"
+            ]
+        },
+        {
+            "fr_question_text": "58. Est-ce qu’on vous a donné des informations sur la façon d’obtenir une aide financière ou des prestations auxquelles vous pourriez avoir droit ?",
+            "fr_answer_texts": [
+                "Oui",
+                "Non, mais j’aurais aimé des informations",
+                "Cela n’a pas été nécessaire",
+                "Je ne sais pas / je ne m’en souviens plus"
+            ],
+            "de_question_text": "58. Hat man Ihnen Informationen dazu gegeben, wie Sie finanzielle Unterstützung oder Leistungen erhalten können, auf die Sie möglicherweise Anspruch haben?",
+            "de_answer_texts": [
+                "Ja",
+                "Nein, aber ich hätte gerne solche Informationen gehabt",
+                "Das war nicht nötig",
+                "Ich weiss es nicht / Ich erinnere mich nicht"
+            ]
+        },
+        {
+            "fr_question_text": "59. Est-ce que les différentes personnes qui vous ont traité·e et soigné·e (comme votre médecin de famille / généraliste, oncologue, médecins et infirmier∙ères à l’hôpital, soins à domicile) ont bien collaboré pour vous offrir les meilleurs soins possibles ?",
+            "fr_answer_texts": [
+                "Oui, toujours",
+                "Oui, parfois",
+                "Non",
+                "Je ne sais pas / je ne m’en souviens plus"
+            ],
+            "de_question_text": "59. Haben die verschiedenen Personen, die Sie behandelt und betreut haben (wie Ihr:e Hausarzt/-ärztin, Onkologe/-in, die Ärzteschaft und Pflegefachpersonen im Spital, Spitex) gut zusammengearbeitet, um Ihnen die bestmögliche Versorgung zu bieten?",
+            "de_answer_texts": [
+                "Ja, immer",
+                "Ja, manchmal",
+                "Nein",
+                "Ich weiss es nicht / Ich erinnere mich nicht"
+            ]
+        },
+        {
+            "fr_question_text": "60. Est-ce qu’on vous a donné un plan de soins ? (C’est un document écrit qui présente vos besoins et objectifs pour soigner le cancer. C’est un plan ou un accord entre vous et les professionnel∙les de santé pour vous aider à atteindre ces objectifs.)",
+            "fr_answer_texts": [
+                "Oui",
+                "Non",
+                "Je ne sais/comprends pas ce qu’est un plan de soins",
+                "Je ne sais pas / je ne m’en souviens plus"
+            ],
+            "de_question_text": "60. Hat man Ihnen einen Behandlungsplan gegeben? (Dabei handelt es sich um ein schriftliches Dokument, in dem Ihre Bedürfnisse und Ziele in Bezug auf die Behandlung der Krebserkrankung dargestellt sind. Es ist ein Plan oder eine Übereinkunft zwischen Ihnen und den Gesundheitsfachpersonen, der Ihnen helfen soll, diese Ziele zu erreichen.)",
+            "de_answer_texts": [
+                "Ja",
+                "Nein",
+                "Ich weiss nicht / verstehe nicht, was ein Behandlungsplan ist",
+                "Ich weiss es nicht / Ich erinnere mich nicht"
+            ]
+        },
+        {
+            "fr_question_text": "61. Au cours de votre parcours de soins, est-il arrivé que des résultats d’un test ou votre dossier médical ne soient pas disponibles au moment du rendez-vous pour les soins ?",
+            "fr_answer_texts": [
+                "Oui, souvent",
+                "Oui, parfois",
+                "Non",
+                "Je ne sais pas / je ne m’en souviens plus"
+            ],
+            "de_question_text": "61. Kam es im Lauf Ihrer Behandlung vor, dass Testergebnisse oder Ihre Krankenakte nicht rechtzeitig zum Behandlungstermin verfügbar waren?",
+            "de_answer_texts": [
+                "Ja, oft",
+                "Ja, manchmal",
+                "Nein",
+                "Ich weiss es nicht / Ich erinnere mich nicht"
+            ]
+        },
+        {
+            "fr_question_text": "62. Au cours de votre parcours de soins, est-il arrivé qu’on vous donne des renseignements qui portaient à confusion ou qui étaient contradictoires concernant votre état de santé ou vos traitements ?",
+            "fr_answer_texts": [
+                "Oui, souvent",
+                "Oui, parfois",
+                "Non",
+                "Je ne sais pas / je ne m’en souviens plus"
+            ],
+            "de_question_text": "62. Kam es im Lauf Ihrer Behandlung vor, dass man Ihnen verwirrende oder widersprüchliche Informationen zu Ihrem Gesundheitszustand oder Ihren Behandlungen gegeben hat?",
+            "de_answer_texts": [
+                "Ja, oft",
+                "Ja, manchmal",
+                "Nein",
+                "Ich weiss es nicht / Ich erinnere mich nicht"
+            ]
+        },
+        {
+            "fr_question_text": "63. Au cours de votre parcours de soins, y a-t-il eu un moment où vous pensiez que des tests ou d'autres évaluations étaient répétées inutilement ?",
+            "fr_answer_texts": [
+                "Oui, souvent",
+                "Oui, parfois",
+                "Non",
+                "Je ne sais pas / je ne m’en souviens plus"
+            ],
+            "de_question_text": "63. Hatten Sie während Ihrer Behandlung den Eindruck, dass Tests oder andere Analysen unnötig wiederholt wurden?",
+            "de_answer_texts": [
+                "Ja, oft",
+                "Ja, manchmal",
+                "Nein",
+                "Ich weiss es nicht / Ich erinnere mich nicht"
+            ]
+        },
+        {
+            "fr_question_text": "64. Comment évalueriez-vous l’ensemble de votre prise en charge ?",
+            "fr_answer_texts": [],
+            "de_question_text": "64. Wie schätzen Sie Ihre Behandlung und Betreuung insgesamt ein?",
+            "de_answer_texts": []
+        },
+        {
+            "fr_question_text": "0 (Très mauvaise)",
+            "fr_answer_texts": [],
+            "de_question_text": "0 (Sehr schlecht)",
+            "de_answer_texts": []
+        },
+        {
+            "fr_question_text": "1",
+            "fr_answer_texts": [],
+            "de_question_text": "1",
+            "de_answer_texts": []
+        },
+        {
+            "fr_question_text": "2",
+            "fr_answer_texts": [],
+            "de_question_text": "2",
+            "de_answer_texts": []
+        },
+        {
+            "fr_question_text": "3",
+            "fr_answer_texts": [],
+            "de_question_text": "3",
+            "de_answer_texts": []
+        },
+        {
+            "fr_question_text": "4",
+            "fr_answer_texts": [],
+            "de_question_text": "4",
+            "de_answer_texts": []
+        },
+        {
+            "fr_question_text": "5",
+            "fr_answer_texts": [],
+            "de_question_text": "5",
+            "de_answer_texts": []
+        },
+        {
+            "fr_question_text": "6",
+            "fr_answer_texts": [],
+            "de_question_text": "6",
+            "de_answer_texts": []
+        },
+        {
+            "fr_question_text": "7",
+            "fr_answer_texts": [],
+            "de_question_text": "7",
+            "de_answer_texts": []
+        },
+        {
+            "fr_question_text": "8",
+            "fr_answer_texts": [],
+            "de_question_text": "8",
+            "de_answer_texts": []
+        },
+        {
+            "fr_question_text": "9",
+            "fr_answer_texts": [],
+            "de_question_text": "9",
+            "de_answer_texts": []
+        },
+        {
+            "fr_question_text": "10 (très bonne)",
+            "fr_answer_texts": [],
+            "de_question_text": "10 (sehr gut)",
+            "de_answer_texts": []
+        },
+        {
+            "fr_question_text": "75. Lorsque vous obtenez une information écrite à propos d’un traitement médical ou de votre état de santé, rencontrez-vous des problèmes de compréhension ?",
+            "fr_answer_texts": [
+                "Toujours",
+                "Souvent",
+                "Parfois",
+                "Occasionnellement",
+                "Jamais"
+            ],
+            "de_question_text": "75. Haben Sie Verständnisprobleme, wenn Sie eine schriftliche Information zu einer medizinischen Behandlung oder zu Ihrem Gesundheitszustand erhalten?",
+            "de_answer_texts": [
+                "Immer",
+                "Oft",
+                "Manchmal",
+                "Gelegentlich",
+                "Nie"
+            ]
+        },
+        {
+            "fr_question_text": "76. En général, comment préférez-vous prendre des décisions médicales concernant le cancer ?",
+            "fr_answer_texts": [
+                "Je préfère prendre moi les décisions",
+                "Je préfère que mon ou ma médecin et moi prenions les décisions ensemble",
+                "Je préfère que mon ou ma médecin prenne les décisions"
+            ],
+            "de_question_text": "76. Wie möchten Sie generell, dass medizinische Entscheidungen über Krebsbehandlungen getroffen werden?",
+            "de_answer_texts": [
+                "Ich treffe Entscheidungen lieber selbst",
+                "Ich treffe die Entscheidungen am liebsten gemeinsam mit meinem/r Arzt/Ärztin",
+                "Ich ziehe es vor, dass mein:e Arzt/Ärztin die Entscheidungen trifft"
+            ]
+        }
+    ]
+}
