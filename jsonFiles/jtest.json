@@ -1,0 +1,194 @@
+[
+  {
+    "answer": { "de-CH": "", "fr-CH": "" },
+    "code": {
+      "valueCoding": {
+        "code": 0,
+        "display": "Ja, absolut",
+        "_display": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "de" },
+                { "url": "content", "valueString": "Ja, absolut" }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "fr" },
+                { "url": "content", "valueString": "Oui, tout à fait" }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "answer": { "de-CH": "", "fr-CH": "" },
+    "code": {
+      "valueCoding": {
+        "code": 1,
+        "display": "Ja, bis zu einem gewissen Grad",
+        "_display": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "de" },
+                {
+                  "url": "content",
+                  "valueString": "Ja, bis zu einem gewissen Grad"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "fr" },
+                {
+                  "url": "content",
+                  "valueString": "Oui, dans une certaine mesure"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "answer": { "de-CH": "", "fr-CH": "" },
+    "code": {
+      "valueCoding": {
+        "code": 2,
+        "display": "Nein, ich habe die Erklärungen nicht verstanden",
+        "_display": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "de" },
+                {
+                  "url": "content",
+                  "valueString": "Nein, ich habe die Erklärungen nicht verstanden"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "fr" },
+                {
+                  "url": "content",
+                  "valueString": "Non, je n’ai pas compris les explications"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "answer": { "de-CH": "", "fr-CH": "" },
+    "code": {
+      "valueCoding": {
+        "code": 3,
+        "display": "Ich habe keine Erklärungen bekommen, aber ich hätte gerne welche gehabt",
+        "_display": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "de" },
+                {
+                  "url": "content",
+                  "valueString": "Ich habe keine Erklärungen bekommen, aber ich hätte gerne welche gehabt"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "fr" },
+                {
+                  "url": "content",
+                  "valueString": "Je n’ai pas eu d’explications mais j’en aurais voulu"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "answer": { "de-CH": "", "fr-CH": "" },
+    "code": {
+      "valueCoding": {
+        "code": 4,
+        "display": "Ich habe keine Erklärungen gebraucht",
+        "_display": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "de" },
+                {
+                  "url": "content",
+                  "valueString": "Ich habe keine Erklärungen gebraucht"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "fr" },
+                {
+                  "url": "content",
+                  "valueString": "Je n’ai pas eu besoin d’explications"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "answer": { "de-CH": "", "fr-CH": "" },
+    "code": {
+      "valueCoding": {
+        "code": 5,
+        "display": "Ich weiss es nicht / Ich erinnere mich nicht",
+        "_display": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "de" },
+                {
+                  "url": "content",
+                  "valueString": "Ich weiss es nicht / Ich erinnere mich nicht"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "fr" },
+                {
+                  "url": "content",
+                  "valueString": "Je ne sais pas / je ne m’en souviens plus"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+]
