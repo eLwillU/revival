@@ -21,8 +21,18 @@
             v-for="answerOption in question.answerOptions"
             :key="answerOption.code"
           >
-            <q-radio label="answerOption.answer['de']"></q-radio>
+            <q-radio
+              :label="answerOption.answer['de']"
+              :val="answerOption.answer['de']"
+              v-model="selectedAnswers[question.id]"
+              :onAnswer="qData.updateQuestionAnswers.bind(qData)"
+            ></q-radio>
           </div>
+          Answers:
+          {{ selectedAnswers }}
+
+          <q-btn @click="updateQuestions()"> Set Questions </q-btn>
+          <q-btn @click="getResponse()">Check</q-btn>
         </q-card-section>
       </q-card>
     </div>
@@ -35,6 +45,7 @@ import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
 const url = "../jsonFiles/scape-copy.json";
 const data = ref("");
 const qData = ref(new QuestionnaireData("", ["de", "fr"]));
+const selectedAnswers = ref({});
 async function fetchData() {
   try {
     const response = await fetch(url);
@@ -43,9 +54,36 @@ async function fetchData() {
     }
     data.value = await response.json();
     qData.value = new QuestionnaireData(data.value, ["de", "fr"]);
+    console.log("AnswerOptions: ", qData.value.getQuestions()[2].answerOptions);
   } catch (error) {
     console.error("Error fetching JSON:", error);
   }
 }
+
 fetchData();
+
+function getResponse() {
+  try {
+    const response = qData.value.getQuestionnaireResponse("de");
+    console.log("respo:", response);
+  } catch (e) {
+    console.warn("Something ain't right:", e);
+  }
+}
+
+function updateQuestions() {
+  // Iterate over the keys of selectedAnswers
+  for (const questionId of Object.keys(selectedAnswers.value)) {
+    // Find the question by id
+    const question = qData.value.findQuestionById(Number(questionId));
+    console.log("question:", question);
+    console.log("answer: ", selectedAnswers.value[questionId]);
+    // Update the question with the selected answer
+    qData.value.updateQuestionAnswers(
+      question,
+      selectedAnswers.value[questionId]
+    );
+  }
+  console.log("resp:", qData.value.getQuestionnaireResponse("de"));
+}
 </script>
