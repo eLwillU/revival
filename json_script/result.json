@@ -1646,7 +1646,7 @@
   {
     "linkId": 9,
     "prefix": 9,
-    "text": "Stehen Sie in regelmässigem Kontakt mit einer Bezugsperson (z",
+    "text": "Stehen Sie in regelmässigem Kontakt mit einer Bezugsperson (zum Beispiel: Arzt/Ärztin, Pflegefach-person, Sozialarbeiter:in) wegen der Nachsorge?",
     "_text": {
       "extension": [
         {
@@ -1658,7 +1658,7 @@
             },
             {
               "url": "content",
-              "valueString": "Stehen Sie in regelmässigem Kontakt mit einer Bezugsperson (z"
+              "valueString": "Stehen Sie in regelmässigem Kontakt mit einer Bezugsperson (zum Beispiel: Arzt/Ärztin, Pflegefach-person, Sozialarbeiter:in) wegen der Nachsorge?"
             }
           ]
         },
@@ -1829,7 +1829,7 @@
   {
     "linkId": 10,
     "prefix": 10,
-    "text": "B",
+    "text": "Wenn ja, mit welcher?",
     "_text": {
       "extension": [
         {
@@ -1841,7 +1841,7 @@
             },
             {
               "url": "content",
-              "valueString": "B"
+              "valueString": "Wenn ja, mit welcher?"
             }
           ]
         },
@@ -1853,8 +1853,7 @@
               "valueCode": "fr"
             },
             {
-              "url": "content",
-              "valueString": "médecin, infirmier(ère), assistant(e) social(e)) pour le suivi ? Si oui, avec laquelle ?"
+              "url": "content"
             }
           ]
         }
@@ -3545,396 +3544,408 @@
     },
     "type": "choice",
     "required": true,
-    "answerOption": []
+    "answerOption": [
+      {
+        "valueCoding": {
+          "code": 0,
+          "display": "(0) (Sehr schlecht)",
+          "_display": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(0) (Sehr schlecht)"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(0) (Très mauvaise)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "valueCoding": {
+          "code": 1,
+          "display": "(1)",
+          "_display": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(1)"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(1)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "valueCoding": {
+          "code": 2,
+          "display": "(2)",
+          "_display": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(2)"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(2)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "valueCoding": {
+          "code": 3,
+          "display": "(3)",
+          "_display": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(3)"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(3)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "valueCoding": {
+          "code": 4,
+          "display": "(4)",
+          "_display": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(4)"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(4)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "valueCoding": {
+          "code": 5,
+          "display": "(5)",
+          "_display": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(5)"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(5)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "valueCoding": {
+          "code": 6,
+          "display": "(6)",
+          "_display": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(6)"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(6)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "valueCoding": {
+          "code": 7,
+          "display": "(7)",
+          "_display": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(7)"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(7)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "valueCoding": {
+          "code": 8,
+          "display": "(8)",
+          "_display": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(8)"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(8)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "valueCoding": {
+          "code": 9,
+          "display": "(9)",
+          "_display": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(9)"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(9)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "valueCoding": {
+          "code": 10,
+          "display": "(10) (sehr gut)",
+          "_display": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(10) (sehr gut)"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "(10) (très bonne)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
   },
   {
     "linkId": 20,
     "prefix": 20,
-    "_text": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "de"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "fr"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        }
-      ]
-    },
-    "type": "choice",
-    "required": true,
-    "answerOption": []
-  },
-  {
-    "linkId": 21,
-    "prefix": 21,
-    "_text": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "de"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "fr"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        }
-      ]
-    },
-    "type": "choice",
-    "required": true,
-    "answerOption": []
-  },
-  {
-    "linkId": 22,
-    "prefix": 22,
-    "_text": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "de"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "fr"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        }
-      ]
-    },
-    "type": "choice",
-    "required": true,
-    "answerOption": []
-  },
-  {
-    "linkId": 23,
-    "prefix": 23,
-    "_text": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "de"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "fr"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        }
-      ]
-    },
-    "type": "choice",
-    "required": true,
-    "answerOption": []
-  },
-  {
-    "linkId": 24,
-    "prefix": 24,
-    "_text": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "de"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "fr"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        }
-      ]
-    },
-    "type": "choice",
-    "required": true,
-    "answerOption": []
-  },
-  {
-    "linkId": 25,
-    "prefix": 25,
-    "_text": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "de"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "fr"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        }
-      ]
-    },
-    "type": "choice",
-    "required": true,
-    "answerOption": []
-  },
-  {
-    "linkId": 26,
-    "prefix": 26,
-    "_text": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "de"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "fr"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        }
-      ]
-    },
-    "type": "choice",
-    "required": true,
-    "answerOption": []
-  },
-  {
-    "linkId": 27,
-    "prefix": 27,
-    "_text": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "de"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "fr"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        }
-      ]
-    },
-    "type": "choice",
-    "required": true,
-    "answerOption": []
-  },
-  {
-    "linkId": 28,
-    "prefix": 28,
-    "_text": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "de"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "fr"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        }
-      ]
-    },
-    "type": "choice",
-    "required": true,
-    "answerOption": []
-  },
-  {
-    "linkId": 29,
-    "prefix": 29,
-    "_text": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "de"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "fr"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        }
-      ]
-    },
-    "type": "choice",
-    "required": true,
-    "answerOption": []
-  },
-  {
-    "linkId": 30,
-    "prefix": 30,
-    "_text": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "de"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "fr"
-            },
-            {
-              "url": "content"
-            }
-          ]
-        }
-      ]
-    },
-    "type": "choice",
-    "required": true,
-    "answerOption": []
-  },
-  {
-    "linkId": 31,
-    "prefix": 31,
     "text": "Haben Sie Verständnisprobleme, wenn Sie eine schriftliche Information zu einer medizinischen Behandlung oder zu Ihrem Gesundheitszustand erhalten?",
     "_text": {
       "extension": [
@@ -4152,8 +4163,8 @@
     ]
   },
   {
-    "linkId": 32,
-    "prefix": 32,
+    "linkId": 21,
+    "prefix": 21,
     "text": "Wie möchten Sie generell, dass medizinische Entscheidungen über Krebsbehandlungen getroffen werden?",
     "_text": {
       "extension": [

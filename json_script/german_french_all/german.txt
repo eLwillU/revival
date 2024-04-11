@@ -43,12 +43,12 @@ Ja, absolut 
 Ja, bis zu einem gewissen Grad 
 Nein 
 Ich weiss es nicht / Ich erinnere mich nicht 
-52. Stehen Sie in regelmässigem Kontakt mit einer Bezugsperson (z. B. Arzt/Ärztin, Pflegefach-person, Sozialarbeiter:in) wegen der Nachsorge? 
+52. Stehen Sie in regelmässigem Kontakt mit einer Bezugsperson (zum Beispiel: Arzt/Ärztin, Pflegefach-person, Sozialarbeiter:in) wegen der Nachsorge? 
 Ja 
 Nein, aber ich hätte es gerne 
 Nein, das ist nicht nötig 
 Ich weiss es nicht 
-52.1 Stehen Sie in regelmässigem Kontakt mit einer Bezugsperson (z. B. Arzt/Ärztin, Pflegefach-person, Sozialarbeiter:in) wegen der Nachsorge? Wenn ja, mit welcher?
+23. Wenn ja, mit welcher?
 Onkologe/-in / Facharzt/-ärztin 
 Hausarzt/-ärztin oder Allgemeinarzt/-ärztin
 Pflegefachperson 
@@ -95,17 +95,17 @@ Ja, manchmal 
 Nein 
 Ich weiss es nicht / Ich erinnere mich nicht 
 64. Wie schätzen Sie Ihre Behandlung und Betreuung insgesamt ein? 
-0 (Sehr schlecht)
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10 (sehr gut)
+(0) (Sehr schlecht)
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+(10) (sehr gut)
 75. Haben Sie Verständnisprobleme, wenn Sie eine schriftliche Information zu einer medizinischen Behandlung oder zu Ihrem Gesundheitszustand erhalten? 
 Immer 
 Oft 
