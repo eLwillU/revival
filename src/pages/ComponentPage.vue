@@ -2,10 +2,7 @@
   <q-page>
     <div>
       <div class="q-py-xl">
-        <q-btn @click="console.log(qData.getQuestions()[1])"
-          >Debug Button</q-btn
-        >
-        <q-btn @click="updateQuestions()"> Set Questions </q-btn>
+        <q-btn>Debug Button</q-btn>
         <q-btn @click="logQuestionnaireResponse()">Check</q-btn>
       </div>
     </div>
@@ -25,7 +22,6 @@ import { ref, watchEffect } from "vue";
 import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
 import { useI18n } from "vue-i18n";
 import QuestionCard from "../components/QuestionCard.vue";
-
 const { locale } = useI18n();
 const language = ref("");
 
@@ -55,7 +51,7 @@ watchEffect(() => {
 
 function getResponse() {
   try {
-    const response = qData.value.getQuestionnaireResponse("de");
+    const response = qData.value.getQuestionnaireResponse(language.value);
     console.log("respo:", response);
   } catch (e) {
     console.warn("Something ain't right:", e);
@@ -77,7 +73,7 @@ function updateQuestions() {
   }
 }
 function logQuestionnaireResponse() {
-  console.log("resp:", qData.value.getQuestionnaireResponse("de"));
+  console.log("resp:", qData.value.getQuestionnaireResponse(language.value));
 }
 
 function handleAnswerSelected({ question, selectedAnswer }) {
