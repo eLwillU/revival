@@ -22,11 +22,15 @@ const routes = [
       },
       {
         path: "/Quest",
-        component: () => import("pages/questionnairePage.vue"),
+        component: () => import("pages/QuestionnairePage.vue"),
       },
       {
         path: "/debug",
         component: () => import("pages/debugPage.vue"),
+      },
+      {
+        path: "/cards",
+        component: () => import("pages/ComponentPage.vue"),
       },
     ],
   },

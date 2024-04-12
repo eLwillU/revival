@@ -10,27 +10,12 @@
       </div>
     </div>
     <div v-for="question in qData.getQuestions()" :key="question.id">
-      <q-card>
-        <q-card-section>
-          <div class="text-body2 text-weight-medium text-justify q-py-sm">
-            {{ question.id }}.
-            {{ question.label[language] }}
-          </div>
-        </q-card-section>
-        <q-card-section>
-          <div
-            v-for="answerOption in question.answerOptions"
-            :key="answerOption.code"
-          >
-            <q-radio
-              :label="answerOption.answer[language]"
-              :val="answerOption"
-              v-model="selectedAnswers[question.id]"
-              :onAnswer="qData.updateQuestionAnswers.bind(qData)"
-            ></q-radio>
-          </div>
-        </q-card-section>
-      </q-card>
+      <QuestionCard
+        :question="question"
+        :language="language"
+        :qDataObject="qData"
+        @answer-selected="handleAnswerSelected"
+      />
     </div>
   </q-page>
 </template>
@@ -39,6 +24,7 @@
 import { ref, watchEffect } from "vue";
 import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
 import { useI18n } from "vue-i18n";
+import QuestionCard from "../components/QuestionCard.vue";
 
 const { locale } = useI18n();
 const language = ref("");
@@ -92,5 +78,10 @@ function updateQuestions() {
 }
 function logQuestionnaireResponse() {
   console.log("resp:", qData.value.getQuestionnaireResponse("de"));
+}
+
+function handleAnswerSelected({ question, selectedAnswer }) {
+  console.log("Question: ", question, " answer: ", selectedAnswer);
+  qData.value.updateQuestionAnswers(question, selectedAnswer);
 }
 </script>

@@ -52,7 +52,7 @@
         label="Midata"
         :content-inset-level="0.5"
         clickable
-        to="/Questionnaire"
+        to="/Quest"
         class="items-center justify-between text-subtitle1"
         >Questionnaire</q-item
       >
