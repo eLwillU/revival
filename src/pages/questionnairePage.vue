@@ -43,6 +43,7 @@ import { useI18n } from "vue-i18n";
 const { locale } = useI18n();
 const language = ref("");
 
+// Questionnaire Stuff
 const url = "../jsonFiles/scape-copy.json";
 const data = ref("");
 const qData = ref(new QuestionnaireData("", ["de", "fr"]));

@@ -9,7 +9,7 @@
         </div>
       </q-img>
     </div>
-
+    <div><LoginButton></LoginButton></div>
     <div>
       <div class="text-h6 q-my-md text-center">{{ $t("infoWelcome") }}</div>
       <div class="text-subtitle2 q-my-md">
@@ -40,9 +40,8 @@
 </template>
 
 <script setup>
-import { openURL } from "quasar";
 import InformationCard from "../components/InformationCard.vue";
-
+import LoginButton from "src/components/LoginButton.vue";
 // Skript-Bereich, falls nötig
 </script>
 

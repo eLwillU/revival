@@ -3,7 +3,7 @@ import { JSOnFhir } from "@i4mi/js-on-fhir";
 const fhir = new JSOnFhir(
   "https://test.midata.coop",
   "revival",
-  "http://localhost:9000/#",
+  "http://localhost:9000/#/cards",
   {
     disablePkce: false,
     doesNotNeedAuth: false,

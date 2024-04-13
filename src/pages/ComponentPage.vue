@@ -2,13 +2,19 @@
   <q-page>
     <div>
       <div class="q-py-xl">
-        <q-btn>Debug Button</q-btn>
-        <q-btn @click="logQuestionnaireResponse()">Check</q-btn>
+        <q-btn @click="loginStatus()">Login Status</q-btn>
+
+        <q-btn @click="logQuestionnaireResponse()">Debug Button</q-btn>
+        <q-btn @click="sendIt()">SENDER</q-btn>
       </div>
     </div>
-    <div v-for="question in qData.getQuestions()" :key="question.id">
+    <q-btn @click="previousPage()">Prev</q-btn>
+    <q-btn @click="nextPage()">Next</q-btn>
+
+    <div v-if="isDataFetched">
+      <q-linear-progress :value="progress"></q-linear-progress>
       <QuestionCard
-        :question="question"
+        :question="qData.getQuestions()[currentPage - 1]"
         :language="language"
         :qDataObject="qData"
         @answer-selected="handleAnswerSelected"
@@ -18,17 +24,52 @@
 </template>
 
 <script setup>
+import { fhir } from "../boot/midataService"; // adjust the path to your midataService file
 import { ref, watchEffect } from "vue";
 import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
 import { useI18n } from "vue-i18n";
 import QuestionCard from "../components/QuestionCard.vue";
 const { locale } = useI18n();
 const language = ref("");
-
+const isDataFetched = ref(false);
 const url = "../jsonFiles/scape-copy.json";
 const data = ref("");
 const qData = ref(new QuestionnaireData("", ["de", "fr"]));
 const selectedAnswers = ref({});
+
+let refreshToken;
+fhir
+  .handleAuthResponse()
+  .then((res) => {
+    // check if the response is not null
+    if (res) {
+      // we are authenticated
+      // ... and can keep refreshToken
+      refreshToken = res.refresh_token;
+    }
+  })
+  .catch((err) => {
+    // oops, something went wrong
+    console.log(err);
+  });
+
+const currentPage = ref(1);
+const numPages = ref(0);
+const progress = ref(0);
+
+function nextPage() {
+  if (currentPage.value < numPages.value) {
+    currentPage.value++;
+    progress.value = currentPage.value / numPages.value;
+  }
+}
+
+function previousPage() {
+  if (currentPage.value > 1) {
+    currentPage.value--;
+    progress.value = currentPage.value / numPages.value;
+  }
+}
 
 async function fetchData() {
   try {
@@ -36,17 +77,28 @@ async function fetchData() {
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
-    data.value = await response.json();
+    data.value = await fhir.getResource(
+      "Questionnaire",
+      "661a3a74596b5e73d7de473a"
+    );
     qData.value = new QuestionnaireData(data.value, ["de", "fr"]);
+    numPages.value = qData.value.getQuestions().length;
+    isDataFetched.value = true;
+    const step = 1 / numPages.value;
+    progress.value = step;
   } catch (error) {
     console.error("Error fetching JSON:", error);
   }
 }
 
-fetchData();
-
 watchEffect(() => {
   language.value = locale.value.split("-")[0];
+});
+
+watchEffect(() => {
+  if (fhir.isLoggedIn) {
+    fetchData();
+  }
 });
 
 function getResponse() {
@@ -79,5 +131,25 @@ function logQuestionnaireResponse() {
 function handleAnswerSelected({ question, selectedAnswer }) {
   console.log("Question: ", question, " answer: ", selectedAnswer);
   qData.value.updateQuestionAnswers(question, selectedAnswer);
+  if (currentPage.value < numPages.value) {
+    currentPage.value++;
+  }
+}
+
+function logUserID() {
+  console.log(fhir.getUserId());
+}
+
+function loadQuestionnaire() {
+  fhir.getResource("Questionnaire", "661a3a74596b5e73d7de473a");
+}
+
+function loginStatus() {
+  console.log("Loginstatus: ", fhir.isLoggedIn());
+}
+
+function sendIt() {
+  console.log("lang:", language.value);
+  fhir.create(qData.value.getQuestionnaireResponse(language.value));
 }
 </script>
