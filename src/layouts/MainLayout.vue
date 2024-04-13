@@ -34,15 +34,6 @@
         label="Midata"
         :content-inset-level="0.5"
         clickable
-        to="/pageOne"
-        class="items-center justify-between text-subtitle1"
-        >Item 1</q-item
-      >
-      <q-item
-        icon="person"
-        label="Midata"
-        :content-inset-level="0.5"
-        clickable
         to="/InfoPage"
         class="items-center justify-between text-subtitle1"
         >InfoPage</q-item
@@ -61,9 +52,9 @@
         label="Midata"
         :content-inset-level="0.5"
         clickable
-        to="/debug"
+        to="/welcome"
         class="items-center justify-between text-subtitle1"
-        >Debug</q-item
+        >Welcome</q-item
       >
     </q-drawer>
 
