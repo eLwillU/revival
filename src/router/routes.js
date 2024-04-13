@@ -17,10 +17,6 @@ const routes = [
         component: () => import("pages/InfoPage.vue"),
       },
       {
-        path: "/Questionnaire",
-        component: () => import("pages/QuestionPage.vue"),
-      },
-      {
         path: "/Quest",
         component: () => import("pages/QuestionnairePage.vue"),
       },
@@ -31,6 +27,10 @@ const routes = [
       {
         path: "/cards",
         component: () => import("pages/ComponentPage.vue"),
+      },
+      {
+        path: "/welcome",
+        component: () => import("pages/WelcomePage.vue"),
       },
     ],
   },

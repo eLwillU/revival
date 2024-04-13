@@ -3,5 +3,12 @@
   "infoWelcome": "Bienvenue chez REVIVAL",
   "infoCaption": "Ensemble, améliorons le traitement du cancer - votre voix compte !",
   "infoText": "Saisissez dès maintenant l'occasion de participer activement à la construction de l'avenir du traitement du cancer en partageant votre expérience personnelle par le biais du questionnaire numérique SCAPE. Votre précieux feedback est la clé d'une meilleure prise en charge des patients et nous aide à rendre le système de santé plus efficace. REVIVAL est plus qu'un simple projet étudiant - c'est un mouvement qui grandit grâce à votre participation et à votre engagement. Agissons ensemble afin d'ouvrir la voie à des changements innovants et de promouvoir le bien-être des patients atteints de cancer. Pour un aperçu plus approfondi et de plus amples informations, veuillez regarder la vidéo ci-dessous et découvrir comment vous pouvez, vous aussi, faire la différence. Soyez le changement que vous voulez voir dans le monde - commençons dès aujourd'hui !",
-  "yourAnswerOption": "Votre réponse :"
+  "yourAnswerOption": "Votre réponse :",
+  "back": "Précédent",
+  "next": "Suivant",
+  "question": "Question",
+  "from": "de",
+  "loginSuccess": "Vous vous êtes connecté avec succès !",
+  "clickToStart": "Cliquez ici pour remplir le questionnaire :",
+  "startButton": "Remplir le questionnaire"
 }

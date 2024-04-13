@@ -1,30 +1,38 @@
 <template>
   <q-page>
-    <div>
-      <div class="q-py-xl">
-        <q-btn @click="loginStatus()">Login Status</q-btn>
-        <LoginButton></LoginButton>
-        <q-btn @click="logQuestionnaireResponse()">Debug Button</q-btn>
-        <q-btn @click="sendIt()">SENDER</q-btn>
-      </div>
-    </div>
-    <q-btn @click="previousPage()">Prev</q-btn>
-    <q-btn @click="nextPage()">Next</q-btn>
-
     <div v-if="isDataFetched">
-      <q-linear-progress :value="progress"></q-linear-progress>
+      <div class="q-px-sm">
+        <q-linear-progress
+          :value="progress"
+          class="q-mt-sm"
+          size="25px"
+          color="info"
+          rounded
+        >
+          <div class="absolute-full flex flex-center">
+            <q-badge
+              >{{ $t("question") }} {{ currentPage }} {{ $t("from") }}
+              {{ numPages }}</q-badge
+            >
+          </div>
+        </q-linear-progress>
+      </div>
       <QuestionCard
         :question="qData.getQuestions()[currentPage - 1]"
         :language="language"
         :qDataObject="qData"
         @answer-selected="handleAnswerSelected"
       />
+
+      <div class="row justify-between q-px-sm">
+        <q-btn @click="previousPage()" color="primary">{{ $t("back") }}</q-btn>
+        <q-btn @click="nextPage()" color="primary">{{ $t("next") }}</q-btn>
+      </div>
     </div>
   </q-page>
 </template>
 
 <script setup>
-import LoginButton from "src/components/LoginButton.vue";
 import { fhir } from "../boot/midataService"; // adjust the path to your midataService file
 import { ref, watchEffect } from "vue";
 import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
@@ -89,10 +97,19 @@ async function fetchData() {
   }
 }
 
+// Watcher if user is logged in to midata.
+watchEffect(() => {
+  if (midataLoginStatus.value) {
+    fetchData();
+  }
+});
+
+// Watcher for the language
 watchEffect(() => {
   language.value = locale.value.split("-")[0];
 });
 
+// TODO: Remove Console.log when done debugging
 function getResponse() {
   try {
     const response = qData.value.getQuestionnaireResponse(language.value);
@@ -102,6 +119,7 @@ function getResponse() {
   }
 }
 
+// TODO: delete maybe, might not be needed anymore
 function updateQuestions() {
   // Iterate over the keys of selectedAnswers
   for (const questionId of Object.keys(selectedAnswers.value)) {
@@ -116,18 +134,14 @@ function updateQuestions() {
     );
   }
 }
-function logQuestionnaireResponse() {
-  console.log("resp:", qData.value.getQuestionnaireResponse(language.value));
-}
 
+// Set question and answer when selected in the component
 function handleAnswerSelected({ question, selectedAnswer }) {
-  console.log("Question: ", question, " answer: ", selectedAnswer);
   qData.value.updateQuestionAnswers(question, selectedAnswer);
-  if (currentPage.value < numPages.value) {
-    currentPage.value++;
-  }
 }
 
+// Debugging functions
+// TODO: remove when done
 function logUserID() {
   console.log(fhir.getUserId());
 }
@@ -144,10 +158,4 @@ function sendIt() {
   console.log("lang:", language.value);
   fhir.create(qData.value.getQuestionnaireResponse(language.value));
 }
-
-watchEffect(() => {
-  if (midataLoginStatus.value) {
-    fetchData();
-  }
-});
 </script>
