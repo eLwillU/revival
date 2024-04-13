@@ -3,7 +3,7 @@
     <div>
       <div class="q-py-xl">
         <q-btn @click="loginStatus()">Login Status</q-btn>
-
+        <LoginButton></LoginButton>
         <q-btn @click="logQuestionnaireResponse()">Debug Button</q-btn>
         <q-btn @click="sendIt()">SENDER</q-btn>
       </div>
@@ -24,6 +24,7 @@
 </template>
 
 <script setup>
+import LoginButton from "src/components/LoginButton.vue";
 import { fhir } from "../boot/midataService"; // adjust the path to your midataService file
 import { ref, watchEffect } from "vue";
 import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
@@ -32,15 +33,16 @@ import QuestionCard from "../components/QuestionCard.vue";
 const { locale } = useI18n();
 const language = ref("");
 const isDataFetched = ref(false);
-const url = "../jsonFiles/scape-copy.json";
 const data = ref("");
 const qData = ref(new QuestionnaireData("", ["de", "fr"]));
 const selectedAnswers = ref({});
+const midataLoginStatus = ref(false);
 
 let refreshToken;
 fhir
   .handleAuthResponse()
   .then((res) => {
+    midataLoginStatus.value = true;
     // check if the response is not null
     if (res) {
       // we are authenticated
@@ -73,10 +75,6 @@ function previousPage() {
 
 async function fetchData() {
   try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
     data.value = await fhir.getResource(
       "Questionnaire",
       "661a3a74596b5e73d7de473a"
@@ -93,12 +91,6 @@ async function fetchData() {
 
 watchEffect(() => {
   language.value = locale.value.split("-")[0];
-});
-
-watchEffect(() => {
-  if (fhir.isLoggedIn) {
-    fetchData();
-  }
 });
 
 function getResponse() {
@@ -152,4 +144,10 @@ function sendIt() {
   console.log("lang:", language.value);
   fhir.create(qData.value.getQuestionnaireResponse(language.value));
 }
+
+watchEffect(() => {
+  if (midataLoginStatus.value) {
+    fetchData();
+  }
+});
 </script>

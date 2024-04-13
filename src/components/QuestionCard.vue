@@ -19,7 +19,9 @@
             v-model="selectedAnswers"
             @update:modelValue="handleAnswerSelected"
           ></q-radio>
-          <q-separator v-if="index < question.answerOptions.length - 1" />
+          <div class="q-py-sm">
+            <q-separator v-if="index < question.answerOptions.length - 1" />
+          </div>
         </div>
       </q-card-section>
     </q-card>
@@ -35,7 +37,7 @@ const props = defineProps({
   qDataObject: Object,
 });
 const emit = defineEmits(["answer-selected"]);
-
+const model = "";
 const selectedAnswers = ref("");
 
 function handleAnswerSelected(selectedAnswer) {
