@@ -1,5 +1,7 @@
 <template>
   <q-page>
+    <div v-if="!fhir.isLoggedIn()"><LoginCard></LoginCard></div>
+
     <div v-if="isDataFetched">
       <div class="q-px-sm">
         <q-linear-progress
@@ -33,6 +35,7 @@
 </template>
 
 <script setup>
+import LoginCard from "../components/LoginCard.vue";
 import { fhir } from "../boot/midataService"; // adjust the path to your midataService file
 import { ref, watchEffect } from "vue";
 import { QuestionnaireData } from "@i4mi/fhir_questionnaire";

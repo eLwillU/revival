@@ -10,5 +10,7 @@
   "from": "de",
   "loginSuccess": "Vous vous êtes connecté avec succès !",
   "clickToStart": "Cliquez ici pour remplir le questionnaire :",
-  "startButton": "Remplir le questionnaire"
+  "startButton": "Remplir le questionnaire",
+  "loginCardText": "Pour pouvoir utiliser REVIVAL, vous devez d'abord vous connecter. vous connecter/enregistrer.",
+  "connectToMidata": "Connecter à MIDATA"
 }
