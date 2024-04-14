@@ -1,7 +1,6 @@
 <template>
   <q-page>
     <div v-if="!fhir.isLoggedIn()"><LoginCard></LoginCard></div>
-
     <div v-if="isDataFetched">
       <div class="q-px-sm">
         <q-linear-progress
@@ -23,12 +22,31 @@
         :question="qData.getQuestions()[currentPage - 1]"
         :language="language"
         :qDataObject="qData"
+        :error="error"
         @answer-selected="handleAnswerSelected"
       />
 
       <div class="row justify-between q-px-sm">
-        <q-btn @click="previousPage()" color="primary">{{ $t("back") }}</q-btn>
-        <q-btn @click="nextPage()" color="primary">{{ $t("next") }}</q-btn>
+        <q-btn
+          @click="previousPage()"
+          color="primary"
+          :disable="currentPage === 1"
+          >{{ $t("back") }}</q-btn
+        >
+
+        <q-btn
+          @click="nextPage()"
+          v-if="numPages !== currentPage"
+          color="primary"
+          :disable="error"
+          >{{ $t("next") }}</q-btn
+        >
+        <q-btn
+          to="/completed"
+          v-if="numPages === currentPage"
+          color="green-5"
+          >{{ $t("completeQuestionnaire") }}</q-btn
+        >
       </div>
     </div>
   </q-page>
@@ -48,7 +66,7 @@ const data = ref("");
 const qData = ref(new QuestionnaireData("", ["de", "fr"]));
 const selectedAnswers = ref({});
 const midataLoginStatus = ref(false);
-
+const userInput = ref(false);
 let refreshToken;
 fhir
   .handleAuthResponse()
@@ -70,10 +88,18 @@ const currentPage = ref(1);
 const numPages = ref(0);
 const progress = ref(0);
 
+const tempBoolean = ref(false);
+const error = ref(false);
 function nextPage() {
-  if (currentPage.value < numPages.value) {
-    currentPage.value++;
-    progress.value = currentPage.value / numPages.value;
+  if (!tempBoolean.value) {
+    error.value = true;
+  } else {
+    if (currentPage.value < numPages.value) {
+      currentPage.value++;
+      progress.value = currentPage.value / numPages.value;
+      tempBoolean.value = false;
+      error.value = false;
+    }
   }
 }
 
@@ -139,8 +165,16 @@ function updateQuestions() {
 }
 
 // Set question and answer when selected in the component
-function handleAnswerSelected({ question, selectedAnswer }) {
+function handleAnswerSelected({
+  question,
+  selectedAnswer,
+  userSelectedAnswer,
+}) {
   qData.value.updateQuestionAnswers(question, selectedAnswer);
+  tempBoolean.value = true;
+  if (error.value) {
+    error.value = false;
+  }
 }
 
 // Debugging functions
@@ -161,4 +195,7 @@ function sendIt() {
   console.log("lang:", language.value);
   fhir.create(qData.value.getQuestionnaireResponse(language.value));
 }
+
+console.log("numpages: ", numPages.value);
+console.log("currentpage: ", currentPage.value);
 </script>

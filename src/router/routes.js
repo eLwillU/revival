@@ -16,6 +16,10 @@ const routes = [
         path: "/welcome",
         component: () => import("pages/WelcomePage.vue"),
       },
+      {
+        path: "/complete",
+        component: () => import("pages/QuestionnaireCompletePage.vue"),
+      },
     ],
   },
   // Always leave this as last one,

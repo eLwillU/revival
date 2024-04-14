@@ -1,10 +1,23 @@
 <template>
   <div class="q-pa-sm">
-    <q-card flat bordered class="bg-grey-1">
+    <q-card
+      flat
+      bordered
+      :class="{
+        'bg-grey-1': !error,
+        'bg-red-1': error,
+        error: error,
+      }"
+    >
       <q-card-section>
         <div class="text-body2 text-weight-medium text-justify">
           {{ question.id }}.
           {{ question.label[language] }}
+        </div>
+      </q-card-section>
+      <q-card-section v-if="error">
+        <div class="text-red text-weight-bold">
+          Wählen Sie eine Antwort aus...
         </div>
       </q-card-section>
       <q-card-section>
@@ -35,12 +48,23 @@ const props = defineProps({
   question: Object,
   language: String,
   qDataObject: Object,
+  error: Boolean,
 });
 const emit = defineEmits(["answer-selected"]);
-const model = "";
 const selectedAnswers = ref("");
+const userSelectedAnswer = true;
 
 function handleAnswerSelected(selectedAnswer) {
-  emit("answer-selected", { question: props.question, selectedAnswer });
+  emit("answer-selected", {
+    question: props.question,
+    selectedAnswer,
+    userSelectedAnswer,
+  });
 }
 </script>
+
+<style>
+.error {
+  border: 1px solid red;
+}
+</style>

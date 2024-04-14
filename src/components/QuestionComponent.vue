@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-sm">
-    <q-card bordered flat class="bg-grey-2">
+    <q-card class="bg-grey-2 border text-red">
       <q-card-section>
         <div class="text-h6">{{ props.questionTitle }}</div>
         <div class="text-subtitle2">
@@ -41,3 +41,8 @@ function testing() {
   emit("answerSelected");
 }
 </script>
+<style scoped>
+.red-border {
+  border: 2px solid red;
+}
+</style>

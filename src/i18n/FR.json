@@ -12,5 +12,6 @@
   "clickToStart": "Cliquez ici pour remplir le questionnaire :",
   "startButton": "Remplir le questionnaire",
   "loginCardText": "Pour pouvoir utiliser REVIVAL, vous devez d'abord vous connecter. vous connecter/enregistrer.",
-  "connectToMidata": "Connecter à MIDATA"
+  "connectToMidata": "Connecter à MIDATA",
+  "completeQuestionnaire": "Terminer"
 }
