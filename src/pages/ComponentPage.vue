@@ -110,11 +110,13 @@ function previousPage() {
 
 async function fetchData() {
   try {
-    data.value = await fhir.getResource(
+    data.value = await fhir.search(
       "Questionnaire",
-      "661a3a74596b5e73d7de473a"
+      "url=http://www.krebsliga.ch/prem/SCAPE-CH"
     );
-    qData.value = new QuestionnaireData(data.value, ["de", "fr"]);
+    const resource = data.value.entry[0].resource;
+    console.log("data:", resource);
+    qData.value = new QuestionnaireData(resource, ["de", "fr"]);
     numPages.value = qData.value.getQuestions().length;
     isDataFetched.value = true;
     const step = 1 / numPages.value;
