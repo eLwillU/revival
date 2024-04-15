@@ -12,6 +12,13 @@
       }
     ]
   },
+  "code": [
+    {
+      "system": "http://www.krebsliga.ch",
+      "code": "scape-ch",
+      "display": "SCAPE-CH Questionnaire"
+    }
+  ],
   "url": "http://www.krebsliga.ch/prem/SCAPE-CH",
   "version": "1.0",
 
