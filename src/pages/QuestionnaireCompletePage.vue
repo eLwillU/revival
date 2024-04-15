@@ -1,11 +1,10 @@
 <template>
   <q-page padding>
-    <!-- content -->
+    <div>
+      Sie haben den Fragebogen erfolgreich ausgefüllt. Vielen Dank für Ihre
+      Unterstützung!
+    </div>
   </q-page>
 </template>
 
-<script>
-export default {
-  // name: 'PageName',
-}
-</script>
+<script setup></script>

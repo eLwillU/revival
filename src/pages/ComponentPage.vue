@@ -42,12 +42,9 @@
           :disable="error"
           >{{ $t("next") }}</q-btn
         >
-        <q-btn
-          to="/completed"
-          v-if="numPages === currentPage"
-          color="green-5"
-          >{{ $t("completeQuestionnaire") }}</q-btn
-        >
+        <q-btn to="/complete" v-if="numPages === currentPage" color="green-5">{{
+          $t("completeQuestionnaire")
+        }}</q-btn>
       </div>
     </div>
   </q-page>
