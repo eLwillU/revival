@@ -1097,7 +1097,7 @@
   {
     "linkId": 6,
     "prefix": 6,
-    "text": "Hat man mit Ihnen darüber gesprochen oder Ihnen Informationen dazu gegeben, welche Auswirkungen die Krebserkrankung auf Ihren Alltag hat (z",
+    "text": "Hat man mit Ihnen darüber gesprochen oder Ihnen Informationen dazu gegeben, welche Auswirkungen die Krebserkrankung auf Ihren Alltag hat (zum Beispiel auf Ihrer Arbeit, auf Ihre Freizeit)?",
     "_text": {
       "extension": [
         {
@@ -1109,7 +1109,7 @@
             },
             {
               "url": "content",
-              "valueString": "Hat man mit Ihnen darüber gesprochen oder Ihnen Informationen dazu gegeben, welche Auswirkungen die Krebserkrankung auf Ihren Alltag hat (z"
+              "valueString": "Hat man mit Ihnen darüber gesprochen oder Ihnen Informationen dazu gegeben, welche Auswirkungen die Krebserkrankung auf Ihren Alltag hat (zum Beispiel auf Ihrer Arbeit, auf Ihre Freizeit)?"
             }
           ]
         },
@@ -1280,7 +1280,7 @@
   {
     "linkId": 7,
     "prefix": 7,
-    "text": "Hat man Ihnen ausreichend praktische Ratschläge gegeben und/oder Unterstützung angeboten, um mit den Langzeitfolgen der Krebserkrankung oder der Behandlungen um-zugehen (z",
+    "text": "Hat man Ihnen ausreichend praktische Ratschläge gegeben und/oder Unterstützung angeboten, um mit den Langzeitfolgen der Krebserkrankung oder der Behandlungen um-zugehen (zum Beispiel Müdigkeit, Schmerzen, Angst)?",
     "_text": {
       "extension": [
         {
@@ -1292,7 +1292,7 @@
             },
             {
               "url": "content",
-              "valueString": "Hat man Ihnen ausreichend praktische Ratschläge gegeben und/oder Unterstützung angeboten, um mit den Langzeitfolgen der Krebserkrankung oder der Behandlungen um-zugehen (z"
+              "valueString": "Hat man Ihnen ausreichend praktische Ratschläge gegeben und/oder Unterstützung angeboten, um mit den Langzeitfolgen der Krebserkrankung oder der Behandlungen um-zugehen (zum Beispiel Müdigkeit, Schmerzen, Angst)?"
             }
           ]
         },
@@ -1305,7 +1305,7 @@
             },
             {
               "url": "content",
-              "valueString": "Est-ce qu’on vous a proposé suffisamment de conseils pratiques et/ou de soutien pour gérer les effets à long terme du cancer ou des traitements (par ex"
+              "valueString": "Est-ce qu’on vous a proposé suffisamment de conseils pratiques et/ou de soutien pour gérer les effets à long terme du cancer ou des traitements (par exemple fatigue, douleurs, anxiété) ?"
             }
           ]
         }
@@ -1671,7 +1671,7 @@
             },
             {
               "url": "content",
-              "valueString": "Etes-vous en contact régulier avec une personne de référence (par ex"
+              "valueString": "Etes-vous en contact régulier avec une personne de référence (par exemple médecin, infirmier·ère, assistant∙e social·e) pour le suivi ?"
             }
           ]
         }
@@ -1853,7 +1853,8 @@
               "valueCode": "fr"
             },
             {
-              "url": "content"
+              "url": "content",
+              "valueString": "Si oui, avec laquelle ?"
             }
           ]
         }
@@ -2230,7 +2231,7 @@
   {
     "linkId": 12,
     "prefix": 12,
-    "text": "Hat man Ihnen Informationen zu Hilfs- und Unterstützungsangeboten gegeben, um Ihnen zu helfen, mit Ihren Gefühlen umzugehen (z",
+    "text": "Hat man Ihnen Informationen zu Hilfs- und Unterstützungsangeboten gegeben, um Ihnen zu helfen, mit Ihren Gefühlen umzugehen (zum Beispiel Stress, Angst, Traurigkeit)?",
     "_text": {
       "extension": [
         {
@@ -2242,7 +2243,7 @@
             },
             {
               "url": "content",
-              "valueString": "Hat man Ihnen Informationen zu Hilfs- und Unterstützungsangeboten gegeben, um Ihnen zu helfen, mit Ihren Gefühlen umzugehen (z"
+              "valueString": "Hat man Ihnen Informationen zu Hilfs- und Unterstützungsangeboten gegeben, um Ihnen zu helfen, mit Ihren Gefühlen umzugehen (zum Beispiel Stress, Angst, Traurigkeit)?"
             }
           ]
         },
@@ -2255,7 +2256,7 @@
             },
             {
               "url": "content",
-              "valueString": "Est-ce qu’on vous a donné des informations sur les possibilités d’aide et de soutien pour vous aider à gérer votre état émotionnel (par ex"
+              "valueString": "Est-ce qu’on vous a donné des informations sur les possibilités d’aide et de soutien pour vous aider à gérer votre état émotionnel (par exemple stress, anxiété, tristesse) ?"
             }
           ]
         }

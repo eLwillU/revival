@@ -33,7 +33,7 @@ Oui 
 Non, mais j’aurais aimé avoir une discussion ou des informations 
 Cela n’a pas été nécessaire 
 Je ne sais pas / je ne m’en souviens plus 
-50. Est-ce qu’on vous a proposé suffisamment de conseils pratiques et/ou de soutien pour gérer les effets à long terme du cancer ou des traitements (par ex. fatigue, douleurs, anxiété) ? 
+50. Est-ce qu’on vous a proposé suffisamment de conseils pratiques et/ou de soutien pour gérer les effets à long terme du cancer ou des traitements (par exemple fatigue, douleurs, anxiété) ? 
 Oui, tout à fait 
 Oui, dans une certaine mesure 
 Non 
@@ -43,12 +43,12 @@ Oui, tout à fait 
 Oui, dans une certaine mesure 
 Non 
 Je ne sais pas / je ne me souviens plus 
-52. Etes-vous en contact régulier avec une personne de référence (par ex. médecin, infirmier·ère, assistant∙e social·e) pour le suivi ? 
+52. Etes-vous en contact régulier avec une personne de référence (par exemple médecin, infirmier·ère, assistant∙e social·e) pour le suivi ? 
 Oui 
 Non, mais j’aimerais bien 
 Non, cela n’est pas nécessaire 
 Je ne sais pas 
-52.1 Si oui, avec laquelle ?
+23. Si oui, avec laquelle ?
 oncologue / médecin spécialiste 
 médecin de famille / généraliste 
 infimier·ère 
@@ -59,7 +59,7 @@ Oui 
 Non, mais j’aurais aimé avoir des informations 
 Cela n’a pas été nécessaire 
 Je ne sais pas / je ne m’en souviens plus 
-57. Est-ce qu’on vous a donné des informations sur les possibilités d’aide et de soutien pour vous aider à gérer votre état émotionnel (par ex. stress, anxiété, tristesse) ? 
+57. Est-ce qu’on vous a donné des informations sur les possibilités d’aide et de soutien pour vous aider à gérer votre état émotionnel (par exemple stress, anxiété, tristesse) ? 
 Oui 
 Non, mais j’aurais aimé avoir des informations 
 Cela n’a pas été nécessaire 

@@ -1,5 +1,6 @@
 <template>
   <q-page>
+    <div><q-btn @click="getResponse()">Log Questionnaire</q-btn></div>
     <div v-if="!fhir.isLoggedIn()"><LoginCard></LoginCard></div>
     <div v-if="isDataFetched">
       <div class="q-px-sm">
@@ -142,6 +143,7 @@ watchEffect(() => {
 function getResponse() {
   try {
     const response = qData.value.getQuestionnaireResponse(language.value);
+    fhir.create(qData.value.getQuestionnaireResponse(language.value));
     console.log("respo:", response);
   } catch (e) {
     console.warn("Something ain't right:", e);

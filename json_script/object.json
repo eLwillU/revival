@@ -98,7 +98,7 @@
                 "Cela n’a pas été nécessaire",
                 "Je ne sais pas / je ne m’en souviens plus"
             ],
-            "de_question_text": "20. Hat man mit Ihnen darüber gesprochen oder Ihnen Informationen dazu gegeben, welche Auswirkungen die Krebserkrankung auf Ihren Alltag hat (z. B. auf Ihrer Arbeit, auf Ihre Freizeit)?",
+            "de_question_text": "20. Hat man mit Ihnen darüber gesprochen oder Ihnen Informationen dazu gegeben, welche Auswirkungen die Krebserkrankung auf Ihren Alltag hat (zum Beispiel auf Ihrer Arbeit, auf Ihre Freizeit)?",
             "de_answer_texts": [
                 "Ja",
                 "Nein, aber ich hätte mir ein Gespräch oder Informationen dazu gewünscht",
@@ -107,14 +107,14 @@
             ]
         },
         {
-            "fr_question_text": "50. Est-ce qu’on vous a proposé suffisamment de conseils pratiques et/ou de soutien pour gérer les effets à long terme du cancer ou des traitements (par ex. fatigue, douleurs, anxiété) ?",
+            "fr_question_text": "50. Est-ce qu’on vous a proposé suffisamment de conseils pratiques et/ou de soutien pour gérer les effets à long terme du cancer ou des traitements (par exemple fatigue, douleurs, anxiété) ?",
             "fr_answer_texts": [
                 "Oui, tout à fait",
                 "Oui, dans une certaine mesure",
                 "Non",
                 "Cela n’a pas été nécessaire"
             ],
-            "de_question_text": "50. Hat man Ihnen ausreichend praktische Ratschläge gegeben und/oder Unterstützung angeboten, um mit den Langzeitfolgen der Krebserkrankung oder der Behandlungen um-zugehen (z. B. Müdigkeit, Schmerzen, Angst)?",
+            "de_question_text": "50. Hat man Ihnen ausreichend praktische Ratschläge gegeben und/oder Unterstützung angeboten, um mit den Langzeitfolgen der Krebserkrankung oder der Behandlungen um-zugehen (zum Beispiel Müdigkeit, Schmerzen, Angst)?",
             "de_answer_texts": [
                 "Ja, absolut",
                 "Ja, bis zu einem gewissen Grad",
@@ -139,7 +139,7 @@
             ]
         },
         {
-            "fr_question_text": "52. Etes-vous en contact régulier avec une personne de référence (par ex. médecin, infirmier·ère, assistant∙e social·e) pour le suivi ?",
+            "fr_question_text": "52. Etes-vous en contact régulier avec une personne de référence (par exemple médecin, infirmier·ère, assistant∙e social·e) pour le suivi ?",
             "fr_answer_texts": [
                 "Oui",
                 "Non, mais j’aimerais bien",
@@ -155,7 +155,7 @@
             ]
         },
         {
-            "fr_question_text": "52.1 Si oui, avec laquelle ?",
+            "fr_question_text": "23. Si oui, avec laquelle ?",
             "fr_answer_texts": [
                 "oncologue / médecin spécialiste",
                 "médecin de famille / généraliste",
@@ -189,14 +189,14 @@
             ]
         },
         {
-            "fr_question_text": "57. Est-ce qu’on vous a donné des informations sur les possibilités d’aide et de soutien pour vous aider à gérer votre état émotionnel (par ex. stress, anxiété, tristesse) ?",
+            "fr_question_text": "57. Est-ce qu’on vous a donné des informations sur les possibilités d’aide et de soutien pour vous aider à gérer votre état émotionnel (par exemple stress, anxiété, tristesse) ?",
             "fr_answer_texts": [
                 "Oui",
                 "Non, mais j’aurais aimé avoir des informations",
                 "Cela n’a pas été nécessaire",
                 "Je ne sais pas / je ne m’en souviens plus"
             ],
-            "de_question_text": "57. Hat man Ihnen Informationen zu Hilfs- und Unterstützungsangeboten gegeben, um Ihnen zu helfen, mit Ihren Gefühlen umzugehen (z. B. Stress, Angst, Traurigkeit)?",
+            "de_question_text": "57. Hat man Ihnen Informationen zu Hilfs- und Unterstützungsangeboten gegeben, um Ihnen zu helfen, mit Ihren Gefühlen umzugehen (zum Beispiel Stress, Angst, Traurigkeit)?",
             "de_answer_texts": [
                 "Ja",
                 "Nein, aber ich hätte gerne solche Informationen gehabt",
