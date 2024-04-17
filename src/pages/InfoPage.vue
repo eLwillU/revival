@@ -18,7 +18,7 @@
       <div class="video-container q-my-md">
         <div class="text-h6">Informationsvideo</div>
         <q-video
-          src="https://www.youtube.com/embed/YIxjabqz8X0?si=8HrqOnlnFwOTo-YM"
+          src="https://www.youtube.com/embed/qj8r_7lH76c?si=yodXuqjES7pap7UY&cc_load_policy=1"
           :ratio="16 / 9"
         />
       </div>
