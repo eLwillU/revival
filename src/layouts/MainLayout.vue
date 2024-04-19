@@ -118,3 +118,13 @@ function toggleLeftDrawer() {
   leftDrawerOpen.value = !leftDrawerOpen.value;
 }
 </script>
+<style>
+.gradback {
+  background: rgb(93, 88, 195);
+  background: linear-gradient(
+    180deg,
+    rgba(93, 88, 195, 1) 0%,
+    rgba(4, 123, 196, 0.46260502492012434) 70%
+  );
+}
+</style>
