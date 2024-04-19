@@ -52,7 +52,7 @@
 
 <script setup>
 import LoginCard from "../components/LoginCard.vue";
-import { fhir } from "../boot/midataService"; // adjust the path to your midataService file
+import { fhir } from "../boot/midataService";
 import { ref, watchEffect } from "vue";
 import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
 import { useI18n } from "vue-i18n";
@@ -70,15 +70,11 @@ fhir
   .handleAuthResponse()
   .then((res) => {
     midataLoginStatus.value = true;
-    // check if the response is not null
     if (res) {
-      // we are authenticated
-      // ... and can keep refreshToken
       refreshToken = res.refresh_token;
     }
   })
   .catch((err) => {
-    // oops, something went wrong
     console.log(err);
   });
 
@@ -133,7 +129,6 @@ watchEffect(() => {
   }
 });
 
-// Watcher for the language
 watchEffect(() => {
   language.value = locale.value.split("-")[0];
 });
@@ -151,13 +146,10 @@ function getResponse() {
 
 // TODO: delete maybe, might not be needed anymore
 function updateQuestions() {
-  // Iterate over the keys of selectedAnswers
   for (const questionId of Object.keys(selectedAnswers.value)) {
-    // Find the question by id
     const question = qData.value.findQuestionById(Number(questionId));
     console.log("question:", question);
     console.log("answer: ", selectedAnswers.value[questionId]);
-    // Update the question with the selected answer
     qData.value.updateQuestionAnswers(
       question,
       selectedAnswers.value[questionId]

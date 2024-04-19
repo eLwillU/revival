@@ -16,8 +16,9 @@
         {{ $t("infoText") }}
       </div>
       <div class="video-container q-my-md">
+        <div class="text-h6">Informationsvideo</div>
         <q-video
-          src="https://www.youtube.com/embed/CvBfHwUxHIk"
+          src="https://www.youtube.com/embed/qj8r_7lH76c?si=ufz14iosaoqJvF8z"
           :ratio="16 / 9"
         />
       </div>
@@ -32,9 +33,7 @@
       class="q-gutter-md row justify-center q-mt-md"
       style="margin-bottom: 3em"
     >
-      <div class="col-5 col-md-4 col-lg-3 q-mb-md">
-        <InformationCard></InformationCard>
-      </div>
+      <InformationCard></InformationCard>
     </div>
   </q-page>
 </template>
