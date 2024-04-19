@@ -59,7 +59,7 @@
     </q-drawer>
 
     <q-page-container class="q-pa-sm row justify-center gradback">
-      <RouterView class="col-md-6"></RouterView>
+      <RouterView class="col-md-8"></RouterView>
     </q-page-container>
   </q-layout>
 </template>
