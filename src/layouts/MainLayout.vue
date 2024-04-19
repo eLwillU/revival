@@ -1,6 +1,6 @@
 <template>
   <q-layout view="hHh lpR fFf">
-    <q-header bordered class="bg-primary text-white">
+    <q-header bordered class="bg-green-6 text-white">
       <q-toolbar>
         <q-btn
           dense
@@ -10,7 +10,7 @@
           label="Menu"
           @click="toggleLeftDrawer"
         />
-        <q-toolbar-title class="text-center">REVIVAL</q-toolbar-title>
+        <q-toolbar-title class="text-center">REVIVAL-TESTING</q-toolbar-title>
 
         <q-btn
           outline

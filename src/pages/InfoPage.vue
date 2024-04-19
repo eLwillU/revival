@@ -1,6 +1,22 @@
 <template>
   <q-page class="q-pa-none">
-    <div class="flex justify-center col-6"></div>
+    <div>
+      <q-btn
+        label="Go to Heading 1"
+        @click="scrollTo('heading1')"
+        color="primary"
+      />
+      <q-btn
+        label="Go to Heading 2"
+        @click="scrollTo('heading2')"
+        color="secondary"
+      />
+      <q-btn
+        label="Go to Heading 3"
+        @click="scrollTo('heading3')"
+        color="accent"
+      />
+    </div>
     <div>
       <q-card class="q-mb-sm">
         <q-img
@@ -11,8 +27,10 @@
           </div>
         </q-img>
         <q-card-section>
-          <div class="text-h6 q-my-md text-center">{{ $t("infoWelcome") }}</div>
-          <div class="text-subtitle2 q-my-md">
+          <div class="text-h6" id="heading1">{{ $t("infoWelcome") }}</div>
+        </q-card-section>
+        <q-card-section>
+          <div class="text-subtitle2">
             {{ $t("infoText") }}
           </div>
         </q-card-section>
@@ -20,25 +38,26 @@
 
       <q-card class="q-mb-sm">
         <q-card-section>
-          <div class="video-container q-my-md text-center">
-            <div class="text-h6">{{ $t("infoVideo") }}</div>
-            <q-video
-              src="https://www.youtube.com/embed/qj8r_7lH76c?si=ufz14iosaoqJvF8z"
-              :ratio="16 / 9"
-            />
-          </div>
+          <div class="text-h6" id="heading2">{{ $t("infoVideo") }}</div>
+        </q-card-section>
+        <q-card-section>
+          <q-video
+            src="https://www.youtube.com/embed/qj8r_7lH76c?si=ufz14iosaoqJvF8z"
+            :ratio="16 / 9"
+          />
+        </q-card-section>
+      </q-card>
+      <q-card class="q-mb-sm">
+        <q-card-section>
+          <div class="text-h6" id="heading3">{{ $t("moreInfo") }}</div>
+        </q-card-section>
+        <q-card-section>
+          <InformationCard></InformationCard>
         </q-card-section>
       </q-card>
     </div>
 
     <div><LoginButton></LoginButton></div>
-
-    <div
-      class="q-gutter-md row justify-center q-mt-md"
-      style="margin-bottom: 3em"
-    >
-      <InformationCard></InformationCard>
-    </div>
   </q-page>
 </template>
 
@@ -46,6 +65,20 @@
 import InformationCard from "../components/InformationCard.vue";
 import LoginButton from "src/components/LoginButton.vue";
 // Skript-Bereich, falls nötig
+
+function scrollTo(id) {
+  const element = document.getElementById(id);
+  if (element) {
+    const headerHeight = 75; // Height of your header, adjust as necessary
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.scrollY - headerHeight;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  }
+}
 </script>
 
 <style>
