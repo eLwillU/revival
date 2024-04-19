@@ -32,7 +32,7 @@
       class="q-gutter-md row justify-center q-mt-md"
       style="margin-bottom: 3em"
     >
-      <div v-for="n in 2" :key="n" class="col-5 col-md-4 col-lg-3 q-mb-md">
+      <div class="col-5 col-md-4 col-lg-3 q-mb-md">
         <InformationCard></InformationCard>
       </div>
     </div>
