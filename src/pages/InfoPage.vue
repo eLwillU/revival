@@ -1,27 +1,36 @@
 <template>
   <q-page class="q-pa-none">
-    <div class="flex justify-center col-6">
-      <q-img
-        src="https://cdn.prod.www.manager-magazin.de/images/e762e9b2-669c-40fc-a4df-dc28ba89c20b_w960_r1.778_fpx55_fpy59.jpg"
-      >
-        <div class="absolute-bottom text-center">
-          {{ $t("infoCaption") }}
-        </div>
-      </q-img>
-    </div>
+    <div class="flex justify-center col-6"></div>
     <div>
-      <div class="text-h6 q-my-md text-center">{{ $t("infoWelcome") }}</div>
-      <div class="text-subtitle2 q-my-md">
-        {{ $t("infoText") }}
-      </div>
-      <div class="video-container q-my-md text-center">
-        <div class="text-h6">{{ $t("infoVideo") }}</div>
-        <q-video
-          src="https://www.youtube.com/embed/qj8r_7lH76c?si=ufz14iosaoqJvF8z"
-          :ratio="16 / 9"
-        />
-      </div>
+      <q-card class="q-mb-sm">
+        <q-img
+          src="https://cdn.prod.www.manager-magazin.de/images/e762e9b2-669c-40fc-a4df-dc28ba89c20b_w960_r1.778_fpx55_fpy59.jpg"
+        >
+          <div class="absolute-bottom text-center">
+            {{ $t("infoCaption") }}
+          </div>
+        </q-img>
+        <q-card-section>
+          <div class="text-h6 q-my-md text-center">{{ $t("infoWelcome") }}</div>
+          <div class="text-subtitle2 q-my-md">
+            {{ $t("infoText") }}
+          </div>
+        </q-card-section>
+      </q-card>
+
+      <q-card class="q-mb-sm">
+        <q-card-section>
+          <div class="video-container q-my-md text-center">
+            <div class="text-h6">{{ $t("infoVideo") }}</div>
+            <q-video
+              src="https://www.youtube.com/embed/qj8r_7lH76c?si=ufz14iosaoqJvF8z"
+              :ratio="16 / 9"
+            />
+          </div>
+        </q-card-section>
+      </q-card>
     </div>
+
     <div><LoginButton></LoginButton></div>
 
     <div
