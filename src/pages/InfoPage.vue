@@ -9,25 +9,20 @@
         </div>
       </q-img>
     </div>
-    <div><LoginButton></LoginButton></div>
     <div>
       <div class="text-h6 q-my-md text-center">{{ $t("infoWelcome") }}</div>
       <div class="text-subtitle2 q-my-md">
         {{ $t("infoText") }}
       </div>
-      <div class="video-container q-my-md">
-        <div class="text-h6">Informationsvideo</div>
+      <div class="video-container q-my-md text-center">
+        <div class="text-h6">{{ $t("infoVideo") }}</div>
         <q-video
           src="https://www.youtube.com/embed/qj8r_7lH76c?si=ufz14iosaoqJvF8z"
           :ratio="16 / 9"
         />
       </div>
     </div>
-
-    <!-- q-cards Container mit zusätzlichem Abstand unten -->
-    <div>
-      <q-car></q-car>
-    </div>
+    <div><LoginButton></LoginButton></div>
 
     <div
       class="q-gutter-md row justify-center q-mt-md"

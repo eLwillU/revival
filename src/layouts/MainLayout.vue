@@ -10,7 +10,7 @@
           label="Menu"
           @click="toggleLeftDrawer"
         />
-        <q-toolbar-title class="text-center"> Revival</q-toolbar-title>
+        <q-toolbar-title class="text-center">REVIVAL</q-toolbar-title>
 
         <q-btn
           outline
@@ -58,7 +58,7 @@
       >
     </q-drawer>
 
-    <q-page-container class="q-pa-sm row justify-center">
+    <q-page-container class="q-pa-sm row justify-center gradback">
       <RouterView class="col-md-6"></RouterView>
     </q-page-container>
   </q-layout>
@@ -120,11 +120,10 @@ function toggleLeftDrawer() {
 </script>
 <style>
 .gradback {
-  background: rgb(93, 88, 195);
-  background: linear-gradient(
-    180deg,
-    rgba(93, 88, 195, 1) 0%,
-    rgba(4, 123, 196, 0.46260502492012434) 70%
+  background-image: radial-gradient(
+    circle farthest-corner at 1.3% 2.8%,
+    rgba(239, 249, 249, 1) 0%,
+    rgba(182, 199, 226, 1) 100.2%
   );
 }
 </style>
