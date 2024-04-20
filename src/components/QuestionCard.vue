@@ -30,7 +30,7 @@
             :label="answerOption.answer[language]"
             :val="answerOption"
             v-model="selectedAnswers"
-            @update:modelValue="handleAnswerSelected"
+            @update:modelValue="handleAnswerSelected(selectedAnswers)"
           ></q-radio>
           <div class="q-py-sm">
             <q-separator v-if="index < question.answerOptions.length - 1" />
@@ -42,7 +42,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 
 const props = defineProps({
   question: Object,
@@ -51,8 +51,21 @@ const props = defineProps({
   error: Boolean,
 });
 const emit = defineEmits(["answer-selected"]);
-const selectedAnswers = ref("");
 const userSelectedAnswer = true;
+const selectedAnswers = ref(props.question.selectedAnswers[0]);
+
+onMounted(() => {
+  selectedAnswers.value = props.question.selectedAnswers;
+});
+
+onMounted(() => {
+  const code = selectedAnswers.value[0]?.valueCoding?.code;
+  if (code) {
+    selectedAnswers.value = props.question.answerOptions[code];
+    handleAnswerSelected(selectedAnswers.value);
+  }
+  console.log("Code: ", code || "yeet");
+});
 
 function handleAnswerSelected(selectedAnswer) {
   emit("answer-selected", {

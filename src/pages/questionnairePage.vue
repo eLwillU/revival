@@ -19,10 +19,12 @@
         </q-linear-progress>
       </div>
       <QuestionCard
+        :key="currentPage - 1"
         :question="qData.getQuestions()[currentPage - 1]"
         :language="language"
         :qDataObject="qData"
         :error="error"
+        :selectedAnswers="qData.getQuestions()[currentPage - 1].selectedAnswer"
         @answer-selected="handleAnswerSelected"
       />
 
@@ -52,7 +54,7 @@
 <script setup>
 import LoginCard from "../components/LoginCard.vue";
 import { fhir } from "../boot/midataService";
-import { ref, watchEffect } from "vue";
+import { ref, watchEffect, onMounted } from "vue";
 import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
 import { useI18n } from "vue-i18n";
 import QuestionCard from "../components/QuestionCard.vue";
@@ -63,9 +65,7 @@ const language = ref("");
 const isDataFetched = ref(false);
 const data = ref("");
 const qData = ref(store.getQuestionnaireResponse);
-const selectedAnswers = ref({});
 const midataLoginStatus = ref(false);
-const userInput = ref(false);
 let refreshToken;
 fhir
   .handleAuthResponse()
@@ -145,19 +145,6 @@ function getResponse() {
   }
 }
 
-// TODO: delete maybe, might not be needed anymore
-function updateQuestions() {
-  for (const questionId of Object.keys(selectedAnswers.value)) {
-    const question = qData.value.findQuestionById(Number(questionId));
-    console.log("question:", question);
-    console.log("answer: ", selectedAnswers.value[questionId]);
-    qData.value.updateQuestionAnswers(
-      question,
-      selectedAnswers.value[questionId]
-    );
-  }
-}
-
 // Set question and answer when selected in the component
 function handleAnswerSelected({
   question,
@@ -165,12 +152,19 @@ function handleAnswerSelected({
   userSelectedAnswer,
 }) {
   qData.value.updateQuestionAnswers(question, selectedAnswer);
+  userStore.questionnaireResponse = qData.value;
   tempBoolean.value = true;
-  store.setQuestionnaireResponse(qData.value);
   if (error.value) {
     error.value = false;
   }
 }
+
+onMounted(() => {
+  const storedQuestionnaireData = userStore.questionnaireResponse;
+  if (storedQuestionnaireData) {
+    qData.value = storedQuestionnaireData;
+  }
+});
 
 // Debugging functions
 // TODO: remove when done
@@ -190,7 +184,4 @@ function sendIt() {
   console.log("lang:", language.value);
   fhir.create(qData.value.getQuestionnaireResponse(language.value));
 }
-
-console.log("numpages: ", numPages.value);
-console.log("currentpage: ", currentPage.value);
 </script>

@@ -21,8 +21,8 @@ export const userStore = defineStore("user", {
     setLanguage(language) {
       this.locale = language;
     },
-    setQuestionnaireResponse(res) {
-      this.questionnaireResponse = res;
+    setQuestionnaireResponse(response) {
+      this.questionnaireResponse = response;
     },
   },
 });
