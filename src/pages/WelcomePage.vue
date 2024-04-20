@@ -2,16 +2,13 @@
   <q-page>
     <div v-if="!midataLoginStatus"><LoginCard /></div>
     <div class="q-py-md row justify-center">
-      <q-card v-if="midataLoginStatus" class="text-center col-sm-8">
-        <q-card-section
-          ><q-icon
-            name="check_circle_outline"
-            size="xl"
-            class="text-green q-pb-sm"
-          />
+      <q-card v-if="midataLoginStatus" class="col-sm-8">
+        <q-card-section class="text-center">
+          <q-icon name="check_circle_outline" size="xl" class="text-green" />
+
           <div class="text-h6">Login/Registrierung erfolgreich</div>
         </q-card-section>
-        <q-card-section
+        <q-card-section class="text-center"
           >Sie haben sich erfolgreich eingeloggt oder registriert. Sie können
           nun mit dem Fragebogen beginnen.
         </q-card-section>

@@ -1,22 +1,5 @@
 <template>
   <q-page class="q-pa-none">
-    <div v-if="!disableButtons">
-      <q-btn
-        label="Go to Heading 1"
-        @click="scrollTo('heading1')"
-        color="primary"
-      />
-      <q-btn
-        label="Go to Heading 2"
-        @click="scrollTo('heading2')"
-        color="secondary"
-      />
-      <q-btn
-        label="Go to Heading 3"
-        @click="scrollTo('heading3')"
-        color="accent"
-      />
-    </div>
     <div>
       <!-- info Text -->
       <q-card class="q-mb-sm">
