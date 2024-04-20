@@ -5,10 +5,14 @@ import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
 export const userStore = defineStore("user", {
   state: () => ({
     locale: ref(navigator.language.split("-")[0]),
-    questionnaireResponse: new QuestionnaireData("", ["de", "fr"]),
+    questionnaireResponse: ref(""),
+    currentPage: ref(1),
   }),
 
   getters: {
+    getCurrentPage() {
+      return this.currentPage;
+    },
     getLanguage() {
       return this.locale.split("-")[0];
     },

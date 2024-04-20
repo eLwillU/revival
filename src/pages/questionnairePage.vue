@@ -24,7 +24,9 @@
         :language="language"
         :qDataObject="qData"
         :error="error"
-        :selectedAnswers="qData.getQuestions()[currentPage - 1].selectedAnswer"
+        :selectedAnswers="
+          qData.getQuestions()[currentPage - 1].selectedAnswers[0]
+        "
         @answer-selected="handleAnswerSelected"
       />
 
@@ -64,8 +66,9 @@ const { locale } = useI18n();
 const language = ref("");
 const isDataFetched = ref(false);
 const data = ref("");
-const qData = ref(store.getQuestionnaireResponse);
+const qData = ref("");
 const midataLoginStatus = ref(false);
+const existingQdata = ref(false);
 let refreshToken;
 fhir
   .handleAuthResponse()
@@ -79,7 +82,7 @@ fhir
     console.log(err);
   });
 
-const currentPage = ref(1);
+const currentPage = ref(store.currentPage);
 const numPages = ref(0);
 const progress = ref(0);
 
@@ -91,6 +94,7 @@ function nextPage() {
   } else {
     if (currentPage.value < numPages.value) {
       currentPage.value++;
+      store.currentPage++;
       progress.value = currentPage.value / numPages.value;
       tempBoolean.value = false;
       error.value = false;
@@ -101,6 +105,8 @@ function nextPage() {
 function previousPage() {
   if (currentPage.value > 1) {
     currentPage.value--;
+    store.currentPage--;
+
     progress.value = currentPage.value / numPages.value;
   }
 }
@@ -112,7 +118,6 @@ async function fetchData() {
       "url=http://www.krebsliga.ch/prem/SCAPE-CH"
     );
     const resource = data.value.entry[0].resource;
-    console.log("data:", resource);
     qData.value = new QuestionnaireData(resource, ["de", "fr"]);
     numPages.value = qData.value.getQuestions().length;
     isDataFetched.value = true;
@@ -121,12 +126,14 @@ async function fetchData() {
   } catch (error) {
     console.error("Error fetching JSON:", error);
   }
+  console.log("qdata loaded: ", qData.value);
 }
 
 // Watcher if user is logged in to midata.
 watchEffect(() => {
-  if (midataLoginStatus.value) {
+  if (midataLoginStatus.value && !existingQdata.value) {
     fetchData();
+    console.log("loading new");
   }
 });
 
@@ -157,14 +164,24 @@ function handleAnswerSelected({
   if (error.value) {
     error.value = false;
   }
+  console.log("new Qdata: ", qData.value);
 }
 
 onMounted(() => {
   const storedQuestionnaireData = userStore.questionnaireResponse;
   if (storedQuestionnaireData) {
+    isDataFetched.value = true;
+    console.log("loading existing");
     qData.value = storedQuestionnaireData;
+    existingQdata.value = true;
+    console.log("Loaded data:", qData.value);
+    numPages.value = qData.value.getQuestions().length;
   }
 });
+
+function initPages(data) {
+  numPages.value = data.getQuestions().length;
+}
 
 // Debugging functions
 // TODO: remove when done

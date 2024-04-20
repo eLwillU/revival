@@ -50,21 +50,18 @@ const props = defineProps({
   qDataObject: Object,
   error: Boolean,
 });
+console.log("got qdata: ", props.qDataObject);
 const emit = defineEmits(["answer-selected"]);
 const userSelectedAnswer = true;
-const selectedAnswers = ref(props.question.selectedAnswers[0]);
+const selectedAnswers = ref([]);
 
 onMounted(() => {
   selectedAnswers.value = props.question.selectedAnswers;
-});
-
-onMounted(() => {
-  const code = selectedAnswers.value[0]?.valueCoding?.code;
-  if (code) {
+  if (props.question.selectedAnswers[0]) {
+    const code = selectedAnswers.value[0]?.valueCoding?.code;
     selectedAnswers.value = props.question.answerOptions[code];
     handleAnswerSelected(selectedAnswers.value);
   }
-  console.log("Code: ", code || "yeet");
 });
 
 function handleAnswerSelected(selectedAnswer) {
