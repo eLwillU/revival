@@ -16,7 +16,9 @@
   "completeQuestionnaire": "Beenden",
   "infoVideo": "Informationsvideo",
   "moreInfo": "Weitere Informationen",
-  "interestedPerson": "Liebe Interessentin, lieber Interessent",
+  "interestedPersonM": "lieber Interessent",
+  "interestedPersonF": "Liebe Interessentin",
+
   "informationPage": "Informationsseite",
   "startingPage": "Startseite",
   "questionnaire": "Fragebogen",

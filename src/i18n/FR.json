@@ -16,7 +16,9 @@
   "completeQuestionnaire": "Terminer",
   "infoVideo": "Vidéo d'information",
   "moreInfo": "Informations complémentaires",
-  "interestedPerson": "Chère intéressée, cher intéressé",
+  "interestedPersonM": "cher intéressé",
+  "interestedPersonF": "Chère intéressée",
+
   "informationPage": "Site d'information",
   "startingPage": "Page d'accueil",
   "questionnaire": "Questionnaire",

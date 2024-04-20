@@ -29,8 +29,9 @@
         </q-img>
 
         <q-card-section>
-          <div class="text-h6 text-weight-bold" id="heading1">
-            {{ $t("interestedPerson") }}
+          <div class="text-subtitle1 text-weight-bold" id="heading1">
+            {{ $t("interestedPersonF") }},
+            {{ $t("interestedPersonM") }}
           </div>
           <div>
             Wir, Dominic und Karin, sind fast fertig mit unserem Studium in
@@ -45,7 +46,7 @@
           <div class="">
             Wir möchten mit Ihrer Unterstützung und Ihren direkten Erfahrungen
             das Cancer Survivors Support Programm (CSSP) mitgestalten. Das
-            Cancer Survivors Support Programm ist ein Pro-jekt der Krebsliga.
+            Cancer Survivors Support Programm ist ein Projekt der Krebsliga.
           </div>
         </q-card-section>
 
@@ -55,7 +56,7 @@
           </div>
           <div class="">
             Der SCAPE-CH-Fragebogen ist ein Fragebogen zur Erfassung von
-            Erfahrungen von Krebspati-enten in der Versorgung. Dieser wird
+            Erfahrungen von Krebspatienten in der Versorgung. Dieser wird
             bereits erfolgreich in der Schweiz eingesetzt. Wir möchten diesen
             Fragebogen digitalisieren und für Sie leicht zugänglich machen.
           </div>
@@ -65,8 +66,8 @@
           <div class="text-subtitle1 text-weight-bold">Ihre Rolle?</div>
           <div class="">
             Sie sind der Schlüssel zur Verbesserung der Behandlungsprozesse.
-            Denn nur durch Ihre Er-fahrungen kann sichergestellt werden, dass
-            die Betreuung genau auf Ihre Bedürfnisse zuge-schnitten ist.
+            Denn nur durch Ihre Erfahrungen kann sichergestellt werden, dass die
+            Betreuung genau auf Ihre Bedürfnisse zuge-schnitten ist.
           </div>
         </q-card-section>
 
@@ -74,45 +75,37 @@
           <div class="text-subtitle1 text-weight-bold">Was ist zu tun?</div>
           <div class="">
             Füllen Sie unseren digitalen Fragebogen aus – es dauert ca. 10-15
-            Minuten, abhängig von Ihrer Vertrautheit mit Ihrem Mobilgerät.
-          </div>
-        </q-card-section>
-        <q-card-section>
-          <div class="text-subtitle1 text-weight-bold">Mehr erfahren?</div>
-          <div class="">
-            Schauen Sie unser Video an! Bei Fragen sind wir per E-Mail oder für
-            ein Telefonat für Sie da. Sie erreichen uns unter:
-          </div>
-          <div class="row">
-            <div class="q-mx-xl q-py-md">
-              Karin Kennel:
-              <br />
-              <a href="mailto:karin.kennel@students.bfh.ch">
-                karin.kennel@students.bfh.ch </a
-              ><br />
-              <a href="tel:+41 78 909 49 46"> +41 78 909 49 46</a>
-            </div>
-            <div class="q-mx-xl q-py-md">
-              Dominic Willi: <br />
-              <a href="mailto:dominic.willi@students.bfh.ch"
-                >dominic.willi@students.bfh.ch</a
-              >
-              <br />
-              <a href="tel:+41 78 949 73 81"> +41 78 949 73 81</a>
-            </div>
-          </div>
-        </q-card-section>
-        <q-card-section>
-          <div>
-            Denn am Ende des Tages zählt jede Stimme, jedes Erlebnis und jede
-            Hoffnung, um den Weg der Heilung nicht nur zu gehen, sondern
-            gemeinsam neu zu gestalten.
+            Minuten, abhängig von Ihrer Vertrautheit mit Ihrem Mobilgerät. Dafür
+            müssen Sie ein Konto auf der MIDATA-Plattform eröffnen.
           </div>
         </q-card-section>
 
         <q-card-section>
-          <LoginButton button-text=" Jetzt Registrieren!"></LoginButton>
+          <LoginButton button-text="Registrieren Sie sich jetzt!"></LoginButton>
         </q-card-section>
+        <q-card-section>
+          <div class="text-subtitle1 text-weight-bold">Mehr erfahren?</div>
+          <div class="">
+            Schauen Sie unser Video an! Bei Fragen stehen wir per Email zur
+            Verfügung. Auf Anfrage können wir Sie gerne telefonisch Beraten.
+          </div>
+          <div class="row">
+            <div class="q-mx-xl q-py-md text-weight-bold">
+              Karin Kennel:
+              <br />
+              <a href="mailto:karin.kennel@students.bfh.ch">
+                karin.kennel@students.bfh.ch
+              </a>
+            </div>
+            <div class="q-mx-xl q-py-md text-weight-bold">
+              Dominic Willi: <br />
+              <a href="mailto:dominic.willi@students.bfh.ch"
+                >dominic.willi@students.bfh.ch</a
+              >
+            </div>
+          </div>
+        </q-card-section>
+
         <q-card-section>
           <div>
             <div class="text-weight-bold">
