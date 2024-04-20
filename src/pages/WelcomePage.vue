@@ -1,9 +1,29 @@
 <template>
-  <q-page class="flex flex-center">
-    <div class="q-py-md">
-      <q-card class="full-width">
+  <q-page>
+    <div class="q-py-md row justify-center">
+      <q-card class="text-center col-sm-6">
+        <q-card-section
+          ><q-icon
+            name="check_circle_outline"
+            size="xl"
+            class="text-green q-pb-sm"
+          />
+          <div class="text-h6">Login/Registrierung erfolgreich</div>
+        </q-card-section>
+        <q-card-section
+          >Sie haben sich erfolgreich eingeloggt oder registriert. Sie können
+          nun mit dem Fragebogen beginnen.
+        </q-card-section>
+
+        <q-card-actions align="center">
+          <q-btn color="primary">Fragebogen ausfüllen</q-btn>
+        </q-card-actions>
+      </q-card>
+
+      <q-card class="full-width" v-if="false">
         <q-card-section>
-          <div class="text-h5">{{ $t("loginSuccess") }}</div>
+          <div class="text-h5">Guten Tag, {{ name }}</div>
+          <div class="text-subtitle2">{{ $t("loginSuccess") }}</div>
         </q-card-section>
         <q-card-section>
           <div class="q-py-sm text-weight-medium">
@@ -16,4 +36,6 @@
     </div>
   </q-page>
 </template>
-<script setup></script>
+<script setup>
+const name = "Ändu";
+</script>

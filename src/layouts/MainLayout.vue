@@ -43,9 +43,9 @@
         label="Midata"
         :content-inset-level="0.5"
         clickable
-        to="/cards"
+        to="/questionnaire"
         class="items-center justify-between text-subtitle1"
-        >Questionnaire</q-item
+        >Fragebogen</q-item
       >
       <q-item
         icon="person"

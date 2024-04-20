@@ -9,8 +9,8 @@ const routes = [
         component: () => import("pages/InfoPage.vue"),
       },
       {
-        path: "/cards",
-        component: () => import("pages/ComponentPage.vue"),
+        path: "/questionnaire",
+        component: () => import("pages/QuestionnairePage.vue"),
       },
       {
         path: "/welcome",

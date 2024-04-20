@@ -109,12 +109,15 @@
             gemeinsam neu zu gestalten.
           </div>
         </q-card-section>
+
+        <q-card-section>
+          <LoginButton button-text=" Jetzt Registrieren!"></LoginButton>
+        </q-card-section>
         <q-card-section>
           <div>
             <div class="text-weight-bold">
               Wir würden uns auf eine Zusammenarbeit freuen.
             </div>
-            <br />
             <div>Herzliche Grüsse Dominic Willi und Karin Kennel</div>
           </div>
         </q-card-section>
@@ -140,8 +143,6 @@
         </q-card-section>
       </q-card>
     </div>
-
-    <div><LoginButton></LoginButton></div>
   </q-page>
 </template>
 
