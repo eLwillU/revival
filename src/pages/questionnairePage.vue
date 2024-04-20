@@ -7,7 +7,7 @@
           :value="progress"
           class="q-mt-sm"
           size="25px"
-          color="info"
+          color="grey-7"
           rounded
         >
           <div class="absolute-full flex flex-center">
