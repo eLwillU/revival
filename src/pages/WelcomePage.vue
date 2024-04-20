@@ -14,28 +14,11 @@
           >Sie haben sich erfolgreich eingeloggt oder registriert. Sie können
           nun mit dem Fragebogen beginnen.
         </q-card-section>
-
         <q-card-actions align="center">
           <q-btn color="primary">Fragebogen ausfüllen</q-btn>
         </q-card-actions>
       </q-card>
-
-      <q-card class="full-width" v-if="false">
-        <q-card-section>
-          <div class="text-h5">Guten Tag, {{ name }}</div>
-          <div class="text-subtitle2">{{ $t("loginSuccess") }}</div>
-        </q-card-section>
-        <q-card-section>
-          <div class="q-py-sm text-weight-medium">
-            {{ $t("clickToStart") }}
-          </div>
-
-          <q-btn color="secondary" to="/cards">{{ $t("startButton") }}</q-btn>
-        </q-card-section>
-      </q-card>
     </div>
   </q-page>
 </template>
-<script setup>
-const name = "Ändu";
-</script>
+<script setup></script>
