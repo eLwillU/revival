@@ -106,7 +106,6 @@ function previousPage() {
   if (currentPage.value > 1) {
     currentPage.value--;
     store.currentPage--;
-
     progress.value = currentPage.value / numPages.value;
   }
 }
@@ -176,12 +175,9 @@ onMounted(() => {
     existingQdata.value = true;
     console.log("Loaded data:", qData.value);
     numPages.value = qData.value.getQuestions().length;
+    progress.value = currentPage.value / numPages.value;
   }
 });
-
-function initPages(data) {
-  numPages.value = data.getQuestions().length;
-}
 
 // Debugging functions
 // TODO: remove when done
