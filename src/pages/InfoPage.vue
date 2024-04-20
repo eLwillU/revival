@@ -29,7 +29,7 @@
         </q-img>
 
         <q-card-section>
-          <div class="text-subtitle1 text-weight-bold" id="heading1">
+          <div class="text-h6 text-weight-bold" id="heading1">
             {{ $t("interestedPerson") }}
           </div>
           <div>
