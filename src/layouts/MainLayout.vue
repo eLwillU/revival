@@ -2,14 +2,7 @@
   <q-layout view="hHh lpR fFf">
     <q-header bordered class="bg-green-6 text-white">
       <q-toolbar>
-        <q-btn
-          dense
-          flat
-          round
-          icon="menu"
-          label="Menu"
-          @click="toggleLeftDrawer"
-        />
+        <q-btn dense flat icon="menu" label="Menu" @click="toggleLeftDrawer" />
         <q-toolbar-title class="text-center">REVIVAL-TESTING</q-toolbar-title>
 
         <q-btn
@@ -36,16 +29,7 @@
         clickable
         to="/InfoPage"
         class="items-center justify-between text-subtitle1"
-        >InfoPage</q-item
-      >
-      <q-item
-        icon="person"
-        label="Midata"
-        :content-inset-level="0.5"
-        clickable
-        to="/questionnaire"
-        class="items-center justify-between text-subtitle1"
-        >Fragebogen</q-item
+        >{{ $t("informationPage") }}</q-item
       >
       <q-item
         icon="person"
@@ -54,12 +38,21 @@
         clickable
         to="/welcome"
         class="items-center justify-between text-subtitle1"
-        >Welcome</q-item
+        >{{ $t("startingPage") }}</q-item
+      >
+      <q-item
+        icon="person"
+        label="Midata"
+        :content-inset-level="0.5"
+        clickable
+        to="/questionnaire"
+        class="items-center justify-between text-subtitle1"
+        >{{ $t("questionnaire") }}</q-item
       >
     </q-drawer>
 
     <q-page-container class="q-pa-sm row justify-center gradback">
-      <RouterView class="col-md-8"></RouterView>
+      <RouterView class="col-md-6"></RouterView>
     </q-page-container>
   </q-layout>
 </template>

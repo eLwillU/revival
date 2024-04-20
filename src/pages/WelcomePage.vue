@@ -1,7 +1,8 @@
 <template>
   <q-page>
+    <div v-if="!midataLoginStatus"><LoginCard /></div>
     <div class="q-py-md row justify-center">
-      <q-card class="text-center col-sm-6">
+      <q-card v-if="midataLoginStatus" class="text-center col-sm-8">
         <q-card-section
           ><q-icon
             name="check_circle_outline"
@@ -15,10 +16,30 @@
           nun mit dem Fragebogen beginnen.
         </q-card-section>
         <q-card-actions align="center">
-          <q-btn color="primary">Fragebogen ausfüllen</q-btn>
+          <q-btn color="primary" to="/questionnaire"
+            >Fragebogen ausfüllen</q-btn
+          >
         </q-card-actions>
       </q-card>
     </div>
   </q-page>
 </template>
-<script setup></script>
+<script setup>
+import { ref, watchEffect } from "vue";
+import LoginCard from "../components/LoginCard.vue";
+import { fhir } from "../boot/midataService";
+
+const midataLoginStatus = ref(false);
+let refreshToken;
+fhir
+  .handleAuthResponse()
+  .then((res) => {
+    if (res) {
+      refreshToken = res.refresh_token;
+      midataLoginStatus.value = true;
+    }
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+</script>

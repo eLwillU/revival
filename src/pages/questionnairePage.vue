@@ -1,7 +1,6 @@
 <template>
   <q-page>
-    <div><q-btn @click="getResponse()">Log Questionnaire</q-btn></div>
-    <div v-if="!fhir.isLoggedIn()"><LoginCard></LoginCard></div>
+    <div v-if="!fhir.isLoggedIn()"><LoginCard /></div>
     <div v-if="isDataFetched">
       <div class="q-px-sm">
         <q-linear-progress
@@ -57,11 +56,13 @@ import { ref, watchEffect } from "vue";
 import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
 import { useI18n } from "vue-i18n";
 import QuestionCard from "../components/QuestionCard.vue";
+import { userStore } from "src/stores/store";
+const store = userStore();
 const { locale } = useI18n();
 const language = ref("");
 const isDataFetched = ref(false);
 const data = ref("");
-const qData = ref(new QuestionnaireData("", ["de", "fr"]));
+const qData = ref(store.getQuestionnaireResponse);
 const selectedAnswers = ref({});
 const midataLoginStatus = ref(false);
 const userInput = ref(false);
@@ -165,6 +166,7 @@ function handleAnswerSelected({
 }) {
   qData.value.updateQuestionAnswers(question, selectedAnswer);
   tempBoolean.value = true;
+  store.setQuestionnaireResponse(qData.value);
   if (error.value) {
     error.value = false;
   }
