@@ -1,7 +1,6 @@
 <template>
   <q-page class="q-pa-none">
     <div>
-      <!-- info Text -->
       <q-card class="q-mb-sm">
         <q-img
           src="https://cdn.prod.www.manager-magazin.de/images/e762e9b2-669c-40fc-a4df-dc28ba89c20b_w960_r1.778_fpx55_fpy59.jpg"
@@ -122,9 +121,6 @@
 <script setup>
 import InformationCard from "../components/InformationCard.vue";
 import LoginButton from "src/components/LoginButton.vue";
-// Skript-Bereich, falls nötig
-
-const disableButtons = true;
 
 function scrollTo(id) {
   const element = document.getElementById(id);

@@ -4,21 +4,45 @@
       <q-toolbar>
         <q-btn dense flat icon="menu" label="Menu" @click="toggleLeftDrawer" />
         <q-toolbar-title class="text-center">REVIVAL-TESTING</q-toolbar-title>
-
-        <q-btn
-          outline
-          class="q-mx-xs"
-          style="color: white"
-          @click="$i18n.locale = `de-CH`"
-          >DE</q-btn
-        >
-        <q-btn
-          outline
-          class="q-mx-xs"
-          style="color: white"
-          @click="$i18n.locale = `fr-CH`"
-          >FR</q-btn
-        >
+        <q-btn color="white" flat icon="settings">
+          <q-menu>
+            <q-list>
+              <q-item clickable>
+                <q-item-section>{{ $t("language") }}</q-item-section>
+                <q-item-section side>
+                  <q-icon name="keyboard_arrow_right" />
+                </q-item-section>
+                <q-menu anchor="top end" self="top start">
+                  <q-list class="row justify-center">
+                    <q-item clickable @click="$i18n.locale = `de-CH`">
+                      <q-item-section>DE</q-item-section>
+                    </q-item>
+                    <q-item clickable @click="$i18n.locale = `fr-CH`">
+                      <q-item-section>FR</q-item-section>
+                    </q-item>
+                  </q-list>
+                </q-menu>
+              </q-item>
+            </q-list>
+            <q-separator />
+            <q-item
+              v-if="!store.isLoggedIn"
+              clickable
+              v-close-popup
+              @click="login()"
+            >
+              <q-item-section>Login</q-item-section>
+            </q-item>
+            <q-item
+              v-if="store.isLoggedIn"
+              clickable
+              v-close-popup
+              @click="logout()"
+            >
+              <q-item-section>Logout</q-item-section>
+            </q-item>
+          </q-menu>
+        </q-btn>
       </q-toolbar>
     </q-header>
     <q-drawer v-model="leftDrawerOpen" side="left" overlay>
@@ -104,6 +128,7 @@ function login() {
 
 function logout() {
   fhir.logout();
+  store.setLoginStatus(false);
   console.log(fhir.isLoggedIn());
 }
 

@@ -5,11 +5,11 @@
       src="https://questionstar.de/wp-content/uploads/2020/06/fragebogen-img.jpg"
     />
     <q-card-section class="text-center">
-      <div class="text-h6">Was ist der SCAPE-Fragebogen?</div>
+      <div class="text-h6">{{ $t("scapeQuestionnaireInfo") }}</div>
       <q-card-actions class="text-center">
         <q-btn
           flat
-          label="Lesen Sie hier weiter"
+          :label="$t('SCAPEReadMore')"
           color="primary"
           href="https://www.scape-enquete.ch/"
           target="_blank"

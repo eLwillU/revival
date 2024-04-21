@@ -31,8 +31,13 @@
   "infoPageRoleText": "Vous êtes la clé de l'amélioration des processus de traitement. En effet, seule votre expérience permet de garantir que les soins sont adaptés à vos besoins. La prise en charge est adaptée à vos besoins.",
   "infoPageToDoTitle": "Que faire ?",
   "infoPageToDoText": "Remplissez notre questionnaire numérique - cela prend environ 10 à 15 minutes, en fonction de votre familiarité avec votre appareil mobile. Pour cela, vous devez ouvrir un compte sur la plateforme MIDATA.",
+  "infoPageMoreTitle": "En savoir plus ?",
   "infoPageMoreText": "Regardez notre vidéo ! Si vous avez des questions, nous sommes à votre disposition par e-mail. Sur demande, nous pouvons vous conseiller par téléphone.",
   "infoPageTogether": "Nous serions ravis de travailler ensemble.",
   "infoPageGreeting": "Cordiales salutations Dominic Willi et Karin Kennel",
-  "registerNowButton": "Inscrivez-vous maintenant !"
+  "registerNowButton": "Inscrivez-vous maintenant !",
+  "scapeQuestionnaireInfo": "Qu'est-ce que le questionnaire SCAPE ?",
+  "SCAPEReadMore": "Lisez la suite ici",
+  "language": "Langue",
+  "settings": "Paramètres"
 }
