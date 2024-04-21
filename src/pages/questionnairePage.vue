@@ -132,7 +132,6 @@ async function fetchData() {
 watchEffect(() => {
   if (midataLoginStatus.value && !existingQdata.value) {
     fetchData();
-    console.log("loading new");
   }
 });
 

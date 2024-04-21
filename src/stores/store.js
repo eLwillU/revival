@@ -7,6 +7,7 @@ export const userStore = defineStore("user", {
     locale: ref(navigator.language.split("-")[0]),
     questionnaireResponse: ref(""),
     currentPage: ref(1),
+    isLoggedIn: false,
   }),
 
   getters: {
@@ -19,6 +20,9 @@ export const userStore = defineStore("user", {
     getQuestionnaireResponse() {
       return this.questionnaireResponse;
     },
+    getIsLoggedIn() {
+      return this.isLoggedIn;
+    },
   },
 
   actions: {
@@ -27,6 +31,10 @@ export const userStore = defineStore("user", {
     },
     setQuestionnaireResponse(response) {
       this.questionnaireResponse = response;
+    },
+    setLoginStatus(status) {
+      console.log(`Updating login status from ${this.isLoggedIn} to ${status}`);
+      this.isLoggedIn = status;
     },
   },
 });

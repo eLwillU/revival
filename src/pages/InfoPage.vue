@@ -17,60 +17,55 @@
             {{ $t("interestedPersonM") }}
           </div>
           <div>
-            Wir, Dominic und Karin, sind fast fertig mit unserem Studium in
-            Medizininformatik. In unse-rer Bachelorarbeit erarbeiten wir ein
-            Projekt, das uns sehr am Herzen liegt: Wir möchten Ihre Stimme und
-            Erfahrungen in den Mittelpunkt stellen.
-          </div>
-        </q-card-section>
-
-        <q-card-section>
-          <div class="text-subtitle1 text-weight-bold">Unser Ziel?</div>
-          <div class="">
-            Wir möchten mit Ihrer Unterstützung und Ihren direkten Erfahrungen
-            das Cancer Survivors Support Programm (CSSP) mitgestalten. Das
-            Cancer Survivors Support Programm ist ein Projekt der Krebsliga.
+            {{ $t("infoPageIntroText") }}
           </div>
         </q-card-section>
 
         <q-card-section>
           <div class="text-subtitle1 text-weight-bold">
-            Unsere Bachelorarbeit?
+            {{ $t("infoPageAimTitle") }}
           </div>
-          <div class="">
-            Der SCAPE-CH-Fragebogen ist ein Fragebogen zur Erfassung von
-            Erfahrungen von Krebspatienten in der Versorgung. Dieser wird
-            bereits erfolgreich in der Schweiz eingesetzt. Wir möchten diesen
-            Fragebogen digitalisieren und für Sie leicht zugänglich machen.
+          <div>
+            {{ $t("infoPageAimText") }}
           </div>
         </q-card-section>
 
         <q-card-section>
-          <div class="text-subtitle1 text-weight-bold">Ihre Rolle?</div>
-          <div class="">
-            Sie sind der Schlüssel zur Verbesserung der Behandlungsprozesse.
-            Denn nur durch Ihre Erfahrungen kann sichergestellt werden, dass die
-            Betreuung genau auf Ihre Bedürfnisse zuge-schnitten ist.
+          <div class="text-subtitle1 text-weight-bold">
+            {{ $t("infoPageThesisTitle") }}
+          </div>
+          <div>
+            {{ $t("infoPageThesisText") }}
           </div>
         </q-card-section>
 
         <q-card-section>
-          <div class="text-subtitle1 text-weight-bold">Was ist zu tun?</div>
-          <div class="">
-            Füllen Sie unseren digitalen Fragebogen aus – es dauert ca. 10-15
-            Minuten, abhängig von Ihrer Vertrautheit mit Ihrem Mobilgerät. Dafür
-            müssen Sie ein Konto auf der MIDATA-Plattform eröffnen.
+          <div class="text-subtitle1 text-weight-bold">
+            {{ $t("infoPageRoleTitle") }}
+          </div>
+          <div>
+            {{ $t("infoPageRoleText") }}
           </div>
         </q-card-section>
 
         <q-card-section>
-          <LoginButton button-text="Registrieren Sie sich jetzt!"></LoginButton>
+          <div class="text-subtitle1 text-weight-bold">
+            {{ $t("infoPageToDoTitle") }}
+          </div>
+          <div>
+            {{ $t("infoPageToDoText") }}
+          </div>
+        </q-card-section>
+
+        <q-card-section>
+          <LoginButton :button-text="$t('registerNowButton')"></LoginButton>
         </q-card-section>
         <q-card-section>
-          <div class="text-subtitle1 text-weight-bold">Mehr erfahren?</div>
+          <div class="text-subtitle1 text-weight-bold">
+            {{ $t("infoPageMoreTitle") }}
+          </div>
           <div class="">
-            Schauen Sie unser Video an! Bei Fragen stehen wir per Email zur
-            Verfügung. Auf Anfrage können wir Sie gerne telefonisch Beraten.
+            {{ $t("infoPageMoreText") }}
           </div>
           <div class="row">
             <div class="q-mx-xl q-py-md text-weight-bold">
@@ -92,9 +87,11 @@
         <q-card-section>
           <div>
             <div class="text-weight-bold">
-              Wir würden uns auf eine Zusammenarbeit freuen.
+              {{ $t("infoPageTogether") }}
             </div>
-            <div>Herzliche Grüsse Dominic Willi und Karin Kennel</div>
+            <div>
+              {{ $t("infoPageGreeting") }}
+            </div>
           </div>
         </q-card-section>
       </q-card>

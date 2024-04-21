@@ -18,9 +18,22 @@
   "moreInfo": "Weitere Informationen",
   "interestedPersonM": "lieber Interessent",
   "interestedPersonF": "Liebe Interessentin",
-
   "informationPage": "Informationsseite",
   "startingPage": "Startseite",
   "questionnaire": "Fragebogen",
-  "welcomePage": "Willkommensseite"
+  "infoPageIntroText": "Wir, Dominic und Karin, sind fast fertig mit unserem Studium in Medizininformatik. In unserer Bachelorarbeit erarbeiten wir ein Projekt, das uns sehr am Herzen liegt: Wir möchten Ihre Stimme und Erfahrungen in den Mittelpunkt stellen.",
+  "infoPageAimTitle": "Unser Ziel?",
+  "infoPageAimText": "Wir möchten mit Ihrer Unterstützung und Ihren direkten Erfahrungen das Cancer Survivors Support Programm (CSSP) mitgestalten. Das Cancer Survivors Support Programm ist ein Projekt der Krebsliga.",
+  "csspInfoButton": "Mehr zum CSSP",
+  "infoPageThesisTitle": "Unsere Bachelorarbeit?",
+  "infoPageThesisText": "Der SCAPE-CH-Fragebogen ist ein Fragebogen zur Erfassung von Erfahrungen von Krebspatienten in der Versorgung. Dieser wird bereits erfolgreich in der Schweiz eingesetzt. Wir möchten diesen Fragebogen digitalisieren und für Sie leicht zugänglich machen.",
+  "infoPageRoleTitle": "Ihre Rolle?",
+  "infoPageRoleText": "Wir möchten mit Ihrer Unterstützung und Ihren direkten Erfahrungen das Cancer Survivors Support Programm (CSSP) mitgestalten. Das Cancer Survivors Support Programm ist ein Projekt der Krebsliga.",
+  "infoPageToDoTitle": "Was ist zu tun?",
+  "infoPageToDoText": "Füllen Sie unseren digitalen Fragebogen aus – es dauert ca. 10-15 Minuten, abhängig von Ihrer Vertrautheit mit Ihrem Mobilgerät. Dafür müssen Sie ein Konto auf der MIDATA-Plattform eröffnen.",
+  "infoPageMoreTitle": "Mehr erfahren?",
+  "infoPageMoreText": "Schauen Sie unser Video an! Bei Fragen stehen wir per Email zur Verfügung. Auf Anfrage können wir Sie gerne telefonisch Beraten.",
+  "infoPageTogether": "Wir würden uns auf eine Zusammenarbeit freuen.",
+  "infoPageGreeting": "Herzliche Grüsse Dominic Willi und Karin Kennel",
+  "registerNowButton": "Registrieren Sie sich jetzt!"
 }

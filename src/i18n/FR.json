@@ -18,9 +18,21 @@
   "moreInfo": "Informations complémentaires",
   "interestedPersonM": "cher intéressé",
   "interestedPersonF": "Chère intéressée",
-
   "informationPage": "Site d'information",
   "startingPage": "Page d'accueil",
   "questionnaire": "Questionnaire",
-  "welcomePage": "Willkommensseite"
+  "infoPageIntroText": "Nous, Dominic et Karin, avons presque terminé nos études en informatique médicale. Dans notre travail de bachelor, nous élaborons un projet qui nous tient à cœur : Nous voulons mettre votre voix et vos expériences au centre de nos préoccupations.",
+  "infoPageAimTitle": "Notre objectif ?",
+  "infoPageAimText": "Nous souhaitons contribuer au programme de soutien aux survivants du cancer (CSSP) grâce à votre soutien et à vos expériences directes. Le Programme de soutien aux survivants du cancer est un projet de la Ligue contre le cancer.",
+  "csspInfoButton": "En savoir plus sur la CSSP",
+  "infoPageThesisTitle": "Notre travail de bachelor ?",
+  "infoPageThesisText": "Le questionnaire SCAPE-CH est un questionnaire destiné à recueillir les expériences des patients atteints de cancer en matière de soins. Il est déjà utilisé avec succès en Suisse. Nous souhaitons numériser ce questionnaire et le rendre facilement accessible pour vous.",
+  "infoPageRoleTitle": "Votre rôle ?",
+  "infoPageRoleText": "Vous êtes la clé de l'amélioration des processus de traitement. En effet, seule votre expérience permet de garantir que les soins sont adaptés à vos besoins. La prise en charge est adaptée à vos besoins.",
+  "infoPageToDoTitle": "Que faire ?",
+  "infoPageToDoText": "Remplissez notre questionnaire numérique - cela prend environ 10 à 15 minutes, en fonction de votre familiarité avec votre appareil mobile. Pour cela, vous devez ouvrir un compte sur la plateforme MIDATA.",
+  "infoPageMoreText": "Regardez notre vidéo ! Si vous avez des questions, nous sommes à votre disposition par e-mail. Sur demande, nous pouvons vous conseiller par téléphone.",
+  "infoPageTogether": "Nous serions ravis de travailler ensemble.",
+  "infoPageGreeting": "Cordiales salutations Dominic Willi et Karin Kennel",
+  "registerNowButton": "Inscrivez-vous maintenant !"
 }

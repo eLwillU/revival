@@ -1,11 +1,10 @@
 <template>
   <q-page>
-    <div v-if="!midataLoginStatus"><LoginCard /></div>
+    <LoginCard v-if="!store.isLoggedIn" />
     <div class="q-py-md row justify-center">
-      <q-card v-if="midataLoginStatus" class="col-sm-8">
+      <q-card v-if="store.isLoggedIn" class="col-sm-8">
         <q-card-section class="text-center">
           <q-icon name="check_circle_outline" size="xl" class="text-green" />
-
           <div class="text-h6">Login/Registrierung erfolgreich</div>
         </q-card-section>
         <q-card-section class="text-center"
@@ -22,21 +21,7 @@
   </q-page>
 </template>
 <script setup>
-import { ref, watchEffect } from "vue";
 import LoginCard from "../components/LoginCard.vue";
-import { fhir } from "../boot/midataService";
-
-const midataLoginStatus = ref(false);
-let refreshToken;
-fhir
-  .handleAuthResponse()
-  .then((res) => {
-    if (res) {
-      refreshToken = res.refresh_token;
-      midataLoginStatus.value = true;
-    }
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+import { userStore } from "stores/store";
+const store = userStore();
 </script>

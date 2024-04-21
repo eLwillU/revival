@@ -82,8 +82,8 @@ function handle() {
         // or we will overwrite the auth token every time when reloading the component
 
         // when we get to here, we are authenticated
-        console.log("logged in?", fhir.isLoggedIn()); // see?
-
+        console.log("logged in?", fhir.isLoggedIn());
+        store.setLoginStatus(fhir.isLoggedIn());
         let refreshToken = response.refresh_token;
         // keep this refreshToken in a safe place
         // e.g. on a post-it attached to your screen ;-)
