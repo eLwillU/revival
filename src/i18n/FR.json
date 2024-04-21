@@ -39,5 +39,8 @@
   "scapeQuestionnaireInfo": "Qu'est-ce que le questionnaire SCAPE ?",
   "SCAPEReadMore": "Lisez la suite ici",
   "language": "Langue",
-  "settings": "Paramètres"
+  "settings": "Paramètres",
+  "registerSuccess": "Connexion/enregistrement réussi(e).",
+  "questionnaireDonePageTitle": "Questionnaire rempli !",
+  "questionnaireDonePageText": "Vous avez rempli le questionnaire avec succès, merci beaucoup ! Nous allons maintenant évaluer les données dans le cadre de notre travail de bachelor."
 }

@@ -5,16 +5,15 @@
       <q-card v-if="store.isLoggedIn" class="col-sm-8">
         <q-card-section class="text-center">
           <q-icon name="check_circle_outline" size="xl" class="text-green" />
-          <div class="text-h6">Login/Registrierung erfolgreich</div>
+          <div class="text-h6">{{ $t("registerSuccess") }}</div>
         </q-card-section>
         <q-card-section class="text-center"
-          >Sie haben sich erfolgreich eingeloggt oder registriert. Sie können
-          nun mit dem Fragebogen beginnen.
+          >{{ $t("loginSuccess") }}
         </q-card-section>
         <q-card-actions align="center">
-          <q-btn color="primary" to="/questionnaire"
-            >Fragebogen ausfüllen</q-btn
-          >
+          <q-btn color="primary" to="/questionnaire">{{
+            $t("startButton")
+          }}</q-btn>
         </q-card-actions>
       </q-card>
     </div>

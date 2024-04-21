@@ -39,5 +39,8 @@
   "scapeQuestionnaireInfo": "Was ist der SCAPE-Fragebogen?",
   "SCAPEReadMore": "Lesen Sie hier weiter",
   "language": "Sprache",
-  "settings": "Einstellungen"
+  "settings": "Einstellungen",
+  "registerSuccess": "Login/Registrierung erfolgreich",
+  "questionnaireDonePageTitle": "Fragebogen ausgefüllt!",
+  "questionnaireDonePageText": "Sie haben den Fragebogen erfolgreich ausgefüllt, vielen Dank! Wir werden die Daten nun im Rahmen unserer Bachelorarbeit auswerten."
 }

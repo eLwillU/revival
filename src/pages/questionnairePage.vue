@@ -45,9 +45,13 @@
           :disable="error"
           >{{ $t("next") }}</q-btn
         >
-        <q-btn to="/complete" v-if="numPages === currentPage" color="green-5">{{
-          $t("completeQuestionnaire")
-        }}</q-btn>
+        <q-btn
+          to="/complete"
+          @click="fhir.create(qData.getQuestionnaireResponse(language))"
+          v-if="numPages === currentPage"
+          color="green-5"
+          >{{ $t("completeQuestionnaire") }}</q-btn
+        >
       </div>
     </div>
   </q-page>
@@ -125,7 +129,6 @@ async function fetchData() {
   } catch (error) {
     console.error("Error fetching JSON:", error);
   }
-  console.log("qdata loaded: ", qData.value);
 }
 
 // Watcher if user is logged in to midata.
@@ -139,17 +142,6 @@ watchEffect(() => {
   language.value = locale.value.split("-")[0];
 });
 
-// TODO: Remove Console.log when done debugging
-function getResponse() {
-  try {
-    const response = qData.value.getQuestionnaireResponse(language.value);
-    fhir.create(qData.value.getQuestionnaireResponse(language.value));
-    console.log("respo:", response);
-  } catch (e) {
-    console.warn("Something ain't right:", e);
-  }
-}
-
 // Set question and answer when selected in the component
 function handleAnswerSelected({
   question,
@@ -162,38 +154,16 @@ function handleAnswerSelected({
   if (error.value) {
     error.value = false;
   }
-  console.log("new Qdata: ", qData.value);
 }
 
 onMounted(() => {
   const storedQuestionnaireData = userStore.questionnaireResponse;
   if (storedQuestionnaireData) {
     isDataFetched.value = true;
-    console.log("loading existing");
     qData.value = storedQuestionnaireData;
     existingQdata.value = true;
-    console.log("Loaded data:", qData.value);
     numPages.value = qData.value.getQuestions().length;
     progress.value = currentPage.value / numPages.value;
   }
 });
-
-// Debugging functions
-// TODO: remove when done
-function logUserID() {
-  console.log(fhir.getUserId());
-}
-
-function loadQuestionnaire() {
-  fhir.getResource("Questionnaire", "661a3a74596b5e73d7de473a");
-}
-
-function loginStatus() {
-  console.log("Loginstatus: ", fhir.isLoggedIn());
-}
-
-function sendIt() {
-  console.log("lang:", language.value);
-  fhir.create(qData.value.getQuestionnaireResponse(language.value));
-}
 </script>

@@ -50,7 +50,6 @@ const props = defineProps({
   qDataObject: Object,
   error: Boolean,
 });
-console.log("got qdata: ", props.qDataObject);
 const emit = defineEmits(["answer-selected"]);
 const userSelectedAnswer = true;
 const selectedAnswers = ref([]);
