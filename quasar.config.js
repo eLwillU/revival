@@ -58,6 +58,7 @@ module.exports = configure(function (/* ctx */) {
       // vueDevtools,
       // vueOptionsAPI: false,
 
+      vueCompiler: false,
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
       publicPath: "/plugin/revival/spa",
