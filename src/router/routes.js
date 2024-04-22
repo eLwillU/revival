@@ -20,10 +20,6 @@ const routes = [
         path: "/complete",
         component: () => import("pages/QuestionnaireCompletePage.vue"),
       },
-      {
-        path: "/debug",
-        component: () => import("pages/debugPage.vue"),
-      },
     ],
   },
   {
