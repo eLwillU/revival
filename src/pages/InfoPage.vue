@@ -2,6 +2,14 @@
   <q-page class="q-pa-none">
     <div>
       <q-card class="q-mb-sm">
+        <q-img
+          src="https://cdn.prod.www.manager-magazin.de/images/e762e9b2-669c-40fc-a4df-dc28ba89c20b_w960_r1.778_fpx55_fpy59.jpg"
+        >
+          <div class="absolute-bottom text-center">
+            {{ $t("infoCaption") }}
+          </div>
+        </q-img>
+
         <q-card-section>
           <div class="text-subtitle1 text-weight-bold" id="heading1">
             {{ $t("interestedPersonF") }},
@@ -91,7 +99,11 @@
         <q-card-section>
           <div class="text-h6" id="heading2">{{ $t("infoVideo") }}</div>
         </q-card-section>
-        <q-card-section> </q-card-section>
+        <q-card-section>
+          <q-video
+            src="https://www.youtube.com/embed/qj8r_7lH76c?si=ufz14iosaoqJvF8z"
+            :ratio="16 / 9"
+        /></q-card-section>
       </q-card>
       <q-card class="q-mb-sm">
         <q-card-section>
