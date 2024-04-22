@@ -88,7 +88,7 @@ module.exports = configure(function (/* ctx */) {
     framework: {
       config: {},
 
-      components: ["QVideo"],
+      components: [],
 
       // iconSet: 'material-icons', // Quasar icon set
       // lang: 'en-US', // Quasar language pack
