@@ -10,7 +10,7 @@ const routes = [
       },
       {
         path: "/questionnaire",
-        component: () => import("pages/QuestionnairePage.vue"),
+        component: () => import("pages/questionnairePage.vue"),
       },
       {
         path: "/welcome",
