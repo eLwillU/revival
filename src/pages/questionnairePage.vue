@@ -46,12 +46,30 @@
           >{{ $t("next") }}</q-btn
         >
         <q-btn
-          to="/complete"
-          @click="fhir.create(qData.getQuestionnaireResponse(language))"
           v-if="numPages === currentPage"
+          :label="$t('completeQuestionnaire')"
           color="green-5"
-          >{{ $t("completeQuestionnaire") }}</q-btn
-        >
+          @click="confirm = true"
+        />
+        <q-dialog v-model="confirm" persistent>
+          <q-card>
+            <q-card-section class="row items-center">
+              <div class="text-subtitle1 text-weight-bold">
+                {{ $t("confirmEnd") }}
+              </div>
+            </q-card-section>
+            <q-card-actions align="right">
+              <q-btn flat :label="$t('cancel')" color="primary" v-close-popup />
+              <q-btn
+                :label="$t('send')"
+                color="green"
+                v-close-popup
+                @click="fhir.create(qData.getQuestionnaireResponse(language))"
+                to="/complete"
+              />
+            </q-card-actions>
+          </q-card>
+        </q-dialog>
       </div>
     </div>
   </q-page>
@@ -73,6 +91,8 @@ const data = ref("");
 const qData = ref("");
 const midataLoginStatus = ref(false);
 const existingQdata = ref(false);
+
+const confirm = ref(false);
 let refreshToken;
 fhir
   .handleAuthResponse()

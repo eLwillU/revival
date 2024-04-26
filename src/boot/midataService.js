@@ -1,7 +1,7 @@
 import { JSOnFhir } from "@i4mi/js-on-fhir";
 
 const fhir = new JSOnFhir(
-  "https://test.midata.coop",
+  "https://ch.midata.coop",
   "revival",
   "https://www.revival-prems.ch/#/welcome",
   {

@@ -43,5 +43,8 @@
   "registerSuccess": "Connexion/enregistrement réussi(e).",
   "questionnaireDonePageTitle": "Questionnaire rempli !",
   "questionnaireDonePageText": "Vous avez rempli le questionnaire avec succès, merci beaucoup ! Nous allons maintenant évaluer les données dans le cadre de notre travail de bachelor.",
-  "errorPage": "Oups. Rien ici..."
+  "errorPage": "Oups. Rien ici...",
+  "confirmEnd": "Souhaitez-vous terminer et envoyer le questionnaire ?",
+  "cancel": "Annuler",
+  "send": "Envoyer"
 }

@@ -1,6 +1,5 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
-import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
 
 export const userStore = defineStore("user", {
   state: () => ({

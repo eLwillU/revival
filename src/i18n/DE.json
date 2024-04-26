@@ -43,5 +43,8 @@
   "registerSuccess": "Login/Registrierung erfolgreich",
   "questionnaireDonePageTitle": "Fragebogen ausgefüllt!",
   "questionnaireDonePageText": "Sie haben den Fragebogen erfolgreich ausgefüllt, vielen Dank! Wir werden die Daten nun im Rahmen unserer Bachelorarbeit auswerten.",
-  "errorPage": "Ups. Nichts da..."
+  "errorPage": "Ups. Nichts da...",
+  "confirmEnd": "Möchten Sie den Fragebogen abschliessen und abschicken?",
+  "cancel": "Abbrechen",
+  "send": "Senden"
 }

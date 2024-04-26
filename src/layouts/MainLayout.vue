@@ -3,7 +3,7 @@
     <q-header bordered class="bg-primary text-white">
       <q-toolbar>
         <q-btn dense flat icon="menu" label="Menu" @click="toggleLeftDrawer" />
-        <q-toolbar-title class="text-center">REVIVAL-TESTING</q-toolbar-title>
+        <q-toolbar-title class="text-center">REVIVAL</q-toolbar-title>
         <q-btn color="white" flat icon="settings">
           <q-menu>
             <q-list>
@@ -115,7 +115,7 @@ function handle() {
 onMounted(handle);
 
 function login() {
-  fhir.authenticate();
+  fhir.authenticate({ language: store.locale });
   loginStatus.value = fhir.isLoggedIn();
 }
 

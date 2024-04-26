@@ -10,8 +10,7 @@
           {{ $t("questionnaireDonePageText") }}
         </div>
       </q-card-section>
-      <q-card-actions class="justify-between">
-        <q-btn color="primary" to="/questionnaire">{{ $t("back") }} </q-btn>
+      <q-card-actions align="center">
         <q-btn color="primary" to="/infoPage" @click="fhir.logout()"
           >Logout</q-btn
         >

@@ -57,8 +57,10 @@
         </q-card-section>
 
         <q-card-section>
+          <q-btn @click="login()">Login</q-btn>
           <LoginButton :button-text="$t('registerNowButton')"></LoginButton>
         </q-card-section>
+
         <q-card-section>
           <div class="text-subtitle1 text-weight-bold">
             {{ $t("infoPageMoreTitle") }}
@@ -120,20 +122,6 @@
 <script setup>
 import InformationCard from "../components/InformationCard.vue";
 import LoginButton from "src/components/LoginButton.vue";
-
-function scrollTo(id) {
-  const element = document.getElementById(id);
-  if (element) {
-    const headerHeight = 75; // Height of your header, adjust as necessary
-    const elementPosition = element.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.scrollY - headerHeight;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth",
-    });
-  }
-}
 </script>
 
 <style>
