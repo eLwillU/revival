@@ -57,7 +57,6 @@
         </q-card-section>
 
         <q-card-section>
-          <q-btn @click="login()">Login</q-btn>
           <LoginButton :button-text="$t('registerNowButton')"></LoginButton>
         </q-card-section>
 
