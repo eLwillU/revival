@@ -1,10 +1,17 @@
-import { locale } from "moment";
 import { defineStore } from "pinia";
 import { ref } from "vue";
 
+var lang = navigator.language.split("-")[0];
+
+if (lang === "de" || lang === "fr") {
+  lang = lang;
+} else {
+  lang = "de";
+}
+
 export const userStore = defineStore("user", {
   state: () => ({
-    locale: ref(navigator.language.split("-")[0]),
+    locale: lang,
     questionnaireResponse: ref(""),
     currentPage: ref(1),
     isLoggedIn: false,
