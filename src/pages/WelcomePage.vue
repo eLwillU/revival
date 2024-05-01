@@ -17,10 +17,32 @@
         </q-card-actions>
       </q-card>
     </div>
+    <!---
+    <div id="tester" style="width: 600px; height: 250px"></div>
+    -->
   </q-page>
 </template>
 <script setup>
 import LoginCard from "../components/LoginCard.vue";
 import { userStore } from "stores/store";
 const store = userStore();
+//TODO: Remove Comments to plot
+// import Plotly from "plotly.js-dist";
+// import { onMounted } from "vue";
+
+// onMounted(() => {
+//   var TESTER = document.getElementById("tester");
+//   Plotly.newPlot(
+//     TESTER,
+//     [
+//       {
+//         x: [1, 2, 3, 4, 5],
+//         y: [1, 2, 4, 8, 16],
+//       },
+//     ],
+//     {
+//       margin: { t: 0 },
+//     }
+//   );
+// });
 </script>
