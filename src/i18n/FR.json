@@ -46,5 +46,6 @@
   "errorPage": "Oups. Rien ici...",
   "confirmEnd": "Souhaitez-vous terminer et envoyer le questionnaire ?",
   "cancel": "Annuler",
-  "send": "Envoyer"
+  "send": "Envoyer",
+  "termsofuse": "Conditions d'utilisation et déclaration de protection des données"
 }

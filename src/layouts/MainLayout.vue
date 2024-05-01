@@ -73,6 +73,18 @@
         class="items-center justify-between text-subtitle1"
         >{{ $t("questionnaire") }}</q-item
       >
+      <q-item
+        icon="person"
+        label="Midata"
+        :content-inset-level="0.5"
+        clickable
+        :href="
+          'https://ch.midata.coop/#/public/terms?which=revival-terms-of-use--1.0&lang=' +
+          $i18n.locale.split('-')[0]
+        "
+        class="items-center justify-between text-subtitle1"
+        >{{ $t("termsofuse") }}</q-item
+      >
     </q-drawer>
 
     <q-page-container class="q-pa-sm row justify-center gradback">

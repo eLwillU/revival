@@ -13,5 +13,4 @@ const props = defineProps({
 function login() {
   fhir.authenticate({ language: store.locale });
 }
-console.log("lang: ", store.locale);
 </script>
