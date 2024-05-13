@@ -1,9 +1,9 @@
 import { JSOnFhir } from "@i4mi/js-on-fhir";
 
 const fhir = new JSOnFhir(
-  "https://ch.midata.coop",
+  "https://test.midata.coop",
   "revival",
-  "https://www.revival-prems.ch/#/welcome",
+  "http://localhost:9000/#/welcome",
   {
     disablePkce: false,
     doesNotNeedAuth: false,
