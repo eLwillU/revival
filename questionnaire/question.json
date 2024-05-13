@@ -5,7 +5,6 @@
   "title": "Patientenfeedback zu Behandlungsinformationen",
   "status": "active",
   "date": "2024-05-11",
-  "subjectType": ["Patient"],
   "item": [
     {
       "linkId": "1",
@@ -225,8 +224,9 @@
         {
           "linkId": "6.6",
           "text": "Es ist zu früh, um zu wissen , ob die Behandlung wirkt",
+          "type": "boolean"
         }
+      ]
+    }
   ]
-}
-]
 }
