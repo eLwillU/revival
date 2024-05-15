@@ -298,13 +298,13 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": "1",
+                "code": "0",
                 "display": "Ja"
               }
             },
             {
               "valueCoding": {
-                "code": "2",
+                "code": "1",
                 "display": "Nein"
               }
             }
@@ -319,8 +319,7 @@
                   "question": "3",
                   "operator": "=",
                   "answerCoding": {
-                    "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
-                    "code": "1"
+                    "code": "0"
                   }
                 }
               ]
@@ -334,8 +333,7 @@
                   "question": "3",
                   "operator": "=",
                   "answerCoding": {
-                    "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
-                    "code": "2"
+                    "code": "1"
                   }
                 }
               ]
