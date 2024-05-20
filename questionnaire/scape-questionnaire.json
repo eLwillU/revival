@@ -1,4 +1,3 @@
-
 {
   "resourceType": "Questionnaire",
   "id": "SCAPE-CH",
@@ -37,7 +36,7 @@
               "valueCode": "de"
             },
             {
-              "url": "translation",
+              "url": "lang",
               "valueString": "Hat man Ihnen angeboten, eine medizinische Fachperson zu kontaktieren, um nach der Krebsdiagnose über Ihre Bedenken und Ängste zu sprechen?"
             },
             {
@@ -45,7 +44,7 @@
               "valueCode": "fr"
             },
             {
-              "url": "translation",
+              "url": "lang",
               "valueString": "Est-ce qu'on vous a proposé de voir un professionnel de santé pour discuter de vos préoccupations et angoisses après votre diagnostic de cancer ?"
             }
           ]
@@ -68,7 +67,7 @@
                       "valueCode": "de"
                     },
                     {
-                      "url": "translation",
+                      "url": "lang",
                       "valueString": "eine Pflegefachperson"
                     },
                     {
@@ -76,7 +75,7 @@
                       "valueCode": "fr"
                     },
                     {
-                      "url": "translation",
+                      "url": "lang",
                       "valueString": "un professionnel de soins infirmiers"
                     }
                   ]
@@ -94,7 +93,7 @@
                       "valueCode": "de"
                     },
                     {
-                      "url": "translation",
+                      "url": "lang",
                       "valueString": "ein:e Psychologen/in"
                     },
                     {
@@ -102,7 +101,7 @@
                       "valueCode": "fr"
                     },
                     {
-                      "url": "translation",
+                      "url": "lang",
                       "valueString": "un(e) psychologue"
                     }
                   ]
@@ -120,7 +119,7 @@
                       "valueCode": "de"
                     },
                     {
-                      "url": "translation",
+                      "url": "lang",
                       "valueString": "ein:e Arzt/Ärztin"
                     },
                     {
@@ -128,7 +127,7 @@
                       "valueCode": "fr"
                     },
                     {
-                      "url": "translation",
+                      "url": "lang",
                       "valueString": "un(e) médecin"
                     }
                   ]
@@ -146,7 +145,7 @@
                       "valueCode": "de"
                     },
                     {
-                      "url": "translation",
+                      "url": "lang",
                       "valueString": "ein:e Sozialarbeiter/in"
                     },
                     {
@@ -154,9 +153,7 @@
                       "valueCode": "fr"
                     },
                     {
-
-
-                      "url": "translation",
+                      "url": "lang",
                       "valueString": "un(e) assistant(e) social(e)"
                     }
                   ]
@@ -174,7 +171,7 @@
                       "valueCode": "de"
                     },
                     {
-                      "url": "translation",
+                      "url": "lang",
                       "valueString": "eine andere Fachperson"
                     },
                     {
@@ -182,7 +179,7 @@
                       "valueCode": "fr"
                     },
                     {
-                      "url": "translation",
+                      "url": "lang",
                       "valueString": "un autre professionnel de santé"
                     }
                   ]
@@ -204,7 +201,7 @@
                   "valueCode": "de"
                 },
                 {
-                  "url": "translation",
+                  "url": "lang",
                   "valueString": "Nein, aber ich hätte es mir gewünscht"
                 },
                 {
@@ -212,7 +209,7 @@
                   "valueCode": "fr"
                 },
                 {
-                  "url": "translation",
+                  "url": "lang",
                   "valueString": "Non, mais j'aurais aimé"
                 }
               ]
@@ -232,7 +229,7 @@
                   "valueCode": "de"
                 },
                 {
-                  "url": "translation",
+                  "url": "lang",
                   "valueString": "Das war nicht nötig"
                 },
                 {
@@ -240,7 +237,7 @@
                   "valueCode": "fr"
                 },
                 {
-                  "url": "translation",
+                  "url": "lang",
                   "valueString": "Ce n'était pas nécessaire"
                 }
               ]
@@ -260,7 +257,7 @@
                   "valueCode": "de"
                 },
                 {
-                  "url": "translation",
+                  "url": "lang",
                   "valueString": "Ich weiß es nicht / Ich erinnere mich nicht"
                 },
                 {
@@ -268,7 +265,7 @@
                   "valueCode": "fr"
                 },
                 {
-                  "url": "translation",
+                  "url": "lang",
                   "valueString": "Je ne sais pas / Je ne m'en souviens plus"
                 }
               ]
