@@ -1,4 +1,3 @@
-
 {
   "resourceType": "Questionnaire",
   "id": "SCAPE-CH",
@@ -306,7 +305,6 @@
           ]
         }
       ],
-
 
       "type": "group",
       "item": [
@@ -681,7 +679,8 @@
             "display": "Hormontherapie",
             "_display": {
               "extension": [
-                {"url": "http://hl7.org/fhir/StructureDefinition/translation",
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
                   "extension": [
                     {
                       "url": "lang",
@@ -783,7 +782,6 @@
           }
         },
         {
-
           "valueCoding": {
             "code": "7",
             "display": "Ich habe meine Behandlung(en) vor mehr als 12 Monaten erhalten",
@@ -1123,186 +1121,219 @@
         }
       ]
     },
-{
-  "linkId": "77",
-  "text": "Sie sind:",
-  "type": "choice",
-  "extension": [
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+      "linkId": "77",
+      "text": "Sie sind:",
+      "type": "choice",
       "extension": [
         {
-          "url": "lang",
-          "valueCode": "de"
+          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "extension": [
+            {
+              "url": "lang",
+              "valueCode": "de"
+            },
+            {
+              "url": "translation",
+              "valueString": "Sie sind:"
+            }
+          ]
         },
         {
-          "url": "translation",
-          "valueString": "Sie sind:"
+          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "extension": [
+            {
+              "url": "lang",
+              "valueCode": "fr"
+            },
+            {
+              "url": "translation",
+              "valueString": "Vous êtes:"
+            }
+          ]
         }
-      ]
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/translation",
-      "extension": [
+      ],
+      "answerOption": [
         {
-          "url": "lang",
-          "valueCode": "fr"
+          "valueCoding": {
+            "code": "1",
+            "display": "Weiblich",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "translation",
+                      "valueString": "Weiblich"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "fr"
+                    },
+                    {
+                      "url": "translation",
+                      "valueString": "Femme"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
         },
         {
-          "url": "translation",
-          "valueString": "Vous êtes:"
-        }
-      ]
-    }
-  ],
-  "answerOption": [
-    {
-      "valueCoding": {
-        "code": "1",
-        "display": "Weiblich",
-        "_display": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "valueCoding": {
+            "code": "2",
+            "display": "Männlich",
+            "_display": {
               "extension": [
                 {
-                  "url": "lang",
-                  "valueCode": "de"
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "translation",
+                      "valueString": "Männlich"
+                    }
+                  ]
                 },
                 {
-                  "url": "translation",
-                  "valueString": "Weiblich"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "fr"
-                },
-                {
-                  "url": "translation",
-                  "valueString": "Femme"
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "fr"
+                    },
+                    {
+                      "url": "translation",
+                      "valueString": "Homme"
+                    }
+                  ]
                 }
               ]
             }
-          ]
-        }
-      }
-    },
-    {
-      "valueCoding": {
-        "code": "2",
-        "display": "Männlich",
-        "_display": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de"
-                },
-                {
-                  "url": "translation",
-                  "valueString": "Männlich"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "fr"
-                },
-                {
-                  "url": "translation",
-                  "valueString": "Homme"
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
-      "valueCoding": {
-        "code": "3",
-        "display": "Nicht binär",
-        "_display": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de"
-                },
-                {
-                  "url": "translation",
-                  "valueString": "Nicht binär"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "fr"
-                },
-                {
-                  "url": "translation",
-                  "valueString": "Non binaire"
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
-      "item": [
+          }
+        },
         {
-          "linkId": "77.1",
-          "type": "string",
-          "text": "Anderes",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "valueCoding": {
+            "code": "3",
+            "display": "Nicht binär",
+            "_display": {
               "extension": [
                 {
-                  "url": "lang",
-                  "valueCode": "de"
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "translation",
+                      "valueString": "Nicht binär"
+                    }
+                  ]
                 },
                 {
-                  "url": "translation",
-                  "valueString": "Anderes"
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "fr"
+                    },
+                    {
+                      "url": "translation",
+                      "valueString": "Non binaire"
+                    }
+                  ]
                 }
               ]
-            },
+            }
+          }
+        },
+        {
+          "item": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "linkId": "77.1",
+              "type": "string",
+              "text": "Anderes",
               "extension": [
                 {
-                  "url": "lang",
-                  "valueCode": "fr"
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "translation",
+                      "valueString": "Anderes"
+                    }
+                  ]
                 },
                 {
-                  "url": "translation",
-                  "valueString": "Autre"
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "fr"
+                    },
+                    {
+                      "url": "translation",
+                      "valueString": "Autre"
+                    }
+                  ]
                 }
               ]
             }
           ]
         }
       ]
-    }
-   ]
-  }
- ]
-}
+    },
 
+    {
+      "linkId": "78",
+      "text": "Gab es während Ihrer Krebsversorgung etwas, das Sie besonders schätzen oder geschätzt haben?",
+      "type": "text",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "extension": [
+            {
+              "url": "lang",
+              "valueCode": "de"
+            },
+            {
+              "url": "translation",
+              "valueString": "Gab es während Ihrer Krebsversorgung etwas, das Sie besonders schätzen oder geschätzt haben?"
+            }
+          ]
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "extension": [
+            {
+              "url": "lang",
+              "valueCode": "fr"
+            },
+            {
+              "url": "translation",
+              "valueString": "Y a-t-il eu quelque chose pendant vos soins contre le cancer que vous avez particulièrement apprécié ou valorisé ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
