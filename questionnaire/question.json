@@ -681,10 +681,7 @@
             "display": "Hormontherapie",
             "_display": {
               "extension": [
-                {
-
-
- "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                {"url": "http://hl7.org/fhir/StructureDefinition/translation",
                   "extension": [
                     {
                       "url": "lang",
@@ -786,44 +783,9 @@
           }
         },
         {
+
           "valueCoding": {
             "code": "7",
-            "display": "Andere",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Andere"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Autre"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "8",
             "display": "Ich habe meine Behandlung(en) vor mehr als 12 Monaten erhalten",
             "_display": {
               "extension": [
@@ -859,7 +821,7 @@
         },
         {
           "valueCoding": {
-            "code": "9",
+            "code": "8",
             "display": "Ich habe noch keine Behandlung erhalten",
             "_display": {
               "extension": [
@@ -895,7 +857,7 @@
         },
         {
           "valueCoding": {
-            "code": "10",
+            "code": "9",
             "display": "Ich weiss es nicht",
             "_display": {
               "extension": [
@@ -932,7 +894,7 @@
       ],
       "item": [
         {
-          "linkId": "42-1",
+          "linkId": "42.1",
           "type": "string",
           "text": "Andere",
           "extension": [
