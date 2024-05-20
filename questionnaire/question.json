@@ -671,9 +671,7 @@
                       ]
                     },
                     {
-                      "url": "http://hl7.org/fhir/StructureDefinition/translation
-
-",
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
                       "extension": [
                         {
                           "url": "lang",
