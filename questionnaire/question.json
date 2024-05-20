@@ -895,7 +895,7 @@
       "item": [
         {
           "linkId": "42.1",
-          "type": "string",
+          "type": "valueCoding",
           "text": "Andere",
           "extension": [
             {
@@ -1122,7 +1122,187 @@
           }
         }
       ]
+    },
+{
+  "linkId": "77",
+  "text": "Sie sind:",
+  "type": "choice",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+      "extension": [
+        {
+          "url": "lang",
+          "valueCode": "de"
+        },
+        {
+          "url": "translation",
+          "valueString": "Sie sind:"
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+      "extension": [
+        {
+          "url": "lang",
+          "valueCode": "fr"
+        },
+        {
+          "url": "translation",
+          "valueString": "Vous êtes:"
+        }
+      ]
     }
-  ]
+  ],
+  "answerOption": [
+    {
+      "valueCoding": {
+        "code": "1",
+        "display": "Weiblich",
+        "_display": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "translation",
+                  "valueString": "Weiblich"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "fr"
+                },
+                {
+                  "url": "translation",
+                  "valueString": "Femme"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "valueCoding": {
+        "code": "2",
+        "display": "Männlich",
+        "_display": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "translation",
+                  "valueString": "Männlich"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "fr"
+                },
+                {
+                  "url": "translation",
+                  "valueString": "Homme"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "valueCoding": {
+        "code": "3",
+        "display": "Nicht binär",
+        "_display": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "translation",
+                  "valueString": "Nicht binär"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "fr"
+                },
+                {
+                  "url": "translation",
+                  "valueString": "Non binaire"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "item": [
+        {
+          "linkId": "77.1",
+          "type": "string",
+          "text": "Anderes",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "translation",
+                  "valueString": "Anderes"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "fr"
+                },
+                {
+                  "url": "translation",
+                  "valueString": "Autre"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+   ]
+  }
+ ]
 }
 
