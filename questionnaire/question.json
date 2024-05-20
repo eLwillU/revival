@@ -1,3 +1,4 @@
+
 {
   "resourceType": "Questionnaire",
   "id": "SCAPE-CH",
@@ -24,259 +25,267 @@
   "item": [
     {
       "linkId": "1",
-      "prefix": "1",
-      "text": "Wie oft waren Sie wegen der durch die Krebserkrankung verursachten Symptome bei einem/r Hausarzt/-ärztin oder Allgemeinarzt/-ärztin, bevor Sie eine:n Spezialisten/-in konsultiert haben?",
-      "extension": [
+      "text": "BESUCH BEI EINEM/R HAUSARZT/-ÄRZTIN ODER ALLGEMEINARZT/-ÄRZTIN vor der Krebsdiagnose",
+      "type": "group",
+      "item": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "linkId": "1.1",
+          "prefix": "1",
+          "text": "Wie oft waren Sie wegen der durch die Krebserkrankung verursachten Symptome bei einem/r Hausarzt/-ärztin oder Allgemeinarzt/-ärztin, bevor Sie eine:n Spezialisten/-in konsultiert haben?",
           "extension": [
             {
-              "url": "lang",
-              "valueCode": "de"
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "translation",
+                  "valueString": "Wie oft waren Sie wegen der durch die Krebserkrankung verursachten Symptome bei einem/r Hausarzt/-ärztin oder Allgemeinarzt/-ärztin, bevor Sie eine:n Spezialisten/-in konsultiert haben?"
+                }
+              ]
             },
             {
-              "url": "translation",
-              "valueString": "Wie oft waren Sie wegen der durch die Krebserkrankung verursachten Symptome bei einem/r Hausarzt/-ärztin oder Allgemeinarzt/-ärztin, bevor Sie eine:n Spezialisten/-in konsultiert haben?"
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "fr"
+                },
+                {
+                  "url": "translation",
+                  "valueString": "Combien de fois avez-vous consulté un médecin généraliste ou un médecin de famille en raison des symptômes causés par votre cancer avant de consulter un spécialiste ?"
+                }
+              ]
             }
-          ]
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
+          ],
+          "type": "choice",
+          "answerOption": [
             {
-              "url": "lang",
-              "valueCode": "fr"
+              "valueCoding": {
+                "code": "0",
+                "display": "Nie – Ich bin direkt zu einem/r Spezialisten/-in gegangen",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Nie – Ich bin direkt zu einem/r Spezialisten/-in gegangen"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Jamais – Je suis allé(e) directement chez un(e) spécialiste"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
             },
             {
-              "url": "translation",
-              "valueString": "Combien de fois avez-vous consulté un médecin généraliste ou un médecin de famille en raison des symptômes causés par votre cancer avant de consulter un spécialiste ?"
+              "valueCoding": {
+                "code": "1",
+                "display": "Nie – Ich hatte keine Symptome und der Krebs wurde im Rahmen einer Routine-/Nachuntersuchung oder bei einer Vorsorgeuntersuchung entdeckt",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Nie – Ich hatte keine Symptome und der Krebs wurde im Rahmen einer Routine-/Nachuntersuchung oder bei einer Vorsorgeuntersuchung entdeckt"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Jamais – Je n'avais aucun symptôme et le cancer a été découvert lors d'un examen de routine ou d'un dépistage"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "display": "Ich war 1 oder 2 Mal bei einem/r Arzt/Ärztin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Ich war 1 oder 2 Mal bei einem/r Arzt/Ärztin"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "J'ai consulté un(e) médecin une ou deux fois"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "display": "Ich war 3 oder 4 Mal bei einem/r Arzt/Ärztin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Ich war 3 oder 4 Mal bei einem/r Arzt/Ärztin"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "J'ai consulté un(e) médecin trois ou quatre fois"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "display": "Ich war 5 oder mehr Mal bei einem/r Arzt/Ärztin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Ich war 5 oder mehr Mal bei einem/r Arzt/Ärztin"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "J'ai consulté un(e) médecin cinq fois ou plus"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "5",
+                "display": "Ich weiss es nicht / Ich erinnere mich nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Ich weiss es nicht / Ich erinnere mich nicht"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Je ne sais pas / Je ne m'en souviens plus"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
             }
           ]
-        }
-      ],
-      "type": "choice",
-      "answerOption": [
-        {
-          "valueCoding": {
-            "code": "0",
-            "display": "Nie – Ich bin direkt zu einem/r Spezialisten/-in gegangen",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Nie – Ich bin direkt zu einem/r Spezialisten/-in gegangen"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Jamais – Je suis allé(e) directement chez un(e) spécialiste"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "1",
-            "display": "Nie – Ich hatte keine Symptome und der Krebs wurde im Rahmen einer Routine-/Nachuntersuchung oder bei einer Vorsorgeuntersuchung entdeckt",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Nie – Ich hatte keine Symptome und der Krebs wurde im Rahmen einer Routine-/Nachuntersuchung oder bei einer Vorsorgeuntersuchung entdeckt"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Jamais – Je n'avais aucun symptôme et le cancer a été découvert lors d'un examen de routine ou d'un dépistage"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "2",
-            "display": "Ich war 1 oder 2 Mal bei einem/r Arzt/Ärztin",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Ich war 1 oder 2 Mal bei einem/r Arzt/Ärztin"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "J'ai consulté un(e) médecin une ou deux fois"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "3",
-            "display": "Ich war 3 oder 4 Mal bei einem/r Arzt/Ärztin",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Ich war 3 oder 4 Mal bei einem/r Arzt/Ärztin"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "J'ai consulté un(e) médecin trois ou quatre fois"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "4",
-            "display": "Ich war 5 oder mehr Mal bei einem/r Arzt/Ärztin",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Ich war 5 oder mehr Mal bei einem/r Arzt/Ärztin"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "J'ai consulté un(e) médecin cinq fois ou plus"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "5",
-            "display": "Ich weiss es nicht / Ich erinnere mich nicht",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Ich weiss es nicht / Ich erinnere mich nicht"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Je ne sais pas / Je ne m'en souviens plus"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
         }
       ]
     },
     {
       "linkId": "13",
       "text": "Hat man Ihnen angeboten, eine medizinische Fachperson zu kontaktieren, um nach der Krebsdiagnose über Ihre Bedenken und Ängste zu sprechen?",
+      "type": "group",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/translation",
@@ -295,6 +304,8 @@
           "url": "http://hl7.org/fhir/StructureDefinition/translation",
           "extension": [
             {
+
+
               "url": "lang",
               "valueCode": "fr"
             },
@@ -305,8 +316,6 @@
           ]
         }
       ],
-
-      "type": "group",
       "item": [
         {
           "linkId": "13.1",
@@ -533,368 +542,14 @@
     },
     {
       "linkId": "42",
-      "prefix": "42",
-      "text": "Welche Art(en) von Krebsbehandlung haben Sie in den letzten 12 Monaten erhalten?",
-      "type": "choice",
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "de"
-            },
-            {
-              "url": "translation",
-              "valueString": "Welche Art(en) von Krebsbehandlung haben Sie in den letzten 12 Monaten erhalten? (Kreuzen Sie alles an, was zutrifft.)"
-            }
-          ]
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "fr"
-            },
-            {
-              "url": "translation",
-              "valueString": "Quels types de traitements contre le cancer avez-vous reçus au cours des 12 derniers mois ? (Cochez tout ce qui s'applique.)"
-            }
-          ]
-        }
-      ],
-      "answerOption": [
-        {
-          "valueCoding": {
-            "code": "1",
-            "display": "Chirurgie",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Chirurgie"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Chirurgie"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "2",
-            "display": "Chemotherapie",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Chemotherapie"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Chimiothérapie"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "3",
-            "display": "Strahlentherapie",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Strahlentherapie"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Radiothérapie"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "4",
-            "display": "Hormontherapie",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Hormontherapie"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Thérapie hormonale"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "5",
-            "display": "Immuntherapie",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Immuntherapie"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Immunothérapie"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "6",
-            "display": "Zielgerichtete Therapie",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Zielgerichtete Therapie"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Thérapie ciblée"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "7",
-            "display": "Ich habe meine Behandlung(en) vor mehr als 12 Monaten erhalten",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Ich habe meine Behandlung(en) vor mehr als 12 Monaten erhalten"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "J'ai reçu mon/mes traitement(s) il y a plus de 12 mois"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "8",
-            "display": "Ich habe noch keine Behandlung erhalten",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Ich habe noch keine Behandlung erhalten"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Je n'ai reçu aucun traitement"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "9",
-            "display": "Ich weiss es nicht",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Ich weiss es nicht"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Je ne sais pas"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        }
-      ],
+      "text": "Behandlungen",
+      "type": "group",
       "item": [
         {
           "linkId": "42.1",
-          "type": "valueCoding",
-          "text": "Andere",
+          "prefix": "42",
+          "text": "Welche Art(en) von Krebsbehandlung haben Sie in den letzten 12 Monaten erhalten?",
+          "type": "choice",
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
@@ -905,7 +560,7 @@
                 },
                 {
                   "url": "translation",
-                  "valueString": "Andere"
+                  "valueString": "Welche Art(en) von Krebsbehandlung haben Sie in den letzten 12 Monaten erhalten? (Kreuzen Sie alles an, was zutrifft.)"
                 }
               ]
             },
@@ -918,7 +573,370 @@
                 },
                 {
                   "url": "translation",
-                  "valueString": "Autre"
+                  "valueString": "Quels types de traitements contre le cancer avez-vous reçus au cours des 12 derniers mois ? (Cochez tout ce qui s'applique.)"
+                }
+              ]
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "display": "Chirurgie",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Chirurgie"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Chirurgie"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "display": "Chemotherapie",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Chemotherapie"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Chimiothérapie"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "display": "Strahlentherapie",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Strahlentherapie"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation
+
+",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Radiothérapie"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "display": "Hormontherapie",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Hormontherapie"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Thérapie hormonale"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "5",
+                "display": "Immuntherapie",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Immuntherapie"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Immunothérapie"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "6",
+                "display": "Zielgerichtete Therapie",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Zielgerichtete Therapie"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Thérapie ciblée"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "7",
+                "display": "Ich habe meine Behandlung(en) vor mehr als 12 Monaten erhalten",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Ich habe meine Behandlung(en) vor mehr als 12 Monaten erhalten"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "J'ai reçu mon/mes traitement(s) il y a plus de 12 mois"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "8",
+                "display": "Ich habe noch keine Behandlung erhalten",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Ich habe noch keine Behandlung erhalten"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Je n'ai reçu aucun traitement"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "9",
+                "display": "Ich weiss es nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Ich weiss es nicht"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Je ne sais pas"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "42.1",
+              "type": "string",
+              "text": "Andere",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "translation",
+                      "valueString": "Andere"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "fr"
+                    },
+                    {
+                      "url": "translation",
+                      "valueString": "Autre"
+                    }
+                  ]
                 }
               ]
             }
@@ -928,7 +946,6 @@
     },
     {
       "linkId": "43",
-      "prefix": "43",
       "text": "Haben Sie vor der Behandlung alle Informationen erhalten, die Sie darüber benötigten?",
       "type": "choice",
       "enableWhen": [
@@ -972,13 +989,6 @@
           "operator": "=",
           "answerCoding": {
             "code": "6"
-          }
-        },
-        {
-          "question": "42",
-          "operator": "=",
-          "answerCoding": {
-            "code": "7"
           }
         }
       ],
@@ -1058,7 +1068,7 @@
                   "extension": [
                     {
                       "url": "lang",
-                      "valueCode": "de"
+                      "alueCode": "de"
                     },
                     {
                       "url": "translation",
@@ -1123,149 +1133,154 @@
     },
     {
       "linkId": "77",
-      "text": "Sie sind:",
-      "type": "choice",
-      "extension": [
+      "text": "Persönliche Information",
+      "type": "group",
+      "item": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "linkId": "77.1",
+          "text": "Sie sind:",
+          "type": "choice",
           "extension": [
             {
-              "url": "lang",
-              "valueCode": "de"
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "translation",
+                  "valueString": "Sie sind:"
+                }
+              ]
             },
             {
-              "url": "translation",
-              "valueString": "Sie sind:"
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "fr"
+                },
+                {
+                  "url": "translation",
+                  "valueString": "Vous êtes:"
+                }
+              ]
             }
-          ]
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
+          ],
+          "answerOption": [
             {
-              "url": "lang",
-              "valueCode": "fr"
+              "valueCoding": {
+                "code": "1",
+                "display": "Weiblich",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Weiblich"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Femme"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
             },
             {
-              "url": "translation",
-              "valueString": "Vous êtes:"
-            }
-          ]
-        }
-      ],
-      "answerOption": [
-        {
-          "valueCoding": {
-            "code": "1",
-            "display": "Weiblich",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "valueCoding": {
+                "code": "2",
+                "display": "Männlich",
+                "_display": {
                   "extension": [
                     {
-                      "url": "lang",
-                      "valueCode": "de"
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Männlich"
+                        }
+                      ]
                     },
                     {
-                      "url": "translation",
-                      "valueString": "Weiblich"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Femme"
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Homme"
+                        }
+                      ]
                     }
                   ]
                 }
-              ]
-            }
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "2",
-            "display": "Männlich",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "display": "Nicht binär",
+                "_display": {
                   "extension": [
                     {
-                      "url": "lang",
-                      "valueCode": "de"
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Nicht binär"
+                        }
+                      ]
                     },
                     {
-                      "url": "translation",
-                      "valueString": "Männlich"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Homme"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "3",
-            "display": "Nicht binär",
-            "_display": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "de"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Nicht binär"
-                    }
-                  ]
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
-                  "extension": [
-                    {
-                      "url": "lang",
-                      "valueCode": "fr"
-                    },
-                    {
-                      "url": "translation",
-                      "valueString": "Non binaire"
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr"
+                        },
+                        {
+                          "url": "translation",
+                          "valueString": "Non binaire"
+                        }
+                      ]
                     }
                   ]
                 }
-              ]
+              }
             }
-          }
-        },
-        {
+          ],
           "item": [
             {
-              "linkId": "77.1",
+              "linkId": "77.2",
               "type": "string",
               "text": "Anderes",
               "extension": [
@@ -1298,38 +1313,77 @@
               ]
             }
           ]
+        },
+        {
+          "linkId": "78",
+          "text": "Wie alt sind Sie?",
+          "type": "integer",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "translation",
+                  "valueString": "Wie alt sind Sie?"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "fr"
+                },
+                {
+                  "url": "translation",
+                  "valueString": "Quel âge avez-vous ?"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
-
     {
-      "linkId": "78",
-      "text": "Gab es während Ihrer Krebsversorgung etwas, das Sie besonders schätzen oder geschätzt haben?",
-      "type": "text",
-      "extension": [
+      "linkId": "90",
+      "text": "Freitextfragen",
+      "type": "group",
+      "item": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "linkId": "90.1",
+          "text": "Gab es während Ihrer Krebsversorgung etwas, das Sie besonders schätzen oder geschätzt haben?",
+          "type": "text",
           "extension": [
             {
-              "url": "lang",
-              "valueCode": "de"
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "translation",
+                  "valueString": "Gab es während Ihrer Krebsversorgung etwas, das Sie besonders schätzen oder geschätzt haben?"
+                }
+              ]
             },
             {
-              "url": "translation",
-              "valueString": "Gab es während Ihrer Krebsversorgung etwas, das Sie besonders schätzen oder geschätzt haben?"
-            }
-          ]
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "fr"
-            },
-            {
-              "url": "translation",
-              "valueString": "Y a-t-il eu quelque chose pendant vos soins contre le cancer que vous avez particulièrement apprécié ou valorisé ?"
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "fr"
+                },
+                {
+                  "url": "translation",
+                  "valueString": "Y a-t-il eu quelque chose pendant vos soins contre le cancer que vous avez particulièrement apprécié ou valorisé ?"
+                }
+              ]
             }
           ]
         }
@@ -1337,3 +1391,4 @@
     }
   ]
 }
+
