@@ -1,0 +1,96 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "SCAPE-CH",
+  "title": "SCAPE-CH",
+  "name": "SCAPE-Fragebogen",
+  "status": "active",
+  "meta": {
+    "security": [
+      {
+        "system": "http://midata.coop/codesystems/security",
+        "code": "public"
+      }
+    ]
+  },
+  "code": [
+    {
+      "system": "http://www.krebsliga.ch",
+      "code": "scape-ch",
+      "display": "SCAPE-CH Questionnaire"
+    }
+  ],
+  "url": "http://www.krebsliga.ch/prem/SCAPE-CH",
+  "version": "2.0",
+  "item": [
+    {
+      "linkId": "1",
+      "prefix": "1",
+      "text": "Wurden Ihnen die möglichen Nebenwirkungen der Behandlung(en) in verständlicher Weise erklärt?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Wurden Ihnen die möglichen Nebenwirkungen der Behandlung(en) in verständlicher Weise erklärt?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "Est-ce que les effets indésirables possibles du ou des traitements vous ont été expliqués de manière compréhensible ?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "required": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "0",
+            "display": "Ja"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "1",
+            "display": "Nein"
+          }
+        }
+      ],
+      "item": [
+        {
+          "linkId": 1.1,
+          "prefix": 1.1,
+          "text": "Hallo Welt",
+          "type": "string",
+          "enableWhen": [
+            {
+              "question": "1",
+              "operator": "=",
+              "answerCoding": {
+                "code": "0",
+                "display": "Ja"
+              }
+            }
+          ],
+          "required": true
+        }
+      ]
+    }
+  ]
+}

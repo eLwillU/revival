@@ -1,4 +1,3 @@
-
 {
   "resourceType": "Questionnaire",
   "id": "SCAPE-CH",
@@ -284,38 +283,38 @@
     },
     {
       "linkId": "13",
-      "text": "Hat man Ihnen angeboten, eine medizinische Fachperson zu kontaktieren, um nach der Krebsdiagnose über Ihre Bedenken und Ängste zu sprechen?",
       "type": "group",
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "de"
-            },
-            {
-              "url": "translation",
-              "valueString": "Hat man Ihnen angeboten, eine medizinische Fachperson zu kontaktieren, um nach der Krebsdiagnose über Ihre Bedenken und Ängste zu sprechen?"
-            }
-          ]
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-
-
-              "url": "lang",
-              "valueCode": "fr"
-            },
-            {
-              "url": "translation",
-              "valueString": "Vous a-t-on proposé de contacter un professionnel de santé pour parler de vos préoccupations et de vos angoisses après le diagnostic de cancer ?"
-            }
-          ]
-        }
-      ],
+      "text": "Hat man Ihnen angeboten, eine medizinische Fachperson zu kontaktieren, um nach der Krebsdiagnose über Ihre Bedenken und Ängste zu sprechen?",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "translation",
+                "valueString": "Hat man Ihnen angeboten, eine medizinische Fachperson zu kontaktieren, um nach der Krebsdiagnose über Ihre Bedenken und Ängste zu sprechen?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "translation",
+                "valueString": "Vous a-t-on proposé de contacter un professionnel de santé pour parler de vos préoccupations et de vos angoisses après le diagnostic de cancer ?"
+              }
+            ]
+          }
+        ]
+      },
       "item": [
         {
           "linkId": "13.1",
@@ -1389,4 +1388,3 @@
     }
   ]
 }
-

@@ -26,28 +26,13 @@
       "linkId": "13",
       "prefix": "13",
       "text": "Hat man Ihnen angeboten, eine medizinische Fachperson zu kontaktieren, um nach der Krebsdiagnose über Ihre Bedenken und Ängste zu sprechen?",
-      "type": "group",
-      "extension": [
+      "type": "choice",
+      "answerOption": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "de"
-            },
-            {
-              "url": "lang",
-              "valueString": "Hat man Ihnen angeboten, eine medizinische Fachperson zu kontaktieren, um nach der Krebsdiagnose über Ihre Bedenken und Ängste zu sprechen?"
-            },
-            {
-              "url": "lang",
-              "valueCode": "fr"
-            },
-            {
-              "url": "lang",
-              "valueString": "Est-ce qu'on vous a proposé de voir un professionnel de santé pour discuter de vos préoccupations et angoisses après votre diagnostic de cancer ?"
-            }
-          ]
+          "valueCoding": {
+            "code": 0,
+            "display": "Ja"
+          }
         }
       ],
       "item": [
