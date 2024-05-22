@@ -86,14 +86,19 @@
         >{{ $t("termsofuse") }}</q-item
       >
       <q-item
-      icon="overview"
-      label="Übersicht Fragebogen"
-      :content-inset-level="0.5"
-      clickable
-      to="/questionnaireOverview"
-      class="items-center justify-between text-subtitle1"
-      >Übersicht Fragebogen</q-item
-    >
+        :content-inset-level="0.5"
+        clickable
+        to="/questionnaireOverview"
+        class="items-center justify-between text-subtitle1"
+        >Übersicht Fragebogen</q-item
+      >
+      <q-item
+        :content-inset-level="0.5"
+        clickable
+        to="/type"
+        class="items-center justify-between text-subtitle1"
+        >Types</q-item
+      >
     </q-drawer>
 
     <q-page-container class="q-pa-sm row justify-center gradback">

@@ -20,16 +20,17 @@
           <label for="answer.code.toString()">
             {{ answer.answer["de"] }}
           </label>
+          {{ answer }}
         </li>
         <div v-for="qSub in q.subItems" :key="qSub.id">
           <div v-if="qSub.isEnabled">
             <h6>
               {{ qSub.label["de"] }}
             </h6>
-            <input type="text" v-model="qSub.answer" />
-            <button @click="sendAnswer(qSub, qSub.answer)">Submit</button>
+            <input type="text" v-model="answer" />
+            <button @click="sendAnswer(qSub, answer)">Submit</button>
             <button @click="console.log(qData.getQuestionnaireResponse('de'))">
-              yeet
+              Log response
             </button>
           </div>
         </div>
@@ -40,11 +41,8 @@
 
 <script setup>
 import { ref } from "vue";
-const data = ref("");
 const qData = ref("");
 import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
-
-console.log("Data;", data);
 const dataReady = ref(false);
 fetch("questionnaire/type.json")
   .then((response) => response.json())
@@ -58,7 +56,6 @@ fetch("questionnaire/type.json")
 
 function updateQuestionAnswers(q, answer) {
   qData.value.updateQuestionAnswers(q, answer);
-  console.log("Subitem after: ", qData.value);
 }
 
 function isAnswerOptionSelected(q, answer) {
@@ -66,11 +63,23 @@ function isAnswerOptionSelected(q, answer) {
 }
 
 function sendAnswer(qSub, answer) {
+  console.log("Ans: ", answer);
   const res = {
-    code: answer,
-    valueString: answer,
+    answer: answer,
+    code: {
+      code: "valueString",
+      valueString: answer,
+    },
   };
-  qData.value.updateQuestionAnswers(qSub, res);
-  console.log(qData.value);
+  qData.value.updateQuestionAnswers(qSub, {
+    answer: answer,
+    code: {
+      answer: answer,
+      code: "valueString",
+      valueString: answer,
+    },
+  });
+  console.log("Qdata after update: ", qData.value);
+  console.log("response: ", qData.value.getQuestionnaireResponse("de"));
 }
 </script>
