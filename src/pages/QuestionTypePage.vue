@@ -1,40 +1,43 @@
 <template>
   <div v-if="dataReady">
     <div v-for="q in qData.getQuestions()" :key="q.id">
-      <h6>
-        {{ q.label["de"] }}
-      </h6>
-
-      <ul>
-        <li
-          v-for="answer in q.answerOptions"
-          :key="q.id + '-' + answer.code"
-          @click="updateQuestionAnswers(q, answer)"
-        >
-          <input
-            :type="q.allowsMultipleAnswers ? 'checkbox' : 'radio'"
-            :checked="isAnswerOptionSelected(q, answer)"
-            :name="q.id"
-            :id="answer.code.toString()"
-          />
-          <label for="answer.code.toString()">
-            {{ answer.answer["de"] }}
-          </label>
-          {{ answer }}
-        </li>
-        <div v-for="qSub in q.subItems" :key="qSub.id">
-          <div v-if="qSub.isEnabled">
-            <h6>
-              {{ qSub.label["de"] }}
-            </h6>
-            <input type="text" v-model="answer" />
-            <button @click="sendAnswer(qSub, answer)">Submit</button>
-            <button @click="console.log(qData.getQuestionnaireResponse('de'))">
-              Log response
-            </button>
+      <div v-if="q.type === 'choice'">
+        <h6>
+          {{ q.label["de"] }}
+        </h6>
+        <ul>
+          <li
+            v-for="answer in q.answerOptions"
+            :key="q.id + '-' + answer.code"
+            @click="updateQuestionAnswers(q, answer)"
+          >
+            <input
+              :type="q.allowsMultipleAnswers ? 'checkbox' : 'radio'"
+              :checked="isAnswerOptionSelected(q, answer)"
+              :name="q.id"
+              :id="answer.code.toString()"
+            />
+            <label for="answer.code.toString()">
+              {{ answer.answer["de"] }}
+            </label>
+            {{ answer }}
+          </li>
+          <div v-for="qSub in q.subItems" :key="qSub.id">
+            <div v-if="qSub.isEnabled">
+              <h6>
+                {{ qSub.label["de"] }}
+              </h6>
+              <input type="text" v-model="singleAnswer" />
+              <button @click="send(qSub, singleAnswer)">Submit</button>
+              <button
+                @click="console.log(qData.getQuestionnaireResponse('de'))"
+              >
+                Log response
+              </button>
+            </div>
           </div>
-        </div>
-      </ul>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -62,24 +65,14 @@ function isAnswerOptionSelected(q, answer) {
   return qData.value.isAnswerOptionSelected(q, answer);
 }
 
-function sendAnswer(qSub, answer) {
-  console.log("Ans: ", answer);
+function send(question, answer) {
+  console.log("inputs:", question, answer);
   const res = {
-    answer: answer,
-    code: {
-      code: "valueString",
-      valueString: answer,
-    },
+    answer: {},
+    code: {},
   };
-  qData.value.updateQuestionAnswers(qSub, {
-    answer: answer,
-    code: {
-      answer: answer,
-      code: "valueString",
-      valueString: answer,
-    },
-  });
-  console.log("Qdata after update: ", qData.value);
-  console.log("response: ", qData.value.getQuestionnaireResponse("de"));
+  res.code.valueString = answer;
+  res.answer = answer;
+  qData.value.updateQuestionAnswers(question, res);
 }
 </script>
