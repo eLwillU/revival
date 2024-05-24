@@ -12,11 +12,19 @@
               :key="q.id + '-' + answer.code"
             >
               <q-radio
+                v-if="!q.allowsMultipleAnswers"
                 v-model="selectedAnswer"
                 :label="answer.answer['de']"
                 :val="answer.answer['de']"
                 @update:model-value="() => updateQuestionAnswers(q, answer)"
               ></q-radio>
+              <q-checkbox
+                v-if="q.allowsMultipleAnswers"
+                v-model="selectedAnswers"
+                :label="answer.answer['de']"
+                :val="answer.answer['de']"
+                @update:model-value="() => updateQuestionAnswers(q, answer)"
+              ></q-checkbox>
             </div>
             <div v-for="qSub in q.subItems" :key="qSub.id">
               <div v-if="qSub.isEnabled">
@@ -24,7 +32,7 @@
                   {{ qSub.label["de"] }}
                 </h6>
                 <q-input v-model="singleAnswer" outlined> </q-input>
-                <button @click="send(qSub, singleAnswer)">Submit</button>
+                <q-btn @click="send(qSub, singleAnswer)">Submit</q-btn>
                 <q-btn @click="logggg()"> Log response </q-btn>
               </div>
             </div>
@@ -39,6 +47,7 @@
 import { ref } from "vue";
 const qData = ref("");
 const selectedAnswer = ref("");
+const selectedAnswers = ref([]);
 const singleAnswer = ref("");
 import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
 const dataReady = ref(false);
@@ -69,7 +78,11 @@ function send(question, answer) {
 }
 
 function logggg() {
-  const res = qData.value.getQuestionnaireResponse("de");
-  console.log("Res stringify ", JSON.stringify(res));
+  try {
+    const response = qData.value.getQuestionnaireResponse("de");
+    console.log(response);
+  } catch (e) {
+    console.warn("Something ain't right:", e);
+  }
 }
 </script>

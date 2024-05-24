@@ -28,64 +28,65 @@
       "text": "Wurden Ihnen die möglichen Nebenwirkungen der Behandlung(en) in verständlicher Weise erklärt?",
       "type": "choice",
       "required": false,
+      "repeats": false,
       "answerOption": [
         {
           "valueCoding": {
-            "code": "chirurgie",
+            "code": "0",
             "display": "Chirurgie"
           }
         },
         {
           "valueCoding": {
-            "code": "Chemotherapie",
+            "code": "1",
             "display": "Chemotherapie"
           }
         },
         {
           "valueCoding": {
-            "code": "Strahlentherapie",
+            "code": "2",
             "display": "Strahlentherapie"
           }
         },
         {
           "valueCoding": {
-            "code": "Hormontherapie",
+            "code": "3",
             "display": "Hormontherapie"
           }
         },
         {
           "valueCoding": {
-            "code": "Immuntherapie",
+            "code": "4",
             "display": "Immuntherapie"
           }
         },
         {
           "valueCoding": {
-            "code": "ZielgerichteteTherapie",
+            "code": "5",
             "display": "Zielgerichtete Therapie"
           }
         },
         {
           "valueCoding": {
-            "code": "noTreatment",
+            "code": "6",
             "display": "Ich habe noch keine Behandlung erhalten"
           }
         },
         {
           "valueCoding": {
-            "code": "over12months",
+            "code": "7",
             "display": "Ich habe meine Behandlung(en) vor mehr als 12 Monaten erhalten"
           }
         },
         {
           "valueCoding": {
-            "code": "idk",
+            "code": "8",
             "display": "Ich weisses nicht"
           }
         },
         {
           "valueCoding": {
-            "code": "Andere",
+            "code": "9",
             "display": "Andere"
           }
         }
@@ -94,19 +95,89 @@
         {
           "linkId": "1.1",
           "prefix": "1.1",
-          "text": "",
+          "text": "subQuestionAnswerText",
           "type": "string",
           "enableWhen": [
             {
               "question": "1",
               "operator": "=",
               "answerCoding": {
-                "code": "Andere",
+                "code": "9",
                 "display": "Andere"
               }
             }
           ],
           "required": false
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "prefix": "2",
+      "text": "Multiple Choice",
+      "type": "choice",
+      "required": false,
+      "repeats": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "0",
+            "display": "Chirurgie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "1",
+            "display": "Chemotherapie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "2",
+            "display": "Strahlentherapie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "3",
+            "display": "Hormontherapie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "4",
+            "display": "Immuntherapie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "5",
+            "display": "Zielgerichtete Therapie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6",
+            "display": "Ich habe noch keine Behandlung erhalten"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "7",
+            "display": "Ich habe meine Behandlung(en) vor mehr als 12 Monaten erhalten"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8",
+            "display": "Ich weisses nicht"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "9",
+            "display": "Andere"
+          }
         }
       ]
     }
