@@ -25,11 +25,7 @@
                 </h6>
                 <q-input v-model="singleAnswer" outlined> </q-input>
                 <button @click="send(qSub, singleAnswer)">Submit</button>
-                <button
-                  @click="console.log(qData.getQuestionnaireResponse('de'))"
-                >
-                  Log response
-                </button>
+                <q-btn @click="logggg()"> Log response </q-btn>
               </div>
             </div>
           </div>
@@ -62,13 +58,19 @@ function updateQuestionAnswers(q, answer) {
 }
 
 function send(question, answer) {
-  console.log("inputs:", question, answer);
   const res = {
     answer: {},
     code: {},
   };
   res.code.valueString = answer;
-  res.answer = answer;
+  res.answer["de"] = answer;
   qData.value.updateQuestionAnswers(question, res);
+  console.log("Qdata new:", qData.value);
+}
+
+function logggg() {
+  const res = qData.value.getQuestionnaireResponse("de");
+  console.log("Res ", res);
+  console.log("Res stringify ", JSON.stringify(res));
 }
 </script>
