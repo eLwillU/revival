@@ -70,7 +70,6 @@ function send(question, answer) {
 
 function logggg() {
   const res = qData.value.getQuestionnaireResponse("de");
-  console.log("Res ", res);
   console.log("Res stringify ", JSON.stringify(res));
 }
 </script>
