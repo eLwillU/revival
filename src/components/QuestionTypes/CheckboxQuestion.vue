@@ -1,4 +1,0 @@
-<template>
-
-<div xmlns=\"http://www.w3.org/1999/xhtml\"><style>.question {font-weight: bold;} ul {margin: 0} .multiple-answers {display: inline; padding: 0} .multiple-answers > li {display: inline; margin-left: 0.3em} .multiple-answers > li:before {content: '-'; margin-right: 0.3em}</style><h4 class=\"title\">SCAPE-CH</h4><p class=\"status\">Status: completed</p><p class=\"created\">Created: 24.5.2024</p><p class=\"questionnaire-link\">Questionnaire: http://www.krebsliga.ch/prem/SCAPE-CH|2.0</p><ul class=\"narrative questionnaire-response\"><li><span class=\"question\">Wurden Ihnen die möglichen Nebenwirkungen der Behandlung(en) in verständlicher Weise erklärt?:</span> <span class=\"response\">Andere</span><ul class=\"sub-question\"> <span class=\"response\">daegg</span></li></ul></li></ul></div>
-</template>
