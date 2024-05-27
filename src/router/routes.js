@@ -28,6 +28,10 @@ const routes = [
         path: "/type",
         component: () => import("pages/QuestionTypePage.vue"),
       },
+      {
+        path: "/feedback",
+        component: () => import("pages/FeedbackPage.vue"),
+      },
     ],
   },
   {

@@ -95,9 +95,9 @@
       <q-item
         :content-inset-level="0.5"
         clickable
-        to="/type"
+        to="/feedback"
         class="items-center justify-between text-subtitle1"
-        >Types</q-item
+        >Feedback</q-item
       >
     </q-drawer>
 
