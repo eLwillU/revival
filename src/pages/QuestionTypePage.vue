@@ -26,16 +26,15 @@
                 @update:model-value="() => updateQuestionAnswers(q, answer)"
               ></q-checkbox>
             </div>
-            <div v-for="qSub in q.subItems" :key="qSub.id">
+            <template v-for="qSub in q.subItems" :key="qSub.id">
               <div v-if="qSub.isEnabled">
-                <h6>
-                  {{ qSub.label["de"] }}
-                </h6>
-                <q-input v-model="singleAnswer" outlined> </q-input>
-                <q-btn @click="send(qSub, singleAnswer)">Submit</q-btn>
+                <q-input v-model="stringAnswer" outlined> </q-input>
+                <q-btn @click="updateTextQuestion(qSub, stringAnswer)"
+                  >Submit</q-btn
+                >
                 <q-btn @click="logggg()"> Log response </q-btn>
               </div>
-            </div>
+            </template>
           </div>
         </div>
       </q-card-section>
@@ -48,7 +47,7 @@ import { ref } from "vue";
 const qData = ref("");
 const selectedAnswer = ref("");
 const selectedAnswers = ref([]);
-const singleAnswer = ref("");
+const stringAnswer = ref("");
 import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
 const dataReady = ref(false);
 
@@ -66,7 +65,7 @@ function updateQuestionAnswers(q, answer) {
   qData.value.updateQuestionAnswers(q, answer);
 }
 
-function send(question, answer) {
+function updateTextQuestion(question, answer) {
   const res = {
     answer: {},
     code: {},
