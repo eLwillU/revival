@@ -1,0 +1,185 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "SCAPE-CH",
+  "title": "SCAPE-CH",
+  "name": "SCAPE-Fragebogen",
+  "status": "active",
+  "meta": {
+    "security": [
+      {
+        "system": "http://midata.coop/codesystems/security",
+        "code": "public"
+      }
+    ]
+  },
+  "code": [
+    {
+      "system": "http://www.krebsliga.ch",
+      "code": "scape-ch",
+      "display": "SCAPE-CH Questionnaire"
+    }
+  ],
+  "url": "http://www.krebsliga.ch/prem/SCAPE-CH",
+  "version": "2.0",
+  "item": [
+    {
+      "linkId": "1",
+      "prefix": "1",
+      "text": "Wurden Ihnen die möglichen Nebenwirkungen der Behandlung(en) in verständlicher Weise erklärt?",
+      "type": "choice",
+      "required": false,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "0",
+            "display": "Chirurgie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "1",
+            "display": "Chemotherapie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "2",
+            "display": "Strahlentherapie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "3",
+            "display": "Hormontherapie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "4",
+            "display": "Immuntherapie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "5",
+            "display": "Zielgerichtete Therapie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6",
+            "display": "Ich habe noch keine Behandlung erhalten"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "7",
+            "display": "Ich habe meine Behandlung(en) vor mehr als 12 Monaten erhalten"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8",
+            "display": "Ich weisses nicht"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "9",
+            "display": "Andere"
+          }
+        }
+      ],
+      "item": [
+        {
+          "linkId": "1.1",
+          "prefix": "1.1",
+          "text": "subQuestionAnswerText",
+          "type": "string",
+          "enableWhen": [
+            {
+              "question": "1",
+              "operator": "=",
+              "answerCoding": {
+                "code": "9",
+                "display": "Andere"
+              }
+            }
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "prefix": "2",
+      "text": "Multiple Choice",
+      "type": "choice",
+      "required": false,
+      "repeats": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "0",
+            "display": "Chirurgie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "1",
+            "display": "Chemotherapie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "2",
+            "display": "Strahlentherapie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "3",
+            "display": "Hormontherapie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "4",
+            "display": "Immuntherapie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "5",
+            "display": "Zielgerichtete Therapie"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6",
+            "display": "Ich habe noch keine Behandlung erhalten"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "7",
+            "display": "Ich habe meine Behandlung(en) vor mehr als 12 Monaten erhalten"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8",
+            "display": "Ich weisses nicht"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "9",
+            "display": "Andere"
+          }
+        }
+      ]
+    }
+  ]
+}

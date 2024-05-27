@@ -1,0 +1,32 @@
+{
+  "linkId": 1,
+  "prefix": 1,
+  "text": "Wurden Ihnen die möglichen Nebenwirkungen der Behandlung(en) in verständlicher Weise erklärt?",
+  "_text": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          { "url": "lang", "valueCode": "de" },
+          {
+            "url": "content",
+            "valueString": "Wurden Ihnen die möglichen Nebenwirkungen der Behandlung(en) in verständlicher Weise erklärt?"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          { "url": "lang", "valueCode": "fr" },
+          {
+            "url": "content",
+            "valueString": "Est-ce que les effets indésirables possibles du ou des traitements vous ont été expliqués de manière compréhensible ?"
+          }
+        ]
+      }
+    ]
+  },
+  "type": "choice",
+  "required": true,
+  "answerOption": []
+}

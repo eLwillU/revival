@@ -1,0 +1,263 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "SCAPE-CH",
+  "title": "SCAPE-CH",
+  "name": "SCAPE-Fragebogen",
+  "status": "active",
+  "meta": {
+    "security": [
+      {
+        "system": "http://midata.coop/codesystems/security",
+        "code": "public"
+      }
+    ]
+  },
+  "code": [
+    {
+      "system": "http://www.krebsliga.ch",
+      "code": "scape-ch",
+      "display": "SCAPE-CH Questionnaire"
+    }
+  ],
+  "url": "http://www.krebsliga.ch/prem/SCAPE-CH",
+  "version": "2.0",
+  "item": [
+    {
+      "linkId": "13",
+      "prefix": "13",
+      "text": "Hat man Ihnen angeboten, eine medizinische Fachperson zu kontaktieren, um nach der Krebsdiagnose über Ihre Bedenken und Ängste zu sprechen?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": 0,
+            "display": "Ja"
+          }
+        }
+      ],
+      "item": [
+        {
+          "linkId": "13.1",
+          "text": "Ja",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "eine Pflegefachperson",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "lang",
+                      "valueString": "eine Pflegefachperson"
+                    },
+                    {
+                      "url": "lang",
+                      "valueCode": "fr"
+                    },
+                    {
+                      "url": "lang",
+                      "valueString": "un professionnel de soins infirmiers"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "valueString": "ein:e Psychologen/in",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "lang",
+                      "valueString": "ein:e Psychologen/in"
+                    },
+                    {
+                      "url": "lang",
+                      "valueCode": "fr"
+                    },
+                    {
+                      "url": "lang",
+                      "valueString": "un(e) psychologue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "valueString": "ein:e Arzt/Ärztin",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "lang",
+                      "valueString": "ein:e Arzt/Ärztin"
+                    },
+                    {
+                      "url": "lang",
+                      "valueCode": "fr"
+                    },
+                    {
+                      "url": "lang",
+                      "valueString": "un(e) médecin"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "valueString": "ein:e Sozialarbeiter/in",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "lang",
+                      "valueString": "ein:e Sozialarbeiter/in"
+                    },
+                    {
+                      "url": "lang",
+                      "valueCode": "fr"
+                    },
+                    {
+                      "url": "lang",
+                      "valueString": "un(e) assistant(e) social(e)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "valueString": "eine andere Fachperson",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "lang",
+                      "valueString": "eine andere Fachperson"
+                    },
+                    {
+                      "url": "lang",
+                      "valueCode": "fr"
+                    },
+                    {
+                      "url": "lang",
+                      "valueString": "un autre professionnel de santé"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "13.2",
+          "text": "Nein, aber ich hätte es mir gewünscht",
+          "type": "boolean",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "lang",
+                  "valueString": "Nein, aber ich hätte es mir gewünscht"
+                },
+                {
+                  "url": "lang",
+                  "valueCode": "fr"
+                },
+                {
+                  "url": "lang",
+                  "valueString": "Non, mais j'aurais aimé"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "13.3",
+          "text": "Das war nicht nötig",
+          "type": "boolean",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "lang",
+                  "valueString": "Das war nicht nötig"
+                },
+                {
+                  "url": "lang",
+                  "valueCode": "fr"
+                },
+                {
+                  "url": "lang",
+                  "valueString": "Ce n'était pas nécessaire"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "13.4",
+          "text": "Ich weiß es nicht / Ich erinnere mich nicht",
+          "type": "boolean",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "lang",
+                  "valueString": "Ich weiß es nicht / Ich erinnere mich nicht"
+                },
+                {
+                  "url": "lang",
+                  "valueCode": "fr"
+                },
+                {
+                  "url": "lang",
+                  "valueString": "Je ne sais pas / Je ne m'en souviens plus"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
