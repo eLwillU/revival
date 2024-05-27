@@ -83,6 +83,7 @@ import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
 import { useI18n } from "vue-i18n";
 import QuestionCard from "../components/QuestionCard.vue";
 import { userStore } from "src/stores/store";
+import { version } from "plotly.js-dist";
 const store = userStore();
 const { locale } = useI18n();
 const language = ref("");
@@ -136,16 +137,19 @@ function previousPage() {
 
 async function fetchData() {
   try {
-    data.value = await fhir.search(
-      "Questionnaire",
-      "url=http://www.krebsliga.ch/prem/SCAPE-CH"
-    );
+    data.value = await fhir.search("Questionnaire", {
+      url: "http://www.krebsliga.ch/prem/SCAPE-CH",
+      version: "1.0",
+      status: "active",
+    });
     const resource = data.value.entry[0].resource;
+    console.log("res;", resource);
     qData.value = new QuestionnaireData(resource, ["de", "fr"]);
     numPages.value = qData.value.getQuestions().length;
     isDataFetched.value = true;
     const step = 1 / numPages.value;
     progress.value = step;
+    console.log("Questionnaire: ", qData.value);
   } catch (error) {
     console.error("Error fetching JSON:", error);
   }
