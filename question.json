@@ -1,0 +1,100 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "SCAPE-CH",
+  "title": "SCAPE-CH",
+  "name": "SCAPE-Fragebogen",
+  "status": "active",
+  "meta": {
+    "security": [
+      {
+        "system": "http://midata.coop/codesystems/security",
+        "code": "public"
+      }
+    ]
+  },
+  "code": [
+    {
+      "system": "http://www.krebsliga.ch",
+      "code": "scape-ch",
+      "display": "SCAPE-CH Questionnaire"
+    }
+  ],
+  "url": "http://www.krebsliga.ch/prem/SCAPE-CH",
+  "version": "2.0",
+{
+  "resourceType": "Questionnaire",
+  "id": "patient-treatment-information-feedback",
+  "title": "Patientenfeedback zu Behandlungsinformationen",
+  "status": "active",
+  "item": [
+    {
+      "linkId": "45",
+      "text": "Haben Sie nach Beginn der Behandlung verständliche Informationen zu ihrer Wirkung erhalten?",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "45.1",
+          "text": "Ja, absolut",
+          "type": "boolean"
+        },
+        {
+          "linkId": "45.2",
+          "text": "Ja, bis zu einem gewissen Grad",
+          "type": "boolean"
+        },
+        {
+          "linkId": "45.3",
+          "text": "Nein, ich habe die Informationen nicht verstanden",
+          "type": "boolean"
+        },
+        {
+          "linkId": "45.4",
+          "text": "Ich habe keine Informationen erhalten, hätte aber gerne welche gehabt",
+          "type": "boolean"
+        },
+        {
+          "linkId": "45.5",
+          "text": "Ich habe keine Informationen benötigt",
+          "type": "boolean"
+        },
+        {
+          "linkId": "45.6",
+          "text": "Es ist zu früh, um zu wissen, ob die Behandlung wirkt",
+          "type": "boolean"
+        }
+      ],
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Haben Sie nach Beginn der Behandlung verständliche Informationen zu ihrer Wirkung erhalten?"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "Avez-vous reçu des informations compréhensibles sur l'effet du traitement après son commencement ?"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+
+
