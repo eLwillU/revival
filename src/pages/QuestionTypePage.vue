@@ -45,11 +45,12 @@
 <script setup>
 import { ref } from "vue";
 const qData = ref("");
+const dataReady = ref(false);
+
 const selectedAnswer = ref("");
 const selectedAnswers = ref([]);
 const stringAnswer = ref("");
 import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
-const dataReady = ref(false);
 
 fetch("questionnaire/type.json")
   .then((response) => response.json())
