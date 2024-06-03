@@ -1,6 +1,9 @@
 # revival (revival)
 
-A Quasar Project
+Das ist das GitHub-Repository für die Bachelorthesis von Karin Kennel und Dominic Willi
+Um das Projekt zu installieren müssen git und npm installiert sein. 
+
+# Setup
 
 ## Install the dependencies
 ```bash
