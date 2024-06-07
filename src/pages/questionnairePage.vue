@@ -83,7 +83,6 @@ import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
 import { useI18n } from "vue-i18n";
 import QuestionCard from "../components/QuestionCard.vue";
 import { userStore } from "src/stores/store";
-import { version } from "plotly.js-dist";
 const store = userStore();
 const { locale } = useI18n();
 const language = ref("");
@@ -94,13 +93,11 @@ const midataLoginStatus = ref(false);
 const existingQdata = ref(false);
 
 const confirm = ref(false);
-let refreshToken;
 fhir
   .handleAuthResponse()
   .then((res) => {
-    midataLoginStatus.value = true;
     if (res) {
-      refreshToken = res.refresh_token;
+      midataLoginStatus.value = true;
     }
   })
   .catch((err) => {
