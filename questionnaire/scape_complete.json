@@ -61,7 +61,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Nie – Ich bin direkt zu einem/r Spezialisten/-in gegangen",
             "_display": {
               "extension": [
@@ -97,7 +97,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nie – Ich hatte keine Symptome und der Krebs wurde im Rahmen einer Routine-/ Nachuntersuchung oder bei einer Vorsorge-untersuchung entdeckt",
             "_display": {
               "extension": [
@@ -133,7 +133,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Ich war 1 oder 2 Mal bei einem/r Arzt/Ärztin",
             "_display": {
               "extension": [
@@ -169,7 +169,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich war 3 oder 4 Mal bei einem/r Arzt/Ärztin",
             "_display": {
               "extension": [
@@ -205,7 +205,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich war 5 oder mehr Mal bei einem/r Arzt/ Ärztin",
             "_display": {
               "extension": [
@@ -241,7 +241,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -316,7 +316,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ich bekam einen Termin, sobald mir dies notwendig erschien",
             "_display": {
               "extension": [
@@ -352,7 +352,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ich hätte etwas früher einen Termin bekommen müssen",
             "_display": {
               "extension": [
@@ -388,7 +388,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Ich hätte viel früher einen Termin bekommen müssen",
             "_display": {
               "extension": [
@@ -424,7 +424,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Es gab keine Wartezeit, da ich keinen Termin vereinbart habe (z. B. Notfall)",
             "_display": {
               "extension": [
@@ -460,7 +460,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -535,7 +535,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -571,7 +571,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -616,7 +616,7 @@
           "question": "SCAPE-3",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -655,7 +655,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -691,7 +691,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -727,7 +727,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -772,7 +772,7 @@
           "question": "SCAPE-3",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -811,7 +811,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Sie war angemessen",
             "_display": {
               "extension": [
@@ -847,7 +847,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Sie war ein bisschen zu lang",
             "_display": {
               "extension": [
@@ -883,7 +883,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Sie war viel zu lang",
             "_display": {
               "extension": [
@@ -928,7 +928,7 @@
           "question": "SCAPE-3",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -967,7 +967,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -1003,7 +1003,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -1039,7 +1039,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, ich habe die Erklärungen nicht verstanden",
             "_display": {
               "extension": [
@@ -1075,7 +1075,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich habe keine Erklärungen bekommen, aber ich hätte gerne welche gehabt",
             "_display": {
               "extension": [
@@ -1111,7 +1111,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich habe keine Erklärungen gebraucht",
             "_display": {
               "extension": [
@@ -1186,7 +1186,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Vor weniger als 1 Jahr",
             "_display": {
               "extension": [
@@ -1222,7 +1222,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Vor mehr als 1 aber weniger als 5 Jahren",
             "_display": {
               "extension": [
@@ -1258,7 +1258,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Vor mehr als 5 Jahren",
             "_display": {
               "extension": [
@@ -1294,7 +1294,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -1369,7 +1369,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ein:e Hausarzt/-ärztin oder Allgemeinarzt/-ärztin",
             "_display": {
               "extension": [
@@ -1405,7 +1405,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ein:e Facharzt/-ärztin (z. B. Onkologe/-in, Gynäkologe/-in, Urologe/-in, Chirurg:in)",
             "_display": {
               "extension": [
@@ -1441,7 +1441,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Eine Pflegefachperson",
             "_display": {
               "extension": [
@@ -1477,7 +1477,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Andere Person",
             "_display": {
               "extension": [
@@ -1513,7 +1513,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -1588,7 +1588,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -1624,7 +1624,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -1660,7 +1660,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Man hat mir die Krebserkrankung am Telefon oder per Brief mitgeteilt",
             "_display": {
               "extension": [
@@ -1696,7 +1696,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -1771,7 +1771,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Es war taktvoll",
             "_display": {
               "extension": [
@@ -1807,7 +1807,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Es hätte etwas taktvoller sein können",
             "_display": {
               "extension": [
@@ -1843,7 +1843,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Es hätte sehr viel taktvoller sein können",
             "_display": {
               "extension": [
@@ -1879,7 +1879,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -1954,7 +1954,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, ich habe alles genau verstanden",
             "_display": {
               "extension": [
@@ -1990,7 +1990,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, ich habe sie teilweise verstanden",
             "_display": {
               "extension": [
@@ -2026,7 +2026,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, ich habe sie nicht verstanden",
             "_display": {
               "extension": [
@@ -2062,7 +2062,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -2137,7 +2137,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, und sie waren leicht zu verstehen",
             "_display": {
               "extension": [
@@ -2173,7 +2173,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, aber sie waren schwer zu verstehen",
             "_display": {
               "extension": [
@@ -2209,7 +2209,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, aber ich hätte gerne welche gehabt",
             "_display": {
               "extension": [
@@ -2245,7 +2245,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich habe keine schriftlichen Erklärungen gebraucht",
             "_display": {
               "extension": [
@@ -2281,7 +2281,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -2356,7 +2356,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -2392,7 +2392,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein, aber ich hätte es mir gewünscht",
             "_display": {
               "extension": [
@@ -2428,7 +2428,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Das war nicht nötig",
             "_display": {
               "extension": [
@@ -2464,7 +2464,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -2509,7 +2509,7 @@
               "question": "SCAPE-13",
               "operator": "=",
               "answerCoding": {
-                "code": 0
+                "code": "0"
               }
             }
           ],
@@ -2548,7 +2548,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "eine Pflegefachperson",
                 "_display": {
                   "extension": [
@@ -2584,7 +2584,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "eine:n Psychologen/in",
                 "_display": {
                   "extension": [
@@ -2620,7 +2620,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "eine:n Arzt/Ärztin",
                 "_display": {
                   "extension": [
@@ -2656,7 +2656,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "eine:n Sozialarbeiter:in",
                 "_display": {
                   "extension": [
@@ -2692,7 +2692,7 @@
             },
             {
               "valueCoding": {
-                "code": 4,
+                "code": "4",
                 "display": "eine andere Fachperson",
                 "_display": {
                   "extension": [
@@ -2769,7 +2769,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -2805,7 +2805,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -2841,7 +2841,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -2877,7 +2877,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Für meine Situation gab es nur eine Art der Behandlung",
             "_display": {
               "extension": [
@@ -2913,7 +2913,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -2988,7 +2988,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -3024,7 +3024,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -3060,7 +3060,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, ich habe die Erklärungen nicht verstanden",
             "_display": {
               "extension": [
@@ -3096,7 +3096,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich habe keine Erklärungen bekommen, aber ich hätte gerne welche gehabt",
             "_display": {
               "extension": [
@@ -3132,7 +3132,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich habe keine Erklärungen gebraucht",
             "_display": {
               "extension": [
@@ -3168,7 +3168,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -3243,7 +3243,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -3279,7 +3279,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -3315,7 +3315,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, aber ich hätte mir Informationen dazu gewünscht",
             "_display": {
               "extension": [
@@ -3351,7 +3351,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich habe keine Informationen dazu gebraucht",
             "_display": {
               "extension": [
@@ -3387,7 +3387,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -3462,7 +3462,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -3498,7 +3498,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -3534,7 +3534,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, aber ich hätte mir jedoch einen stärkeren Einbezug gewünscht",
             "_display": {
               "extension": [
@@ -3570,7 +3570,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -3645,7 +3645,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -3681,7 +3681,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -3717,7 +3717,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, ich hätte mir einen stärkeren (oder weniger starken) Einbezug gewünscht",
             "_display": {
               "extension": [
@@ -3753,7 +3753,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Die Frage betrifft mich nicht",
             "_display": {
               "extension": [
@@ -3789,7 +3789,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -3864,7 +3864,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -3900,7 +3900,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -3936,7 +3936,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, aber ich hätte mir dies gewünscht",
             "_display": {
               "extension": [
@@ -3972,7 +3972,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Das war nicht nötig",
             "_display": {
               "extension": [
@@ -4008,7 +4008,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -4083,7 +4083,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -4119,7 +4119,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein, aber ich hätte mir ein Gespräch oder Informationen dazu gewünscht",
             "_display": {
               "extension": [
@@ -4155,7 +4155,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Das war nicht nötig",
             "_display": {
               "extension": [
@@ -4191,7 +4191,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -4266,7 +4266,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -4302,7 +4302,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -4347,7 +4347,7 @@
           "question": "SCAPE-21",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -4386,7 +4386,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, oft",
             "_display": {
               "extension": [
@@ -4422,7 +4422,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, manchmal",
             "_display": {
               "extension": [
@@ -4458,7 +4458,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -4503,7 +4503,7 @@
           "question": "SCAPE-21",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -4542,7 +4542,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, allen",
             "_display": {
               "extension": [
@@ -4578,7 +4578,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, einigen",
             "_display": {
               "extension": [
@@ -4614,7 +4614,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, gar nicht",
             "_display": {
               "extension": [
@@ -4659,7 +4659,7 @@
           "question": "SCAPE-21",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -4698,7 +4698,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -4734,7 +4734,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -4770,7 +4770,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -4806,7 +4806,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Meine Familie oder nahestehende Personen wollten nicht mit einem/r Arzt/Ärztin sprechen / betrifft mich nicht",
             "_display": {
               "extension": [
@@ -4851,7 +4851,7 @@
           "question": "SCAPE-21",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -4890,7 +4890,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, allen",
             "_display": {
               "extension": [
@@ -4926,7 +4926,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, manchen",
             "_display": {
               "extension": [
@@ -4962,7 +4962,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, gar nicht",
             "_display": {
               "extension": [
@@ -5007,7 +5007,7 @@
           "question": "SCAPE-21",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -5046,7 +5046,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, immer",
             "_display": {
               "extension": [
@@ -5082,7 +5082,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, manchmal",
             "_display": {
               "extension": [
@@ -5118,7 +5118,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -5163,7 +5163,7 @@
           "question": "SCAPE-21",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -5202,7 +5202,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, immer",
             "_display": {
               "extension": [
@@ -5238,7 +5238,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, manchmal",
             "_display": {
               "extension": [
@@ -5274,7 +5274,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -5310,7 +5310,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich habe keine Hilfe gebraucht",
             "_display": {
               "extension": [
@@ -5355,7 +5355,7 @@
           "question": "SCAPE-21",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -5394,7 +5394,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, immer",
             "_display": {
               "extension": [
@@ -5430,7 +5430,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, manchmal",
             "_display": {
               "extension": [
@@ -5466,7 +5466,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -5502,7 +5502,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich hatte keine Bedenken oder Ängste",
             "_display": {
               "extension": [
@@ -5547,7 +5547,7 @@
           "question": "SCAPE-21",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -5586,7 +5586,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -5622,7 +5622,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -5658,7 +5658,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -5694,7 +5694,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich hatte keine Schmerzen",
             "_display": {
               "extension": [
@@ -5739,7 +5739,7 @@
           "question": "SCAPE-21",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -5778,7 +5778,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, immer",
             "_display": {
               "extension": [
@@ -5814,7 +5814,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, manchmal",
             "_display": {
               "extension": [
@@ -5850,7 +5850,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -5895,7 +5895,7 @@
           "question": "SCAPE-21",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -5934,7 +5934,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, und sie waren leicht zu verstehen",
             "_display": {
               "extension": [
@@ -5970,7 +5970,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, aber sie waren schwer zu verstehen",
             "_display": {
               "extension": [
@@ -6006,7 +6006,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, aber ich hätte gerne welche gehabt",
             "_display": {
               "extension": [
@@ -6042,7 +6042,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich habe keine schriftlichen Erklärungen gebraucht",
             "_display": {
               "extension": [
@@ -6078,7 +6078,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -6123,7 +6123,7 @@
           "question": "SCAPE-21",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -6162,7 +6162,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -6198,7 +6198,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -6234,7 +6234,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -6270,7 +6270,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -6315,7 +6315,7 @@
           "question": "SCAPE-21",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -6354,7 +6354,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -6390,7 +6390,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein, aber ich hätte das gerne gehabt",
             "_display": {
               "extension": [
@@ -6426,7 +6426,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Das war nicht nötig",
             "_display": {
               "extension": [
@@ -6462,7 +6462,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -6507,7 +6507,7 @@
           "question": "SCAPE-21",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -6546,7 +6546,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -6582,7 +6582,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -6618,7 +6618,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -6693,7 +6693,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -6729,7 +6729,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -6774,7 +6774,7 @@
           "question": "SCAPE-36",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -6813,7 +6813,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, immer",
             "_display": {
               "extension": [
@@ -6849,7 +6849,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, manchmal",
             "_display": {
               "extension": [
@@ -6885,7 +6885,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -6921,7 +6921,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich hatte keine Bedenken oder Ängste",
             "_display": {
               "extension": [
@@ -6966,7 +6966,7 @@
           "question": "SCAPE-36",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -7005,7 +7005,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Angemessen",
             "_display": {
               "extension": [
@@ -7041,7 +7041,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Etwas zu lang",
             "_display": {
               "extension": [
@@ -7077,7 +7077,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Viel zu lang",
             "_display": {
               "extension": [
@@ -7122,7 +7122,7 @@
           "question": "SCAPE-36",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -7161,7 +7161,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, immer",
             "_display": {
               "extension": [
@@ -7197,7 +7197,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, manchmal",
             "_display": {
               "extension": [
@@ -7233,7 +7233,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -7269,7 +7269,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich habe keine Fragen gestellt",
             "_display": {
               "extension": [
@@ -7344,7 +7344,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -7380,7 +7380,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein, aber ich hätte mir dies gewünscht",
             "_display": {
               "extension": [
@@ -7416,7 +7416,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, das war nicht nötig",
             "_display": {
               "extension": [
@@ -7452,7 +7452,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -7497,7 +7497,7 @@
           "question": "SCAPE-39",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -7536,7 +7536,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Sehr einfach",
             "_display": {
               "extension": [
@@ -7572,7 +7572,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ziemlich einfach",
             "_display": {
               "extension": [
@@ -7608,7 +7608,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Ziemlich schwierig",
             "_display": {
               "extension": [
@@ -7644,7 +7644,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich habe nicht versucht, eine Pflegefachperson der Pflegesprechstunde zu kontaktieren",
             "_display": {
               "extension": [
@@ -7689,7 +7689,7 @@
           "question": "SCAPE-39",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -7728,7 +7728,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, immer",
             "_display": {
               "extension": [
@@ -7764,7 +7764,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, manchmal",
             "_display": {
               "extension": [
@@ -7800,7 +7800,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -7836,7 +7836,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich habe keine Fragen gestellt",
             "_display": {
               "extension": [
@@ -7911,7 +7911,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Chirurgie",
             "_display": {
               "extension": [
@@ -7947,7 +7947,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Chemotherapie",
             "_display": {
               "extension": [
@@ -7983,7 +7983,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Strahlentherapie",
             "_display": {
               "extension": [
@@ -8019,7 +8019,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Hormontherapie",
             "_display": {
               "extension": [
@@ -8055,7 +8055,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Immuntherapie",
             "_display": {
               "extension": [
@@ -8091,7 +8091,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Zielgerichtete Therapie",
             "_display": {
               "extension": [
@@ -8127,7 +8127,7 @@
         },
         {
           "valueCoding": {
-            "code": 6,
+            "code": "6",
             "display": "Andere",
             "_display": {
               "extension": [
@@ -8163,7 +8163,7 @@
         },
         {
           "valueCoding": {
-            "code": 7,
+            "code": "7",
             "display": "Ich habe meine Behandlung(en) vor mehr als 12 Monaten erhalten",
             "_display": {
               "extension": [
@@ -8199,7 +8199,7 @@
         },
         {
           "valueCoding": {
-            "code": 8,
+            "code": "8",
             "display": "Ich habe noch keine Behandlung erhalten",
             "_display": {
               "extension": [
@@ -8235,7 +8235,7 @@
         },
         {
           "valueCoding": {
-            "code": 9,
+            "code": "9",
             "display": "Ich weiss es nicht",
             "_display": {
               "extension": [
@@ -8280,7 +8280,7 @@
               "question": "SCAPE-42",
               "operator": "=",
               "answerCoding": {
-                "code": 6
+                "code": "6"
               }
             }
           ],
@@ -8328,42 +8328,42 @@
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         },
         {
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 1
+            "code": "1"
           }
         },
         {
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 2
+            "code": "2"
           }
         },
         {
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 3
+            "code": "3"
           }
         },
         {
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 4
+            "code": "4"
           }
         },
         {
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 5
+            "code": "5"
           }
         }
       ],
@@ -8408,7 +8408,7 @@
               "question": "SCAPE-42",
               "operator": "=",
               "answerCoding": {
-                "code": 0
+                "code": "0"
               }
             }
           ],
@@ -8447,7 +8447,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Ja, absolut",
                 "_display": {
                   "extension": [
@@ -8483,7 +8483,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ja, bis zu einem gewissen Grad",
                 "_display": {
                   "extension": [
@@ -8519,7 +8519,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Nein",
                 "_display": {
                   "extension": [
@@ -8564,7 +8564,7 @@
               "question": "SCAPE-42",
               "operator": "=",
               "answerCoding": {
-                "code": 1
+                "code": "1"
               }
             }
           ],
@@ -8603,7 +8603,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Ja, absolut",
                 "_display": {
                   "extension": [
@@ -8639,7 +8639,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ja, bis zu einem gewissen Grad",
                 "_display": {
                   "extension": [
@@ -8675,7 +8675,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Nein",
                 "_display": {
                   "extension": [
@@ -8720,7 +8720,7 @@
               "question": "SCAPE-42",
               "operator": "=",
               "answerCoding": {
-                "code": 2
+                "code": "2"
               }
             }
           ],
@@ -8759,7 +8759,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Ja, absolut",
                 "_display": {
                   "extension": [
@@ -8795,7 +8795,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ja, bis zu einem gewissen Grad",
                 "_display": {
                   "extension": [
@@ -8831,7 +8831,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Nein",
                 "_display": {
                   "extension": [
@@ -8876,7 +8876,7 @@
               "question": "SCAPE-42",
               "operator": "=",
               "answerCoding": {
-                "code": 3
+                "code": "3"
               }
             }
           ],
@@ -8915,7 +8915,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Ja, absolut",
                 "_display": {
                   "extension": [
@@ -8951,7 +8951,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ja, bis zu einem gewissen Grad",
                 "_display": {
                   "extension": [
@@ -8987,7 +8987,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Nein",
                 "_display": {
                   "extension": [
@@ -9032,7 +9032,7 @@
               "question": "SCAPE-42",
               "operator": "=",
               "answerCoding": {
-                "code": 4
+                "code": "4"
               }
             }
           ],
@@ -9071,7 +9071,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Ja, absolut",
                 "_display": {
                   "extension": [
@@ -9107,7 +9107,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ja, bis zu einem gewissen Grad",
                 "_display": {
                   "extension": [
@@ -9143,7 +9143,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Nein",
                 "_display": {
                   "extension": [
@@ -9188,7 +9188,7 @@
               "question": "SCAPE-42",
               "operator": "=",
               "answerCoding": {
-                "code": 5
+                "code": "5"
               }
             }
           ],
@@ -9227,7 +9227,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Ja, absolut",
                 "_display": {
                   "extension": [
@@ -9263,7 +9263,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ja, bis zu einem gewissen Grad",
                 "_display": {
                   "extension": [
@@ -9299,7 +9299,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Nein",
                 "_display": {
                   "extension": [
@@ -9346,42 +9346,42 @@
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         },
         {
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 1
+            "code": "1"
           }
         },
         {
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 2
+            "code": "2"
           }
         },
         {
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 3
+            "code": "3"
           }
         },
         {
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 4
+            "code": "4"
           }
         },
         {
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 5
+            "code": "5"
           }
         }
       ],
@@ -9426,7 +9426,7 @@
               "question": "SCAPE-42",
               "operator": "=",
               "answerCoding": {
-                "code": 0
+                "code": "0"
               }
             }
           ],
@@ -9465,7 +9465,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Ja, absolut",
                 "_display": {
                   "extension": [
@@ -9501,7 +9501,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ja, bis zu einem gewissen Grad",
                 "_display": {
                   "extension": [
@@ -9537,7 +9537,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Nein, aber ich hätte gerne welche gehabt",
                 "_display": {
                   "extension": [
@@ -9573,7 +9573,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "Nein, das war nicht nötig",
                 "_display": {
                   "extension": [
@@ -9618,7 +9618,7 @@
               "question": "SCAPE-42",
               "operator": "=",
               "answerCoding": {
-                "code": 1
+                "code": "1"
               }
             }
           ],
@@ -9657,7 +9657,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Ja, absolut",
                 "_display": {
                   "extension": [
@@ -9693,7 +9693,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ja, bis zu einem gewissen Grad",
                 "_display": {
                   "extension": [
@@ -9729,7 +9729,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Nein, aber ich hätte gerne welche gehabt",
                 "_display": {
                   "extension": [
@@ -9765,7 +9765,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "Nein, das war nicht nötig",
                 "_display": {
                   "extension": [
@@ -9810,7 +9810,7 @@
               "question": "SCAPE-42",
               "operator": "=",
               "answerCoding": {
-                "code": 2
+                "code": "2"
               }
             }
           ],
@@ -9849,7 +9849,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Ja, absolut",
                 "_display": {
                   "extension": [
@@ -9885,7 +9885,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ja, bis zu einem gewissen Grad",
                 "_display": {
                   "extension": [
@@ -9921,7 +9921,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Nein, aber ich hätte gerne welche gehabt",
                 "_display": {
                   "extension": [
@@ -9957,7 +9957,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "Nein, das war nicht nötig",
                 "_display": {
                   "extension": [
@@ -10002,7 +10002,7 @@
               "question": "SCAPE-42",
               "operator": "=",
               "answerCoding": {
-                "code": 3
+                "code": "3"
               }
             }
           ],
@@ -10041,7 +10041,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Ja, absolut",
                 "_display": {
                   "extension": [
@@ -10077,7 +10077,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ja, bis zu einem gewissen Grad",
                 "_display": {
                   "extension": [
@@ -10113,7 +10113,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Nein, aber ich hätte gerne welche gehabt",
                 "_display": {
                   "extension": [
@@ -10149,7 +10149,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "Nein, das war nicht nötig",
                 "_display": {
                   "extension": [
@@ -10194,7 +10194,7 @@
               "question": "SCAPE-42",
               "operator": "=",
               "answerCoding": {
-                "code": 4
+                "code": "4"
               }
             }
           ],
@@ -10233,7 +10233,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Ja, absolut",
                 "_display": {
                   "extension": [
@@ -10269,7 +10269,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ja, bis zu einem gewissen Grad",
                 "_display": {
                   "extension": [
@@ -10305,7 +10305,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Nein, aber ich hätte gerne welche gehabt",
                 "_display": {
                   "extension": [
@@ -10341,7 +10341,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "Nein, das war nicht nötig",
                 "_display": {
                   "extension": [
@@ -10386,7 +10386,7 @@
               "question": "SCAPE-42",
               "operator": "=",
               "answerCoding": {
-                "code": 5
+                "code": "5"
               }
             }
           ],
@@ -10425,7 +10425,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Ja, absolut",
                 "_display": {
                   "extension": [
@@ -10461,7 +10461,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ja, bis zu einem gewissen Grad",
                 "_display": {
                   "extension": [
@@ -10497,7 +10497,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Nein, aber ich hätte gerne welche gehabt",
                 "_display": {
                   "extension": [
@@ -10533,7 +10533,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "Nein, das war nicht nötig",
                 "_display": {
                   "extension": [
@@ -10580,42 +10580,42 @@
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         },
         {
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 1
+            "code": "1"
           }
         },
         {
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 2
+            "code": "2"
           }
         },
         {
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 3
+            "code": "3"
           }
         },
         {
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 4
+            "code": "4"
           }
         },
         {
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 5
+            "code": "5"
           }
         }
       ],
@@ -10660,7 +10660,7 @@
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -10699,7 +10699,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -10735,7 +10735,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -10771,7 +10771,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, ich habe die Erklärung nicht verstanden",
             "_display": {
               "extension": [
@@ -10807,7 +10807,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich habe keine Informationen bekommen, aber ich hätte gerne welche gehabt",
             "_display": {
               "extension": [
@@ -10843,7 +10843,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich habe keine Informationen gebraucht",
             "_display": {
               "extension": [
@@ -10879,7 +10879,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Es ist zu früh, um zu wissen, ob die Behandlung wirkt",
             "_display": {
               "extension": [
@@ -10924,7 +10924,7 @@
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 1
+            "code": "1"
           }
         }
       ],
@@ -10963,7 +10963,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -10999,7 +10999,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -11035,7 +11035,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, ich habe die Erklärung nicht verstanden",
             "_display": {
               "extension": [
@@ -11071,7 +11071,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich habe keine Informationen bekommen, aber ich hätte gerne welche gehabt",
             "_display": {
               "extension": [
@@ -11107,7 +11107,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich habe keine Informationen gebraucht",
             "_display": {
               "extension": [
@@ -11143,7 +11143,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Es ist zu früh, um zu wissen, ob die Behandlung wirkt",
             "_display": {
               "extension": [
@@ -11188,7 +11188,7 @@
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 2
+            "code": "2"
           }
         }
       ],
@@ -11227,7 +11227,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -11263,7 +11263,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -11299,7 +11299,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, ich habe die Erklärung nicht verstanden",
             "_display": {
               "extension": [
@@ -11335,7 +11335,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich habe keine Informationen bekommen, aber ich hätte gerne welche gehabt",
             "_display": {
               "extension": [
@@ -11371,7 +11371,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich habe keine Informationen gebraucht",
             "_display": {
               "extension": [
@@ -11407,7 +11407,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Es ist zu früh, um zu wissen, ob die Behandlung wirkt",
             "_display": {
               "extension": [
@@ -11452,7 +11452,7 @@
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 3
+            "code": "3"
           }
         }
       ],
@@ -11491,7 +11491,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -11527,7 +11527,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -11563,7 +11563,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, ich habe die Erklärung nicht verstanden",
             "_display": {
               "extension": [
@@ -11599,7 +11599,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich habe keine Informationen bekommen, aber ich hätte gerne welche gehabt",
             "_display": {
               "extension": [
@@ -11635,7 +11635,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich habe keine Informationen gebraucht",
             "_display": {
               "extension": [
@@ -11671,7 +11671,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Es ist zu früh, um zu wissen, ob die Behandlung wirkt",
             "_display": {
               "extension": [
@@ -11716,7 +11716,7 @@
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 4
+            "code": "4"
           }
         }
       ],
@@ -11755,7 +11755,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -11791,7 +11791,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -11827,7 +11827,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, ich habe die Erklärung nicht verstanden",
             "_display": {
               "extension": [
@@ -11863,7 +11863,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich habe keine Informationen bekommen, aber ich hätte gerne welche gehabt",
             "_display": {
               "extension": [
@@ -11899,7 +11899,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich habe keine Informationen gebraucht",
             "_display": {
               "extension": [
@@ -11935,7 +11935,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Es ist zu früh, um zu wissen, ob die Behandlung wirkt",
             "_display": {
               "extension": [
@@ -11980,7 +11980,7 @@
           "question": "SCAPE-42",
           "operator": "=",
           "answerCoding": {
-            "code": 5
+            "code": "5"
           }
         }
       ],
@@ -12019,7 +12019,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -12055,7 +12055,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -12091,7 +12091,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, ich habe die Erklärung nicht verstanden",
             "_display": {
               "extension": [
@@ -12127,7 +12127,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich habe keine Informationen bekommen, aber ich hätte gerne welche gehabt",
             "_display": {
               "extension": [
@@ -12163,7 +12163,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich habe keine Informationen gebraucht",
             "_display": {
               "extension": [
@@ -12199,7 +12199,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Es ist zu früh, um zu wissen, ob die Behandlung wirkt",
             "_display": {
               "extension": [
@@ -12274,7 +12274,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -12310,7 +12310,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -12346,7 +12346,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -12382,7 +12382,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Das war nicht nötig",
             "_display": {
               "extension": [
@@ -12457,7 +12457,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -12493,7 +12493,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -12529,7 +12529,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -12565,7 +12565,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Das war nicht nötig",
             "_display": {
               "extension": [
@@ -12601,7 +12601,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Die Frage betrifft mich nicht",
             "_display": {
               "extension": [
@@ -12676,7 +12676,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -12712,7 +12712,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -12748,7 +12748,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -12784,7 +12784,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Das war nicht nötig",
             "_display": {
               "extension": [
@@ -12859,7 +12859,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -12895,7 +12895,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -12931,7 +12931,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -12967,7 +12967,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Das war nicht nötig",
             "_display": {
               "extension": [
@@ -13042,7 +13042,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -13078,7 +13078,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -13114,7 +13114,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -13150,7 +13150,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Das war nicht nötig",
             "_display": {
               "extension": [
@@ -13225,7 +13225,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -13261,7 +13261,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -13297,7 +13297,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -13333,7 +13333,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -13408,7 +13408,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -13444,7 +13444,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein, aber ich hätte es gerne",
             "_display": {
               "extension": [
@@ -13480,7 +13480,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, das ist nicht nötig",
             "_display": {
               "extension": [
@@ -13525,7 +13525,7 @@
               "question": "SCAPE-52",
               "operator": "=",
               "answerCoding": {
-                "code": 0
+                "code": "0"
               }
             }
           ],
@@ -13564,7 +13564,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Onkologe/-in / Facharzt/-ärztin",
                 "_display": {
                   "extension": [
@@ -13600,7 +13600,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Hausarzt/-ärztin oder Allgemeinarzt/-ärztin",
                 "_display": {
                   "extension": [
@@ -13636,7 +13636,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Pflegefachperson",
                 "_display": {
                   "extension": [
@@ -13672,7 +13672,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "Sozialarbeiter:in",
                 "_display": {
                   "extension": [
@@ -13708,7 +13708,7 @@
             },
             {
               "valueCoding": {
-                "code": 4,
+                "code": "4",
                 "display": "eine andere Fachperson",
                 "_display": {
                   "extension": [
@@ -13755,7 +13755,7 @@
           "question": "SCAPE-52",
           "operator": "=",
           "answerCoding": {
-            "code": 0
+            "code": "0"
           }
         }
       ],
@@ -13794,7 +13794,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -13830,7 +13830,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -13866,7 +13866,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Das war nicht nötig",
             "_display": {
               "extension": [
@@ -13941,7 +13941,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, absolut",
             "_display": {
               "extension": [
@@ -13977,7 +13977,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, bis zu einem gewissen Grad",
             "_display": {
               "extension": [
@@ -14013,7 +14013,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein, sie hätten mehr tun können",
             "_display": {
               "extension": [
@@ -14049,7 +14049,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Die Praxis meines/r Hausarztes/-ärztin oder Allgemeinarzt/-ärztin war nicht involviert",
             "_display": {
               "extension": [
@@ -14085,7 +14085,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Ich habe keine:n Hausarzt/-ärztin oder Allgemeinarzt/-ärztin",
             "_display": {
               "extension": [
@@ -14160,7 +14160,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -14196,7 +14196,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -14232,7 +14232,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Ich wollte nicht, dass mein:e Hausarzt/-ärztin oder Allgemeinarzt/-ärztin involviert ist.",
             "_display": {
               "extension": [
@@ -14268,7 +14268,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich habe keine:n Hausarzt/-ärztin oder Allgemeinarzt/-ärztin",
             "_display": {
               "extension": [
@@ -14343,7 +14343,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -14379,7 +14379,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein, aber ich hätte gerne solche Informationen gehabt",
             "_display": {
               "extension": [
@@ -14415,7 +14415,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Das war nicht nötig",
             "_display": {
               "extension": [
@@ -14451,7 +14451,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -14526,7 +14526,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -14562,7 +14562,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein, aber ich hätte gerne solche Informationen gehabt",
             "_display": {
               "extension": [
@@ -14598,7 +14598,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Das war nicht nötig",
             "_display": {
               "extension": [
@@ -14634,7 +14634,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -14709,7 +14709,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -14745,7 +14745,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein, aber ich hätte gerne solche Informationen gehabt",
             "_display": {
               "extension": [
@@ -14781,7 +14781,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Das war nicht nötig",
             "_display": {
               "extension": [
@@ -14817,7 +14817,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -14892,7 +14892,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, immer",
             "_display": {
               "extension": [
@@ -14928,7 +14928,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, manchmal",
             "_display": {
               "extension": [
@@ -14964,7 +14964,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -15000,7 +15000,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -15075,7 +15075,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -15111,7 +15111,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -15147,7 +15147,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Ich weiss nicht / verstehe nicht, was ein Behandlungsplan ist",
             "_display": {
               "extension": [
@@ -15183,7 +15183,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -15258,7 +15258,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, oft",
             "_display": {
               "extension": [
@@ -15294,7 +15294,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, manchmal",
             "_display": {
               "extension": [
@@ -15330,7 +15330,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -15366,7 +15366,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -15441,7 +15441,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, oft",
             "_display": {
               "extension": [
@@ -15477,7 +15477,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, manchmal",
             "_display": {
               "extension": [
@@ -15513,7 +15513,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -15549,7 +15549,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -15624,7 +15624,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, oft",
             "_display": {
               "extension": [
@@ -15660,7 +15660,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ja, manchmal",
             "_display": {
               "extension": [
@@ -15696,7 +15696,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -15732,7 +15732,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -15807,7 +15807,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "0 (sehr schlecht)",
             "_display": {
               "extension": [
@@ -15843,7 +15843,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "1",
             "_display": {
               "extension": [
@@ -15879,7 +15879,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "2",
             "_display": {
               "extension": [
@@ -15915,7 +15915,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "3",
             "_display": {
               "extension": [
@@ -15951,7 +15951,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "4",
             "_display": {
               "extension": [
@@ -15987,7 +15987,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "5",
             "_display": {
               "extension": [
@@ -16023,7 +16023,7 @@
         },
         {
           "valueCoding": {
-            "code": 6,
+            "code": "6",
             "display": "6",
             "_display": {
               "extension": [
@@ -16059,7 +16059,7 @@
         },
         {
           "valueCoding": {
-            "code": 7,
+            "code": "7",
             "display": "7",
             "_display": {
               "extension": [
@@ -16095,7 +16095,7 @@
         },
         {
           "valueCoding": {
-            "code": 8,
+            "code": "8",
             "display": "8",
             "_display": {
               "extension": [
@@ -16131,7 +16131,7 @@
         },
         {
           "valueCoding": {
-            "code": 9,
+            "code": "9",
             "display": "9",
             "_display": {
               "extension": [
@@ -16167,7 +16167,7 @@
         },
         {
           "valueCoding": {
-            "code": 10,
+            "code": "10",
             "display": "10 (sehr gut)",
             "_display": {
               "extension": [
@@ -16242,7 +16242,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Bauchspeicheldrüse",
             "_display": {
               "extension": [
@@ -16278,7 +16278,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Blase",
             "_display": {
               "extension": [
@@ -16314,7 +16314,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Brust",
             "_display": {
               "extension": [
@@ -16350,7 +16350,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Dickdarm/Enddarm/kolorektales Karzinom",
             "_display": {
               "extension": [
@@ -16386,7 +16386,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Eierstock",
             "_display": {
               "extension": [
@@ -16422,7 +16422,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Gebärmutter",
             "_display": {
               "extension": [
@@ -16458,7 +16458,7 @@
         },
         {
           "valueCoding": {
-            "code": 6,
+            "code": "6",
             "display": "Gehirn",
             "_display": {
               "extension": [
@@ -16494,7 +16494,7 @@
         },
         {
           "valueCoding": {
-            "code": 7,
+            "code": "7",
             "display": "Hoden",
             "_display": {
               "extension": [
@@ -16530,7 +16530,7 @@
         },
         {
           "valueCoding": {
-            "code": 8,
+            "code": "8",
             "display": "Leber",
             "_display": {
               "extension": [
@@ -16566,7 +16566,7 @@
         },
         {
           "valueCoding": {
-            "code": 9,
+            "code": "9",
             "display": "Leukämie",
             "_display": {
               "extension": [
@@ -16602,7 +16602,7 @@
         },
         {
           "valueCoding": {
-            "code": 10,
+            "code": "10",
             "display": "Lunge, Bronchien, Luftröhre",
             "_display": {
               "extension": [
@@ -16638,7 +16638,7 @@
         },
         {
           "valueCoding": {
-            "code": 11,
+            "code": "11",
             "display": "Lymphom",
             "_display": {
               "extension": [
@@ -16674,7 +16674,7 @@
         },
         {
           "valueCoding": {
-            "code": 12,
+            "code": "12",
             "display": "Magen",
             "_display": {
               "extension": [
@@ -16710,7 +16710,7 @@
         },
         {
           "valueCoding": {
-            "code": 13,
+            "code": "13",
             "display": "Melanom der Haut",
             "_display": {
               "extension": [
@@ -16746,7 +16746,7 @@
         },
         {
           "valueCoding": {
-            "code": 14,
+            "code": "14",
             "display": "Mund/Rachenraum",
             "_display": {
               "extension": [
@@ -16782,7 +16782,7 @@
         },
         {
           "valueCoding": {
-            "code": 15,
+            "code": "15",
             "display": "Myelom",
             "_display": {
               "extension": [
@@ -16818,7 +16818,7 @@
         },
         {
           "valueCoding": {
-            "code": 16,
+            "code": "16",
             "display": "Niere",
             "_display": {
               "extension": [
@@ -16854,7 +16854,7 @@
         },
         {
           "valueCoding": {
-            "code": 17,
+            "code": "17",
             "display": "Prostata",
             "_display": {
               "extension": [
@@ -16890,7 +16890,7 @@
         },
         {
           "valueCoding": {
-            "code": 18,
+            "code": "18",
             "display": "Schilddrüse",
             "_display": {
               "extension": [
@@ -16926,7 +16926,7 @@
         },
         {
           "valueCoding": {
-            "code": 19,
+            "code": "19",
             "display": "Speiseröhre",
             "_display": {
               "extension": [
@@ -16962,7 +16962,7 @@
         },
         {
           "valueCoding": {
-            "code": 20,
+            "code": "20",
             "display": "Andere",
             "_display": {
               "extension": [
@@ -16998,7 +16998,7 @@
         },
         {
           "valueCoding": {
-            "code": 21,
+            "code": "21",
             "display": "Ich weiss es nicht",
             "_display": {
               "extension": [
@@ -17043,7 +17043,7 @@
               "question": "SCAPE-65",
               "operator": "=",
               "answerCoding": {
-                "code": 20
+                "code": "20"
               }
             }
           ],
@@ -17122,7 +17122,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ein Rezidiv einer in der Vergangenheit behandelten Krebserkrankung (Krebs, der zuvor diagnostiziert, behandelt und geheilt wurde, der aber zurückgekehrt ist)",
             "_display": {
               "extension": [
@@ -17158,7 +17158,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Eine zweite oder dritte Krebserkrankung (völlig verschieden von einer zuvor diagnostizierten Krebserkrankung)",
             "_display": {
               "extension": [
@@ -17233,7 +17233,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Nein, aber der Krebs hat sich danach ausgebreitet",
             "_display": {
               "extension": [
@@ -17269,7 +17269,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein und der Krebs hat sich danach nicht ausgebreitet",
             "_display": {
               "extension": [
@@ -17305,7 +17305,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Ich weiss es nicht / Ich erinnere mich nicht",
             "_display": {
               "extension": [
@@ -17380,7 +17380,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Keine",
             "_display": {
               "extension": [
@@ -17416,7 +17416,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Aromatherapie, Bachblüten, Phytotherapie (inklusive CBD-Produkte)",
             "_display": {
               "extension": [
@@ -17452,7 +17452,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Ayurveda, traditionelle chinesische Medizin (inklusive Akupunktur)",
             "_display": {
               "extension": [
@@ -17488,7 +17488,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Homöopathie, Anthroposophische Medizin (inklusive Mistel), Naturheilverfahren",
             "_display": {
               "extension": [
@@ -17524,7 +17524,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Hypnose, Meditation, Sophrologie",
             "_display": {
               "extension": [
@@ -17560,7 +17560,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Kinesiologie, Reiki, Bioresonanz",
             "_display": {
               "extension": [
@@ -17596,7 +17596,7 @@
         },
         {
           "valueCoding": {
-            "code": 6,
+            "code": "6",
             "display": "Osteopathie, therapeutische Massagen, Reflexologie, Shiatsu",
             "_display": {
               "extension": [
@@ -17632,7 +17632,7 @@
         },
         {
           "valueCoding": {
-            "code": 7,
+            "code": "7",
             "display": "Andere",
             "_display": {
               "extension": [
@@ -17677,7 +17677,7 @@
               "question": "SCAPE-68",
               "operator": "=",
               "answerCoding": {
-                "code": 7
+                "code": "7"
               }
             }
           ],
@@ -17756,7 +17756,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja, ich habe mindestens eine andere chronische Erkrankung (z. B. Depression, Diabetes, Bluthochdruck, Herz-Kreislauf-Erkrankung, Lungenkrankheit)",
             "_display": {
               "extension": [
@@ -17792,7 +17792,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein, ich habe keine anderen chronischen Krankheiten",
             "_display": {
               "extension": [
@@ -17828,7 +17828,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Ich weiss es nicht",
             "_display": {
               "extension": [
@@ -17903,7 +17903,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ausgezeichnet",
             "_display": {
               "extension": [
@@ -17939,7 +17939,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Sehr gut",
             "_display": {
               "extension": [
@@ -17975,7 +17975,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Gut",
             "_display": {
               "extension": [
@@ -18011,7 +18011,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Weniger gut",
             "_display": {
               "extension": [
@@ -18047,7 +18047,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Schlecht",
             "_display": {
               "extension": [
@@ -18158,7 +18158,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Überhaupt nicht",
                 "_display": {
                   "extension": [
@@ -18194,7 +18194,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ein wenig",
                 "_display": {
                   "extension": [
@@ -18230,7 +18230,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Mässig",
                 "_display": {
                   "extension": [
@@ -18266,7 +18266,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "Ziemlich",
                 "_display": {
                   "extension": [
@@ -18302,7 +18302,7 @@
             },
             {
               "valueCoding": {
-                "code": 4,
+                "code": "4",
                 "display": "Sehr",
                 "_display": {
                   "extension": [
@@ -18377,7 +18377,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Überhaupt nicht",
                 "_display": {
                   "extension": [
@@ -18413,7 +18413,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ein wenig",
                 "_display": {
                   "extension": [
@@ -18449,7 +18449,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Mässig",
                 "_display": {
                   "extension": [
@@ -18485,7 +18485,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "Ziemlich",
                 "_display": {
                   "extension": [
@@ -18521,7 +18521,7 @@
             },
             {
               "valueCoding": {
-                "code": 4,
+                "code": "4",
                 "display": "Sehr",
                 "_display": {
                   "extension": [
@@ -18596,7 +18596,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Überhaupt nicht",
                 "_display": {
                   "extension": [
@@ -18632,7 +18632,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ein wenig",
                 "_display": {
                   "extension": [
@@ -18668,7 +18668,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Mässig",
                 "_display": {
                   "extension": [
@@ -18704,7 +18704,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "Ziemlich",
                 "_display": {
                   "extension": [
@@ -18740,7 +18740,7 @@
             },
             {
               "valueCoding": {
-                "code": 4,
+                "code": "4",
                 "display": "Sehr",
                 "_display": {
                   "extension": [
@@ -18815,7 +18815,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Überhaupt nicht",
                 "_display": {
                   "extension": [
@@ -18851,7 +18851,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ein wenig",
                 "_display": {
                   "extension": [
@@ -18887,7 +18887,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Mässig",
                 "_display": {
                   "extension": [
@@ -18923,7 +18923,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "Ziemlich",
                 "_display": {
                   "extension": [
@@ -18959,7 +18959,7 @@
             },
             {
               "valueCoding": {
-                "code": 4,
+                "code": "4",
                 "display": "Sehr",
                 "_display": {
                   "extension": [
@@ -19034,7 +19034,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Überhaupt nicht",
                 "_display": {
                   "extension": [
@@ -19070,7 +19070,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ein wenig",
                 "_display": {
                   "extension": [
@@ -19106,7 +19106,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Mässig",
                 "_display": {
                   "extension": [
@@ -19142,7 +19142,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "Ziemlich",
                 "_display": {
                   "extension": [
@@ -19178,7 +19178,7 @@
             },
             {
               "valueCoding": {
-                "code": 4,
+                "code": "4",
                 "display": "Sehr",
                 "_display": {
                   "extension": [
@@ -19253,7 +19253,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Überhaupt nicht",
                 "_display": {
                   "extension": [
@@ -19289,7 +19289,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ein wenig",
                 "_display": {
                   "extension": [
@@ -19325,7 +19325,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Mässig",
                 "_display": {
                   "extension": [
@@ -19361,7 +19361,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "Ziemlich",
                 "_display": {
                   "extension": [
@@ -19397,7 +19397,7 @@
             },
             {
               "valueCoding": {
-                "code": 4,
+                "code": "4",
                 "display": "Sehr",
                 "_display": {
                   "extension": [
@@ -19472,7 +19472,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Überhaupt nicht",
                 "_display": {
                   "extension": [
@@ -19508,7 +19508,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "Ein wenig",
                 "_display": {
                   "extension": [
@@ -19544,7 +19544,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "Mässig",
                 "_display": {
                   "extension": [
@@ -19580,7 +19580,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "Ziemlich",
                 "_display": {
                   "extension": [
@@ -19616,7 +19616,7 @@
             },
             {
               "valueCoding": {
-                "code": 4,
+                "code": "4",
                 "display": "Sehr",
                 "_display": {
                   "extension": [
@@ -19729,7 +19729,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Überhaupt nicht",
                 "_display": {
                   "extension": [
@@ -19765,7 +19765,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "An einzelnen Tagen",
                 "_display": {
                   "extension": [
@@ -19801,7 +19801,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "An mehr als der Hälfte der Tage",
                 "_display": {
                   "extension": [
@@ -19837,7 +19837,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "Beinahe jeden Tag",
                 "_display": {
                   "extension": [
@@ -19912,7 +19912,7 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": 0,
+                "code": "0",
                 "display": "Überhaupt nicht",
                 "_display": {
                   "extension": [
@@ -19948,7 +19948,7 @@
             },
             {
               "valueCoding": {
-                "code": 1,
+                "code": "1",
                 "display": "An einzelnen Tagen",
                 "_display": {
                   "extension": [
@@ -19984,7 +19984,7 @@
             },
             {
               "valueCoding": {
-                "code": 2,
+                "code": "2",
                 "display": "An mehr als der Hälfte der Tage",
                 "_display": {
                   "extension": [
@@ -20020,7 +20020,7 @@
             },
             {
               "valueCoding": {
-                "code": 3,
+                "code": "3",
                 "display": "Beinahe jeden Tag",
                 "_display": {
                   "extension": [
@@ -20097,7 +20097,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -20133,7 +20133,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -20208,7 +20208,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ja",
             "_display": {
               "extension": [
@@ -20244,7 +20244,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -20319,7 +20319,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Überhaupt nicht",
             "_display": {
               "extension": [
@@ -20355,7 +20355,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ein wenig",
             "_display": {
               "extension": [
@@ -20391,7 +20391,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Mässig",
             "_display": {
               "extension": [
@@ -20427,7 +20427,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ziemlich",
             "_display": {
               "extension": [
@@ -20463,7 +20463,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Sehr",
             "_display": {
               "extension": [
@@ -20499,7 +20499,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Ich weiss nicht / nich zutreffend",
             "_display": {
               "extension": [
@@ -20574,7 +20574,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Überhaupt nicht",
             "_display": {
               "extension": [
@@ -20610,7 +20610,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ein wenig",
             "_display": {
               "extension": [
@@ -20646,7 +20646,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Mässig",
             "_display": {
               "extension": [
@@ -20682,7 +20682,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ziemlich",
             "_display": {
               "extension": [
@@ -20718,7 +20718,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Sehr",
             "_display": {
               "extension": [
@@ -20754,7 +20754,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Ich weiss nicht / nich zutreffend",
             "_display": {
               "extension": [
@@ -20829,7 +20829,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Überhaupt nicht",
             "_display": {
               "extension": [
@@ -20865,7 +20865,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ein wenig",
             "_display": {
               "extension": [
@@ -20901,7 +20901,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Mässig",
             "_display": {
               "extension": [
@@ -20937,7 +20937,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ziemlich",
             "_display": {
               "extension": [
@@ -20973,7 +20973,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Sehr",
             "_display": {
               "extension": [
@@ -21009,7 +21009,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Ich weiss nicht / nich zutreffend",
             "_display": {
               "extension": [
@@ -21084,7 +21084,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Überhaupt nicht",
             "_display": {
               "extension": [
@@ -21120,7 +21120,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ein wenig",
             "_display": {
               "extension": [
@@ -21156,7 +21156,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Mässig",
             "_display": {
               "extension": [
@@ -21192,7 +21192,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ziemlich",
             "_display": {
               "extension": [
@@ -21228,7 +21228,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Sehr",
             "_display": {
               "extension": [
@@ -21264,7 +21264,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Ich weiss nicht / nich zutreffend",
             "_display": {
               "extension": [
@@ -21339,7 +21339,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Oft",
             "_display": {
               "extension": [
@@ -21375,7 +21375,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Manchmal",
             "_display": {
               "extension": [
@@ -21411,7 +21411,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Gelegentlich",
             "_display": {
               "extension": [
@@ -21447,7 +21447,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Nie",
             "_display": {
               "extension": [
@@ -21522,7 +21522,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ich treffe die Entscheidungen am liebsten gemeinsam mit meinem/r Arzt/Ärztin",
             "_display": {
               "extension": [
@@ -21558,7 +21558,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Ich ziehe es vor, dass mein:e Arzt/Ärztin die Entscheidungen trifft",
             "_display": {
               "extension": [
@@ -21633,7 +21633,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Weiblich",
             "_display": {
               "extension": [
@@ -21669,7 +21669,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Männlich",
             "_display": {
               "extension": [
@@ -21705,7 +21705,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Nicht binär",
             "_display": {
               "extension": [
@@ -21741,7 +21741,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Anderes",
             "_display": {
               "extension": [
@@ -21786,7 +21786,7 @@
               "question": "SCAPE-77",
               "operator": "=",
               "answerCoding": {
-                "code": 3
+                "code": "3"
               }
             }
           ],
@@ -21901,7 +21901,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Französisch",
             "_display": {
               "extension": [
@@ -21937,7 +21937,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Italienisch",
             "_display": {
               "extension": [
@@ -21973,7 +21973,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Andere",
             "_display": {
               "extension": [
@@ -22048,7 +22048,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Europäisch",
             "_display": {
               "extension": [
@@ -22084,7 +22084,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Aussereuropäisch",
             "_display": {
               "extension": [
@@ -22159,7 +22159,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Verheiratet / eingetragene Partnerschaft",
             "_display": {
               "extension": [
@@ -22195,7 +22195,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Geschieden / aufgelöste Partnerschaft",
             "_display": {
               "extension": [
@@ -22231,7 +22231,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Verwitwet",
             "_display": {
               "extension": [
@@ -22306,7 +22306,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Ich lebe allein, mit einem Kind/Kindern im Haushalt",
             "_display": {
               "extension": [
@@ -22342,7 +22342,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Wir sind ein Paar, ohne Kinder im Haushalt",
             "_display": {
               "extension": [
@@ -22378,7 +22378,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Wir sind ein Paar, mit Kind/Kindern im Haushalt",
             "_display": {
               "extension": [
@@ -22414,7 +22414,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Ich lebe mit anderen Personen (z. B. Verwandte, Mitbewohner)",
             "_display": {
               "extension": [
@@ -22450,7 +22450,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Sonstige Wohnform (z. B. in einer Einrichtung)",
             "_display": {
               "extension": [
@@ -22525,7 +22525,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Keine Schule / obligatorische Schule",
             "_display": {
               "extension": [
@@ -22561,7 +22561,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Fachmittelschule / Gymnasiale- oder Berufs-maturität / Lehrkräfte-Seminar",
             "_display": {
               "extension": [
@@ -22597,7 +22597,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Anlehre (EFZ/EBA) / jährige Berufslehre / berufliche Grundbildung",
             "_display": {
               "extension": [
@@ -22633,7 +22633,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Höhere Fach- und Berufsausbildung mit eidgenössischem Fachausweis, Diplom oder Meisterdiplom / Höhere Fachschule",
             "_display": {
               "extension": [
@@ -22669,7 +22669,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Universität, Fachhochschule oder Pädagogische Hochschule, Technische Hochschule (ETH/EPFL)",
             "_display": {
               "extension": [
@@ -22705,7 +22705,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Sonstige",
             "_display": {
               "extension": [
@@ -22750,7 +22750,7 @@
               "question": "SCAPE-83",
               "operator": "=",
               "answerCoding": {
-                "code": 5
+                "code": "5"
               }
             }
           ],
@@ -22829,7 +22829,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Berufstätigkeit in Vollzeit (80%-100%)",
             "_display": {
               "extension": [
@@ -22865,7 +22865,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Berufstätigkeit in Teilzeit (<80%)",
             "_display": {
               "extension": [
@@ -22901,7 +22901,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "In Ausbildung (Schüler:in, Student:in, Lehrling)",
             "_display": {
               "extension": [
@@ -22937,7 +22937,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Arbeitsuchend (arbeitslos gemeldet oder nicht)",
             "_display": {
               "extension": [
@@ -22973,7 +22973,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Hausmann/-frau",
             "_display": {
               "extension": [
@@ -23009,7 +23009,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Invalide (z. B. IV-Rentner:in) oder längere Zeit krankgeschrieben",
             "_display": {
               "extension": [
@@ -23045,7 +23045,7 @@
         },
         {
           "valueCoding": {
-            "code": 6,
+            "code": "6",
             "display": "In Rente (AHV und/oder andere Rente ausser Invalidenrente)",
             "_display": {
               "extension": [
@@ -23081,7 +23081,7 @@
         },
         {
           "valueCoding": {
-            "code": 7,
+            "code": "7",
             "display": "Sonstiges",
             "_display": {
               "extension": [
@@ -23126,7 +23126,7 @@
               "question": "SCAPE-84",
               "operator": "=",
               "answerCoding": {
-                "code": 7
+                "code": "7"
               }
             }
           ],
@@ -23205,7 +23205,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -23280,7 +23280,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -23355,7 +23355,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Reduktion der Ausgaben für Ferien oder Freizeit",
             "_display": {
               "extension": [
@@ -23391,7 +23391,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Verzicht auf grössere Anschaffungen (z. B. Auto)",
             "_display": {
               "extension": [
@@ -23427,7 +23427,7 @@
         },
         {
           "valueCoding": {
-            "code": 2,
+            "code": "2",
             "display": "Reduktion der Grundausgaben (z. B. Nahrung oder Kleidung)",
             "_display": {
               "extension": [
@@ -23463,7 +23463,7 @@
         },
         {
           "valueCoding": {
-            "code": 3,
+            "code": "3",
             "display": "Verwendung von Ersparnissen, die für andere Zwecke zurückgelegt wurden (z. B. für den Ruhestand, Ausbildung)",
             "_display": {
               "extension": [
@@ -23499,7 +23499,7 @@
         },
         {
           "valueCoding": {
-            "code": 4,
+            "code": "4",
             "display": "Sonstiges",
             "_display": {
               "extension": [
@@ -23535,7 +23535,7 @@
         },
         {
           "valueCoding": {
-            "code": 5,
+            "code": "5",
             "display": "Keine finanziellen Opfer",
             "_display": {
               "extension": [
@@ -23580,7 +23580,7 @@
               "question": "SCAPE-87",
               "operator": "=",
               "answerCoding": {
-                "code": 4
+                "code": "4"
               }
             }
           ],
@@ -23659,7 +23659,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -23695,7 +23695,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Zum Zeitpunkt der Krebsdiagnose nicht erwerbstätig",
             "_display": {
               "extension": [
@@ -23770,7 +23770,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Nein",
             "_display": {
               "extension": [
@@ -23806,7 +23806,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Nahestehende Person nicht erwerbstätig / Nicht zutreffend",
             "_display": {
               "extension": [
@@ -23989,7 +23989,7 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": 0,
+            "code": "0",
             "display": "Alleine",
             "_display": {
               "extension": [
@@ -24025,7 +24025,7 @@
         },
         {
           "valueCoding": {
-            "code": 1,
+            "code": "1",
             "display": "Mit Hilfe von jemanden",
             "_display": {
               "extension": [
