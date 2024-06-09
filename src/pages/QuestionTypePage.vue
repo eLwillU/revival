@@ -49,7 +49,7 @@
 <script setup>
 import {ref} from "vue";
 
-const qData = ref("");
+const qData = ref();
 const dataReady = ref(false);
 
 const selectedAnswer = ref("");
@@ -57,7 +57,7 @@ const selectedAnswers = ref([]);
 const stringAnswer = ref("");
 import {QuestionnaireData} from "@i4mi/fhir_questionnaire";
 
-fetch("questionnaire/output.json")
+fetch("questionnaire/scape_complete.json")
   .then((response) => response.json())
   .then((res) => {
     qData.value = new QuestionnaireData(res, ["de"]);
@@ -79,7 +79,6 @@ function updateTextQuestion(question, answer) {
   res.code.valueString = answer;
   res.answer["de"] = answer;
   qData.value.updateQuestionAnswers(question, res);
-  console.log("Qdata new:", qData.value);
 }
 
 function logggg() {
