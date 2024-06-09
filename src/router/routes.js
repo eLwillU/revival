@@ -32,6 +32,10 @@ const routes = [
         path: "/feedback",
         component: () => import("pages/FeedbackPage.vue"),
       },
+      {
+        path: "/techday",
+        component: () => import("pages/TechDayPage.vue"),
+      },
     ],
   },
   {
