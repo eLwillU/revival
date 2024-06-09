@@ -102,8 +102,7 @@
               "question": "1",
               "operator": "=",
               "answerCoding": {
-                "code": "9",
-                "display": "Andere"
+                "code": 7
               }
             }
           ],
