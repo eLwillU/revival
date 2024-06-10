@@ -8325,7 +8325,6 @@
       "linkId": "SCAPE-43",
       "prefix": "43",
       "text": "Haben Sie vor der Behandlung alle Informationen erhalten, die Sie darüber benötigten?",
-      "enableBehavior": "any",
       "enableWhen": [
         {
           "question": "SCAPE-42",
@@ -8400,6 +8399,7 @@
           }
         ]
       },
+      "enableBehavior": "any",
       "type": "group",
       "item": [
         {
