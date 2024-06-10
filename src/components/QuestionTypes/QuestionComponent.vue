@@ -45,6 +45,7 @@
               v-model="selectedAnswers"
               :label="answer.answer['de']"
               :val="answer"
+              @update:model-value="() => updateAnswers(props.question, answer)"
 
             ></q-checkbox>
           </div>
@@ -95,13 +96,11 @@ function updateTextQuestion(q, answer) {
 
 function updateAnswers(q, answer) {
   props.qData.updateQuestionAnswers(props.question, answer)
-  console.log(selectedAnswers.value)
+
 }
 
 function confirm() {
-  props.qData.updateQuestionAnswers(props.question, selectedAnswers.value)
-  //selectedAnswers.value.forEach((ans) => props.qData.updateQuestionAnswers(props.question, ans))
-  console.log(selectedAnswers.value)
+   console.log(selectedAnswers.value)
   console.log(props.qData)
 }
 
