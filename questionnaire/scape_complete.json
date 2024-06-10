@@ -1333,6 +1333,7 @@
     {
       "linkId": "SCAPE-8",
       "prefix": "8",
+      "repeats": true,
       "text": "Welche Person hat Ihnen als erste mitgeteilt, dass Sie an einer Krebserkrankung leiden? (Mehrere Antworten möglich)",
       "_text": {
         "extension": [
@@ -7875,6 +7876,7 @@
     {
       "linkId": "SCAPE-42",
       "prefix": "42",
+      "repeats": true,
       "text": "Welche Art(en) von Krebsbehandlung haben Sie in den letzten 12 Monaten erhalten? (Wählen Sie alles an, was zutrifft.)",
       "_text": {
         "extension": [
@@ -17344,6 +17346,7 @@
     {
       "linkId": "SCAPE-68",
       "prefix": "68",
+      "repeats": true,
       "text": "Haben Sie eine der folgenden komplementärmedizinischen Therapien zur Krebsbehandlung oder Kontrolle der Symptome erhalten?",
       "_text": {
         "extension": [
@@ -22012,6 +22015,7 @@
     {
       "linkId": "SCAPE-80",
       "prefix": "80",
+      "repeats": true,
       "text": "Welche Nationalität haben Sie?",
       "_text": {
         "extension": [
@@ -23319,6 +23323,7 @@
     {
       "linkId": "SCAPE-87",
       "prefix": "87",
+      "repeats": true,
       "text": "Haben Sie oder Ihre Familie aufgrund der Krebserkrankung, der Behandlung oder der Langzeitwirkungen finanzielle Aufwände bringen müssen?",
       "_text": {
         "extension": [
