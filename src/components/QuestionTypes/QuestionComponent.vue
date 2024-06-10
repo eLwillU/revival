@@ -9,8 +9,12 @@
       <template v-if="q.type === 'display'">
         <q-card-section :class=questionTitleStyle>{{ q.prefix }}. {{ q.label["de"] }}</q-card-section>
       </template>
+      <template v-if="q.type === 'group'">
+        <q-card-section :class=questionTitleStyle>{{ q.prefix }}. {{ q.label["de"] }}</q-card-section>
+      </template>
       <template v-if="q.type === 'string'">
         <q-card-section :class=questionTitleStyle> {{ q.prefix }}. {{ q.label["de"] }}</q-card-section>
+
         <q-card-section>
           <q-input v-model=stringAnswer outlined placeholder="Ihre Antwort"></q-input>
         </q-card-section>
@@ -36,6 +40,7 @@
               @update:model-value="() => updateAnswers(q, answer)"
             ></q-radio>
             <q-checkbox
+              :onAnswer="props.qData.updateQuestionAnswers.bind(qData)"
               v-if="q.allowsMultipleAnswers"
               v-model="selectedAnswers"
               :label="answer.answer['de']"
@@ -44,12 +49,12 @@
             ></q-checkbox>
           </div>
         </q-card-section>
-        <q-card-section v-for="qSub in q.subItems" :key="qSub.id">
-          <template v-if="qSub.isEnabled">
-            <QuestionComponent :qData=props.qData :question=qSub></QuestionComponent>
-          </template>
-        </q-card-section>
       </template>
+      <q-card-section v-for="qSub in filteredItems" :key="qSub.id">
+        <div v-if="qSub.isEnabled">
+          <QuestionComponent :qData=props.qData :question=qSub></QuestionComponent>
+        </div>
+      </q-card-section>
       <q-card-actions>
         <q-btn @click="logggg">Log</q-btn>
       </q-card-actions>
@@ -58,7 +63,7 @@
 </template>
 
 <script setup>
-import {onMounted, ref} from 'vue'
+import {computed, onMounted, ref, watch} from 'vue'
 import SubQuestionComponent from "components/QuestionTypes/SubQuestionComponent.vue";
 
 const dataReady = ref(false)
@@ -72,6 +77,11 @@ const props = defineProps({
   question: Object,
   qData: Object
 })
+
+const filteredItems = ref()
+watch(() => q.value.subItems, (newVal) => {
+  filteredSubItems.value = newVal;
+}, {deep: true});
 
 onMounted(() => {
   q.value = props.question
@@ -90,6 +100,7 @@ function updateTextQuestion(q, answer) {
 
 function updateAnswers(q, answer) {
   props.qData.updateQuestionAnswers(q, answer)
+  console.log("Selected: ", q.selectedAnswers)
 }
 
 function logggg() {
