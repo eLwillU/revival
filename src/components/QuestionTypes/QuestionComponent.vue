@@ -118,13 +118,8 @@ function updateTextQuestion(q, answer) {
 function updateAnswers(q, answer) {
   console.log("answer: ", answer);
   props.qData.updateQuestionAnswers(q, selectedAnswer.value);
-  //props.qData.updateQuestionAnswers(q, answer);
 }
 
-function confirm() {
-  console.log(selectedAnswers.value);
-  console.log(props.qData);
-}
 
 function log() {
   console.log("logging something useful");

@@ -7,7 +7,9 @@
         </div>
       </q-card-section>
     </q-card>
+    <q-btn @click="console.log(qData.getQuestionnaireResponse('de'))">Log Response</q-btn>
   </div>
+
 </template>
 
 <script setup>
@@ -31,6 +33,4 @@ fetch("questionnaire/scape_complete.json")
   .catch((error) => {
     console.error("Error loading the JSON file:", error);
   });
-
-
 </script>
