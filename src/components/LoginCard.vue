@@ -1,4 +1,8 @@
 <template>
+  <!--
+  This is the card which is being displayed when the user is not logged in yet.
+  -->
+
   <div class="container">
     <q-card class="card">
       <q-card-section>

@@ -1,3 +1,8 @@
+<!--
+This is the main page rendering the question items according to the fhir resource which is being fetched from the MIDATA-FHIR-API.
+
+-->
+
 <template>
   <q-page>
     <div v-if="!fhir.isLoggedIn()"><LoginCard /></div>
@@ -77,18 +82,19 @@
 
 <script setup>
 import LoginCard from "../components/LoginCard.vue";
-import { fhir } from "../boot/midataService";
-import { ref, watchEffect, onMounted } from "vue";
-import { QuestionnaireData } from "@i4mi/fhir_questionnaire";
-import { useI18n } from "vue-i18n";
+import {fhir} from "boot/midataService";
+import {onMounted, ref, watchEffect} from "vue";
+import {QuestionnaireData} from "@i4mi/fhir_questionnaire";
+import {useI18n} from "vue-i18n";
 import QuestionCard from "../components/QuestionCard.vue";
-import { userStore } from "src/stores/store";
+import {userStore} from "src/stores/store";
+
 const store = userStore();
 const { locale } = useI18n();
 const language = ref("");
 const isDataFetched = ref(false);
-const data = ref("");
-const qData = ref("");
+const data = ref();
+const qData = ref();
 const midataLoginStatus = ref(false);
 const existingQdata = ref(false);
 
@@ -110,6 +116,8 @@ const progress = ref(0);
 
 const tempBoolean = ref(false);
 const error = ref(false);
+
+// Function to go to the next question / page.
 function nextPage() {
   if (!tempBoolean.value) {
     error.value = true;
@@ -123,7 +131,7 @@ function nextPage() {
     }
   }
 }
-
+// Function to go to the previous question / page.
 function previousPage() {
   if (currentPage.value > 1) {
     currentPage.value--;
@@ -132,6 +140,10 @@ function previousPage() {
   }
 }
 
+// fetches the questionnaire from MIDATA.
+// in this case we use the fhir.search function with some additional params.
+// the usage of this method is documented in the official documentation of the js-on-fhir package.
+// Additionally the contents of the progress-bar are being calculated to display the progress to the user.
 async function fetchData() {
   try {
     data.value = await fhir.search("Questionnaire", {
@@ -144,8 +156,7 @@ async function fetchData() {
     qData.value = new QuestionnaireData(resource, ["de", "fr"]);
     numPages.value = qData.value.getQuestions().length;
     isDataFetched.value = true;
-    const step = 1 / numPages.value;
-    progress.value = step;
+    progress.value = 1 / numPages.value;
     console.log("Questionnaire: ", qData.value);
   } catch (error) {
     console.error("Error fetching JSON:", error);
@@ -159,6 +170,7 @@ watchEffect(() => {
   }
 });
 
+// Watcher if the language changes.
 watchEffect(() => {
   language.value = locale.value.split("-")[0];
 });
@@ -166,8 +178,7 @@ watchEffect(() => {
 // Set question and answer when selected in the component
 function handleAnswerSelected({
   question,
-  selectedAnswer,
-  userSelectedAnswer,
+  selectedAnswer
 }) {
   qData.value.updateQuestionAnswers(question, selectedAnswer);
   userStore.questionnaireResponse = qData.value;
@@ -177,6 +188,9 @@ function handleAnswerSelected({
   }
 }
 
+
+// Initialise the questionnaire data when loading the page
+// This is an additional measure to being able to reload progress to the questionnaire which might not have been completed.
 onMounted(() => {
   const storedQuestionnaireData = userStore.questionnaireResponse;
   if (storedQuestionnaireData) {

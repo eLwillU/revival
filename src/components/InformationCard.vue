@@ -1,4 +1,9 @@
 <template>
+  <!--
+  This is a card to display more information to the user.
+  Currently its in a static form leading to the SCAPE-CH Website.
+   -->
+
   <q-card class="my-card">
     <q-img
       class="card-image"

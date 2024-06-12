@@ -1,5 +1,12 @@
+<!--
+this is the currently used card to display the questions to the user.
+it only supports one type of questions: choice.
+This card could be further extended by implementing all the different types of questions like in the "QuestionComponent.vue".
+It takes some props which are used to render the question correctly and handle the answers accordingly.
+ -->
+
 <template>
-  <div class="q-pa-sm">
+    <div class="q-pa-sm">
     <q-card
       flat
       bordered
@@ -33,7 +40,7 @@
             @update:modelValue="handleAnswerSelected(selectedAnswers)"
           ></q-radio>
           <div class="q-py-sm">
-            <q-separator v-if="index < question.answerOptions.length - 1" />
+            <q-separator v-if="index < question.answerOptions.length - 1"/>
           </div>
         </div>
       </q-card-section>
@@ -42,7 +49,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import {ref, onMounted} from "vue";
 
 const props = defineProps({
   question: Object,

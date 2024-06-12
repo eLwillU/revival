@@ -22,7 +22,7 @@ const selectedAnswer = ref("");
 const selectedAnswers = ref([]);
 const stringAnswer = ref("");
 import {QuestionnaireData} from "@i4mi/fhir_questionnaire";
-import QuestionComponent from "components/QuestionTypes/QuestionComponent.vue";
+import QuestionComponent from "components/QuestionComponent.vue";
 
 fetch("questionnaire/scape_complete.json")
   .then((response) => response.json())

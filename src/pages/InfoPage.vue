@@ -1,3 +1,9 @@
+<!--
+This is the landing page for the users when opening www.revival-prems.ch.
+It currently contains all the information about our bachelors thesis.
+For use outside the bachelors thesis it should be redone and the information adapted accordingly.
+-->
+
 <template>
   <q-page class="q-pa-none">
     <div>
@@ -70,15 +76,15 @@
           <div class="row">
             <div class="q-mx-xl q-py-md text-weight-bold">
               Karin Kennel:
-              <br />
+              <br/>
               <a href="mailto:karin.kennel@students.bfh.ch">
                 karin.kennel@students.bfh.ch
               </a>
             </div>
             <div class="q-mx-xl q-py-md text-weight-bold">
-              Dominic Willi: <br />
+              Dominic Willi: <br/>
               <a href="mailto:dominic.willi@students.bfh.ch"
-                >dominic.willi@students.bfh.ch</a
+              >dominic.willi@students.bfh.ch</a
               >
             </div>
           </div>
@@ -104,7 +110,8 @@
           <q-video
             src="https://www.youtube.com/embed/qj8r_7lH76c?si=ufz14iosaoqJvF8z"
             :ratio="16 / 9"
-        /></q-card-section>
+          />
+        </q-card-section>
       </q-card>
       <q-card class="q-mb-sm">
         <q-card-section>
@@ -123,21 +130,4 @@ import InformationCard from "../components/InformationCard.vue";
 import LoginButton from "src/components/LoginButton.vue";
 </script>
 
-<style>
-.video-container .responsive-video {
-  width: 100%;
-  height: auto; /* Für ein responsives Video */
-}
 
-.my-card {
-  max-width: 300px;
-  width: 100%;
-  margin: auto;
-  margin-bottom: 2em;
-}
-
-.card-image {
-  height: 150px;
-  object-fit: cover;
-}
-</style>

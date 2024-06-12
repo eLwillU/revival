@@ -1,3 +1,8 @@
+<!--
+This page is being displayed to the user after successfully logging in to MIDATA.
+
+-->
+
 <template>
   <q-page>
     <LoginCard v-if="!store.isLoggedIn" />

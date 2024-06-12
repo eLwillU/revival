@@ -1,3 +1,5 @@
+// default generated contents by pinia.
+
 import { store } from "quasar/wrappers";
 import { createPinia } from "pinia";
 

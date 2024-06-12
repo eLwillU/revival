@@ -1,3 +1,9 @@
+<!--
+This is the main layout of the application.
+It is composed using a q-layout component which has a toolbar and a drawer menu.
+Furthermore it contains the "router-view" which enables the application to render the according pages
+-->
+
 <template>
   <q-layout view="hHh lpR fFf">
     <q-header bordered class="bg-primary text-white">
@@ -109,46 +115,39 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-import { fhir } from "../boot/midataService"; // adjust the path to your midataService file
+import { fhir } from "boot/midataService";
 import { userStore } from "stores/store";
 
 const store = userStore();
 const leftDrawerOpen = ref(false);
 const loginStatus = ref(fhir.isLoggedIn());
 
+// handle the auth response which is called when the login process has been successful.
 function handle() {
   fhir
     .handleAuthResponse()
     .then((response) => {
       if (response) {
-        // check if response is not null - we have to check for this,
-        // or we will overwrite the auth token every time when reloading the component
-
-        // when we get to here, we are authenticated
-        console.log("logged in?", fhir.isLoggedIn());
         store.setLoginStatus(fhir.isLoggedIn());
-        let refreshToken = response.refresh_token;
-        // keep this refreshToken in a safe place
-        // e.g. on a post-it attached to your screen ;-)
       }
     })
     .catch((err) => {
-      // if something went wrong, we end up here
       console.log(err);
     });
 }
 
 onMounted(handle);
 
+// Handle login process
 function login() {
   fhir.authenticate({ language: store.locale });
   loginStatus.value = fhir.isLoggedIn();
 }
 
+// Handle logout process
 function logout() {
   fhir.logout();
   store.setLoginStatus(false);
-  console.log(fhir.isLoggedIn());
 }
 
 function toggleLeftDrawer() {
@@ -156,6 +155,8 @@ function toggleLeftDrawer() {
 }
 </script>
 <style>
+
+// Gradient style for the background of the pages.
 .gradback {
   background-image: radial-gradient(
     circle farthest-corner at 1.3% 2.8%,

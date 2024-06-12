@@ -1,3 +1,8 @@
+<!--
+This Page is being displayed to the users after completing the questionnaire.
+Currently it only contains a logout logout button and no further functionallity.
+-->
+
 <template>
   <q-page padding>
     <q-card class="q-mb-sm">

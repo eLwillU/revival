@@ -1,3 +1,7 @@
+// this is the router for the project.
+// it contains all the routes which are currently defined.
+
+
 const routes = [
   {
     path: "/",
@@ -10,7 +14,7 @@ const routes = [
       },
       {
         path: "/questionnaire",
-        component: () => import("pages/questionnairePage.vue"),
+        component: () => import("pages/QuestionnairePage.vue"),
       },
       {
         path: "/welcome",
