@@ -107,7 +107,7 @@ Furthermore it contains the "router-view" which enables the application to rende
       >
     </q-drawer>
 
-    <q-page-container class="q-pa-sm row justify-center gradback">
+    <q-page-container class="q-pa-sm row justify-center gradient_background">
       <RouterView class="col-md-6"></RouterView>
     </q-page-container>
   </q-layout>
@@ -155,9 +155,8 @@ function toggleLeftDrawer() {
 }
 </script>
 <style>
-
-// Gradient style for the background of the pages.
-.gradback {
+/* Gradient style for the background of the pages. */
+.gradient_background {
   background-image: radial-gradient(
     circle farthest-corner at 1.3% 2.8%,
     rgba(239, 249, 249, 1) 0%,

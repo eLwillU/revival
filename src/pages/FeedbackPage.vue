@@ -2,9 +2,6 @@
 This is a page for the tech day which is being displayed to people scanning the QR-code to this page.
 Currently its only available in german.
 -->
-
-
-
 <template>
   <q-page>
     <q-card class="q-mt-sm">
