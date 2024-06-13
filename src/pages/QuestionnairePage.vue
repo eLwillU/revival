@@ -140,6 +140,8 @@ function previousPage() {
   }
 }
 
+onMounted(() => fetchData())
+
 // fetches the questionnaire from MIDATA.
 // in this case we use the fhir.search function with some additional params.
 // the usage of this method is documented in the official documentation of the js-on-fhir package.
