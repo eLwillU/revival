@@ -156,7 +156,7 @@ function toggleLeftDrawer() {
 </script>
 <style>
 
-// Gradient style for the background of the pages.
+/* Gradient style for the background of the pages. */
 .gradback {
   background-image: radial-gradient(
     circle farthest-corner at 1.3% 2.8%,
