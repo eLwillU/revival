@@ -24,6 +24,9 @@ npm install
 quasar dev
 
 ```
+### Redirect URL
+If you want to run the project locally, you need to change the redirect URL in the midataService.js to http://localhost:9000/#/welcome.
+
 
 ### Build the app for production
 
