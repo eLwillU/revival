@@ -4,7 +4,7 @@ import { JSOnFhir } from "@i4mi/js-on-fhir";
 const fhir = new JSOnFhir(
   "https://test.midata.coop",  // Base URL of the FHIR server.
   "revival",  // Client ID for the FHIR server.
-  "http://localhost:9000/#/welcome",  // Redirect URI after authentication.
+  "https://www.revival-prems.ch/#/welcome",  // Redirect URI after authentication.
   {
     disablePkce: false,  // PKCE (Proof Key for Code Exchange) is enabled for enhanced security.
     doesNotNeedAuth: false,  // Authentication is required.
